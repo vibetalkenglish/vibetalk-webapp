@@ -10,6 +10,7 @@ import { playAmericanSpeech } from '@/lib/speechHelper';
 import { recordTestResult, getUserProgress } from '@/lib/storage';
 import { awardExp } from '@/lib/authStorage';
 import { LevelId } from '@/types';
+import LevelCertificateModal from '@/components/LevelCertificateModal';
 import { 
   Award, 
   Volume2, 
@@ -21,7 +22,8 @@ import {
   Sparkles, 
   HelpCircle,
   Zap,
-  Lock
+  Lock,
+  Download
 } from 'lucide-react';
 
 export default function LevelTestPage() {
@@ -38,6 +40,7 @@ export default function LevelTestPage() {
   const [score, setScore] = useState(0);
   const [passed, setPassed] = useState(false);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+  const [isCertOpen, setIsCertOpen] = useState(false);
 
   useEffect(() => {
     const progress = getUserProgress();
@@ -269,23 +272,33 @@ export default function LevelTestPage() {
                 : 'Bạn cần đạt tối thiểu 80% để mở khóa level mới. Hãy xem lại giải thích chi tiết bên dưới và làm lại nhé!'}
             </p>
 
-            <div className="pt-2 flex items-center justify-center gap-3">
+            <div className="pt-3 flex items-center justify-center gap-3 flex-wrap">
               <button
                 onClick={handleRetry}
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-white text-slate-800 rounded-xl text-xs font-bold shadow-sm hover:bg-slate-100"
+                className="inline-flex items-center gap-1.5 px-4 py-2 bg-white text-slate-800 rounded-xl text-xs font-bold shadow-sm hover:bg-slate-100 cursor-pointer"
               >
                 <RotateCcw className="w-4 h-4" />
                 <span>Làm lại bài test</span>
               </button>
 
               {passed && (
-                <Link
-                  href="/lessons"
-                  className="inline-flex items-center gap-1.5 px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-sm"
-                >
-                  <span>Xem Level Mới Mở Khóa</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                <>
+                  <button
+                    onClick={() => setIsCertOpen(true)}
+                    className="inline-flex items-center gap-1.5 px-5 py-2 bg-amber-400 hover:bg-amber-300 text-slate-950 rounded-xl text-xs font-black shadow-md transition-all active:scale-95 cursor-pointer"
+                  >
+                    <Award className="w-4 h-4" />
+                    <span>Xem & Tải Chứng Chỉ 🏆</span>
+                  </button>
+
+                  <Link
+                    href="/lessons"
+                    className="inline-flex items-center gap-1.5 px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow-sm"
+                  >
+                    <span>Xem Level Mới Mở Khóa</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </>
               )}
             </div>
           </div>
@@ -346,6 +359,14 @@ export default function LevelTestPage() {
           </div>
         </div>
       )}
+
+      {/* Level Graduation Certificate Modal */}
+      <LevelCertificateModal
+        level={levelConfig}
+        score={score}
+        isOpen={isCertOpen}
+        onClose={() => setIsCertOpen(false)}
+      />
     </div>
   );
 }

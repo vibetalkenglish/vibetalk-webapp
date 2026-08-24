@@ -9,6 +9,10 @@ import DialoguePlayer from '@/components/DialoguePlayer';
 import SentencePatternCard from '@/components/SentencePatternCard';
 import EarTrainingCard from '@/components/EarTrainingCard';
 import GrammarSpotlightCard from '@/components/GrammarSpotlightCard';
+import FontSizeController from '@/components/FontSizeController';
+import VocabularyFlashcardsModal from '@/components/VocabularyFlashcardsModal';
+import LessonRadioPlayer from '@/components/LessonRadioPlayer';
+import LessonQuickQuiz from '@/components/LessonQuickQuiz';
 import { 
   markLessonCompleted, 
   toggleSaveLesson, 
@@ -27,7 +31,9 @@ import {
   Volume2, 
   BookOpen, 
   Award,
-  Zap
+  Zap,
+  Layers,
+  Headphones
 } from 'lucide-react';
 
 export default function LessonDetailPage() {
@@ -38,6 +44,8 @@ export default function LessonDetailPage() {
   const lesson = LESSONS.find((l) => l.id === lessonId);
   const [isSaved, setIsSaved] = useState(false);
   const [isCompleted, setIsCompleted] = useState(false);
+  const [fontSizeLevel, setFontSizeLevel] = useState(0); // 0: Normal, 1: +15%, 2: +30%
+  const [isFlashcardsOpen, setIsFlashcardsOpen] = useState(false);
 
   useEffect(() => {
     if (lesson) {
@@ -91,10 +99,17 @@ export default function LessonDetailPage() {
     }
   };
 
+  // Dynamic font sizing wrapper class
+  const fontScaleClass = fontSizeLevel === 1 
+    ? 'text-[1.12rem] [&_p]:text-[1.05rem] [&_h3]:text-[1.25rem] [&_h2]:text-[1.45rem]' 
+    : fontSizeLevel === 2 
+    ? 'text-[1.25rem] [&_p]:text-[1.18rem] [&_h3]:text-[1.4rem] [&_h2]:text-[1.65rem]' 
+    : '';
+
   return (
-    <div className="space-y-8 max-w-5xl mx-auto">
-      {/* Navigation Breadcrumb & Back */}
-      <div className="flex items-center justify-between gap-4">
+    <div className={`space-y-8 max-w-5xl mx-auto transition-all ${fontScaleClass}`}>
+      {/* Top Accessibility & Speed Toolbar */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <Link
           href="/lessons"
           className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-indigo-600 transition-colors"
@@ -103,147 +118,137 @@ export default function LessonDetailPage() {
           <span>Danh sách bài học ({levelConfig.title.split(':')[0]})</span>
         </Link>
 
-        {/* Action Buttons */}
-        <div className="flex items-center gap-2">
-          <button
-            onClick={handleToggleSave}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
-              isSaved
-                ? 'bg-amber-100 text-amber-800 border border-amber-300'
-                : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-50'
-            }`}
-          >
-            <Bookmark className={`w-3.5 h-3.5 ${isSaved ? 'fill-amber-600 text-amber-600' : ''}`} />
-            <span>{isSaved ? 'Đã lưu bài' : 'Lưu bài học'}</span>
-          </button>
-
-          <button
-            onClick={handleMarkComplete}
-            className={`flex items-center gap-1.5 px-4 py-1.5 rounded-xl text-xs font-bold transition-all ${
-              isCompleted
-                ? 'bg-emerald-600 text-white shadow-sm'
-                : 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm'
-            }`}
-          >
-            <CheckCircle2 className="w-3.5 h-3.5" />
-            <span>{isCompleted ? 'Đã hoàn thành' : 'Đánh dấu hoàn thành'}</span>
-          </button>
-        </div>
+        <FontSizeController
+          fontSizeLevel={fontSizeLevel}
+          onFontSizeChange={(lvl) => setFontSizeLevel(lvl)}
+        />
       </div>
 
-      {/* Lesson Hero Banner */}
-      <div className="bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl space-y-4">
-        <div className="flex items-center gap-2">
-          <span className="text-xs font-bold px-3 py-1 rounded-full bg-white/15 backdrop-blur-sm text-indigo-200">
-            {levelConfig.title.split(':')[0]} • Bài {currentIndex + 1}
-          </span>
-          <span className="text-xs font-medium text-indigo-300">
-            ⏱️ {lesson.durationMinutes} phút
-          </span>
-        </div>
-
-        <h1 className="text-2xl sm:text-4xl font-black tracking-tight text-white">
-          {lesson.titleVi}
-        </h1>
-        <p className="text-sm font-semibold text-indigo-200">
-          {lesson.titleEn}
-        </p>
-
-        <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
-          {lesson.descriptionVi}
-        </p>
-
-        {/* Key Takeaways */}
-        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10 space-y-2 mt-4">
-          <h4 className="text-xs font-bold text-amber-300 uppercase tracking-wider flex items-center gap-1.5">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Trọng tâm bài học:</span>
-          </h4>
-          <ul className="space-y-1 text-xs text-indigo-100 list-disc list-inside">
-            {lesson.keyTakeaways.map((item, idx) => (
-              <li key={idx}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      {/* SECTION 1: VIETNAMESE PRONUNCIATION TIPS */}
-      <section className="space-y-4">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">
-            1
-          </div>
-          <h2 className="text-xl font-bold text-slate-900">
-            Bí Quyết Phát Âm Chuẩn Mỹ Dành Cho Người Việt
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {lesson.vietnamesePronunciationTips.map((tip, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm space-y-3"
-            >
-              <h3 className="text-base font-bold text-indigo-900 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-indigo-600" />
-                {tip.title}
-              </h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                {tip.description}
-              </p>
-              <div className="bg-indigo-50/70 p-2.5 rounded-xl border border-indigo-100 text-xs text-indigo-900 font-semibold">
-                📌 Quy tắc: {tip.rule}
-              </div>
-
-              {/* Mini Examples with Audio */}
-              <div className="space-y-1.5 pt-2 border-t border-slate-100">
-                {tip.examples.map((ex, exIdx) => (
-                  <div
-                    key={exIdx}
-                    className="flex items-center justify-between p-2 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors"
-                  >
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-xs font-bold text-slate-800">{ex.en}</span>
-                        <span className="text-[11px] font-serif text-indigo-600">{ex.ipa}</span>
-                        <span className="text-[11px] text-slate-500">({ex.vi})</span>
-                      </div>
-                      {ex.soundTip && (
-                        <span className="text-[10px] text-rose-600 block mt-0.5">
-                          👉 {ex.soundTip}
-                        </span>
-                      )}
-                    </div>
-
-                    <button
-                      onClick={() => playAmericanSpeech(ex.en, 0.85)}
-                      className="p-1.5 rounded-lg bg-white border border-slate-200 hover:bg-indigo-600 hover:text-white text-indigo-600 transition-colors"
-                      title="Nghe phát âm"
-                    >
-                      <Volume2 className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
-                ))}
-              </div>
+      {/* 1. LESSON HERO BANNER */}
+      <div className="bg-gradient-to-br from-indigo-900 via-indigo-950 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl border border-indigo-500/20 relative overflow-hidden">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="space-y-3 max-w-2xl">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-bold border border-white/10">
+                {levelConfig.title.split(':')[0]} • Bài {currentIndex + 1}
+              </span>
+              <span className="px-2.5 py-0.5 rounded-full bg-indigo-500/30 text-indigo-200 text-xs font-semibold">
+                ⏱️ {lesson.durationMinutes} phút
+              </span>
+              {isCompleted && (
+                <span className="px-2.5 py-0.5 rounded-full bg-emerald-500 text-white text-xs font-bold flex items-center gap-1">
+                  <CheckCircle2 className="w-3.5 h-3.5" /> Đã hoàn thành
+                </span>
+              )}
             </div>
-          ))}
-        </div>
-      </section>
 
-      {/* SECTION 2: CORE VOCABULARY */}
+            <h1 className="text-2xl sm:text-4xl font-black tracking-tight leading-snug">
+              {lesson.titleVi}
+            </h1>
+
+            <p className="text-xs sm:text-sm text-indigo-200 font-medium leading-relaxed">
+              {lesson.descriptionVi}
+            </p>
+
+            {/* Quick Interactive Tool Buttons */}
+            <div className="flex items-center gap-2.5 pt-2 flex-wrap">
+              <button
+                onClick={() => setIsFlashcardsOpen(true)}
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs shadow-md transition-all active:scale-95 cursor-pointer"
+              >
+                <Layers className="w-4 h-4" />
+                <span>🃏 Lật Flashcard 3D ({lesson.vocabulary.length} từ)</span>
+              </button>
+
+              <LessonRadioPlayer lesson={lesson} />
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row md:flex-col gap-2.5 flex-shrink-0">
+            <button
+              onClick={handleToggleSave}
+              className={`flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                isSaved
+                  ? 'bg-amber-400 text-slate-950 shadow-md font-black'
+                  : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
+              }`}
+            >
+              <Bookmark className={`w-3.5 h-3.5 ${isSaved ? 'fill-slate-950' : ''}`} />
+              <span>{isSaved ? 'Đã lưu vào Sổ tay' : 'Lưu bài học'}</span>
+            </button>
+
+            <button
+              onClick={handleMarkComplete}
+              className={`flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                isCompleted
+                  ? 'bg-emerald-500/30 text-emerald-200 border border-emerald-500/40'
+                  : 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md'
+              }`}
+            >
+              <CheckCircle2 className="w-3.5 h-3.5" />
+              <span>{isCompleted ? 'Hoàn thành (+50 EXP)' : 'Đánh dấu đã học'}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* SECTION 1: PHONETICS & PRONUNCIATION TIPS */}
+      {lesson.vietnamesePronunciationTips && lesson.vietnamesePronunciationTips.length > 0 && (
+        <section className="space-y-4">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">
+              1
+            </div>
+            <div>
+              <h2 className="text-xl font-bold text-slate-900">
+                Mẹo Khẩu Hình & Bí Thuật Giọng Mỹ
+              </h2>
+              <p className="text-xs text-slate-500">Khắc phục triệt để lỗi phát âm của người Việt</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {lesson.vietnamesePronunciationTips.map((tip, idx) => (
+              <div key={idx} className="bg-white rounded-3xl p-5 border border-slate-200 shadow-xs space-y-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-lg">💡</span>
+                  <h3 className="font-bold text-slate-900 text-sm">{tip.title}</h3>
+                </div>
+                <p className="text-xs text-slate-600 leading-relaxed">{tip.description}</p>
+                {tip.rule && (
+                  <div className="p-3 bg-amber-50/70 border border-amber-200/80 rounded-2xl text-xs text-amber-900 font-medium">
+                    ⚠️ <strong className="font-bold">Quy tắc vàng:</strong> {tip.rule}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* SECTION 2: KEY VOCABULARY */}
       <section className="space-y-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-xl bg-indigo-100 text-indigo-800 flex items-center justify-center font-bold text-sm">
               2
             </div>
             <div>
               <h2 className="text-xl font-bold text-slate-900">
-                Từ Vựng Then Chốt & Phiên Âm Chi Tiết
+                Từ Vựng Then Chốt ({lesson.vocabulary.length} từ)
               </h2>
-              <p className="text-xs text-slate-500">Chạm nút ⭐ để lưu vào sổ tay từ vựng của bạn</p>
+              <p className="text-xs text-slate-500">Phiên âm IPA chuẩn, mẹo âm đuôi và câu ví dụ thực tế</p>
             </div>
           </div>
+
+          <button
+            onClick={() => setIsFlashcardsOpen(true)}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold transition-colors cursor-pointer"
+          >
+            <Layers className="w-3.5 h-3.5" />
+            <span>Lật Flashcard</span>
+          </button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -315,7 +320,7 @@ export default function LessonDetailPage() {
         <section className="space-y-4">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-xl bg-purple-100 text-purple-800 flex items-center justify-center font-bold text-sm">
-              {lesson.grammarNotes ? 6 : 5}
+              6
             </div>
             <div>
               <h2 className="text-xl font-bold text-slate-900">
@@ -328,6 +333,23 @@ export default function LessonDetailPage() {
           <EarTrainingCard drills={lesson.earTrainingDrills} />
         </section>
       )}
+
+      {/* SECTION 7: MINI QUIZ CHECKPOINT */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">
+            7
+          </div>
+          <div>
+            <h2 className="text-xl font-bold text-slate-900">
+              Kiểm Tra Phản Xạ 30 Giây (Mini Checkpoint)
+            </h2>
+            <p className="text-xs text-slate-500">Vượt qua 3 câu trắc nghiệm nhanh để nhận +30 EXP</p>
+          </div>
+        </div>
+
+        <LessonQuickQuiz lesson={lesson} />
+      </section>
 
       {/* BOTTOM FOOTER NAVIGATION */}
       <div className="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -363,6 +385,14 @@ export default function LessonDetailPage() {
           </Link>
         )}
       </div>
+
+      {/* 3D Flashcards Modal */}
+      <VocabularyFlashcardsModal
+        vocabulary={lesson.vocabulary}
+        lessonTitle={lesson.titleVi}
+        isOpen={isFlashcardsOpen}
+        onClose={() => setIsFlashcardsOpen(false)}
+      />
     </div>
   );
 }

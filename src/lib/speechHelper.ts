@@ -230,24 +230,43 @@ class AmericanSpeechEngine {
 
 export const speechEngine = new AmericanSpeechEngine();
 
+const SPEED_PREF_KEY = 'VIBETALK_AUDIO_SPEED_PREF_V1';
+
+export function getGlobalAudioSpeed(): number {
+  if (typeof window === 'undefined') return 1.0;
+  const saved = localStorage.getItem(SPEED_PREF_KEY);
+  if (!saved) return 1.0;
+  const parsed = parseFloat(saved);
+  return isNaN(parsed) ? 1.0 : parsed;
+}
+
+export function setGlobalAudioSpeed(speed: number) {
+  if (typeof window !== 'undefined') {
+    localStorage.setItem(SPEED_PREF_KEY, speed.toString());
+  }
+}
+
 /**
  * Universal American Speech Player
  * Uses Neural TTS / Studio Audio with graceful client fallback
  */
 export function playAmericanSpeech(
   text: string, 
-  rate: number = 0.88, 
+  rate?: number, 
   onEnd?: () => void,
   options?: { gender?: 'female' | 'male'; audioUrl?: string }
 ) {
+  const globalSpeed = getGlobalAudioSpeed();
+  const effectiveRate = (rate ?? 0.88) * globalSpeed;
+
   // If in browser and studio audio manager is available, use hybrid pipeline
   if (typeof window !== 'undefined') {
     import('./audioManager').then(({ studioAudio }) => {
-      studioAudio.play(text, { rate, onEnd, ...options });
+      studioAudio.play(text, { rate: effectiveRate, onEnd, ...options });
     }).catch(() => {
-      speechEngine.speak(text, { rate, onEnd });
+      speechEngine.speak(text, { rate: effectiveRate, onEnd });
     });
   } else {
-    speechEngine.speak(text, { rate, onEnd });
+    speechEngine.speak(text, { rate: effectiveRate, onEnd });
   }
 }
