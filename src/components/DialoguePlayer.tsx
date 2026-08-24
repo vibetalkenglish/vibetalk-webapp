@@ -141,9 +141,11 @@ export default function DialoguePlayer({ lines, title = 'Đoạn Hội Thoại T
 
                   {/* IPA Subtitle */}
                   {showIpa && (
-                    <p className="text-xs sm:text-sm font-ipa font-bold text-indigo-700 tracking-wider">
-                      {line.ipa}
-                    </p>
+                    <div className="py-0.5">
+                      <span className="inline-block text-xs sm:text-sm font-ipa font-bold text-indigo-700 bg-indigo-50/90 px-3 py-1 rounded-xl border border-indigo-200/80 tracking-wider shadow-xs">
+                        {line.ipa}
+                      </span>
+                    </div>
                   )}
 
                   {/* Vietnamese Meaning */}

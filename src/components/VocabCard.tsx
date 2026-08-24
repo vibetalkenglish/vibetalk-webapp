@@ -55,13 +55,15 @@ export default function VocabCard({ item, onRemove }: VocabCardProps) {
             </div>
           </div>
 
-          <div className="my-3 text-center">
-            <h3 className="text-3xl font-black text-slate-900 mb-1">
+          <div className="my-3 text-center space-y-1.5">
+            <h3 className="text-3xl font-black text-slate-900">
               {item.word}
             </h3>
-            <span className="text-lg font-ipa font-bold text-indigo-600 tracking-wider">
-              {item.ipa}
-            </span>
+            <div>
+              <span className="inline-block text-lg sm:text-xl font-black font-ipa text-indigo-700 bg-indigo-50 px-3.5 py-0.5 rounded-xl border border-indigo-200/90 tracking-wider shadow-xs">
+                {item.ipa}
+              </span>
+            </div>
           </div>
 
           <div className="flex items-center justify-center gap-1 text-xs text-slate-400 pt-2 border-t border-slate-100">
