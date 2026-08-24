@@ -22,6 +22,7 @@ import { UserProgress } from '@/types';
 import { IPA_SOUNDS } from '@/data/ipaData';
 import { LESSONS, LEVELS_CONFIG } from '@/data/lessonsData';
 import { playAmericanSpeech } from '@/lib/speechHelper';
+import DailyHabitSprint from '@/components/DailyHabitSprint';
 
 export default function HomePage() {
   const [progress, setProgress] = useState<UserProgress | null>(null);
@@ -49,6 +50,9 @@ export default function HomePage() {
 
   return (
     <div className="space-y-8">
+      {/* DAILY 3-MINUTE HABIT SPRINT (CHỐNG NẢN MỖI NGÀY) */}
+      <DailyHabitSprint />
+
       {/* HERO SECTION */}
       <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 text-white p-6 sm:p-10 shadow-xl">
         <div className="relative z-10 max-w-3xl space-y-4">

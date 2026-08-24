@@ -17,7 +17,8 @@ import {
   Trophy,
   User,
   Zap,
-  LogIn
+  LogIn,
+  Crown
 } from 'lucide-react';
 import { getUserProgress, subscribeToProgress } from '@/lib/storage';
 import { getActiveUser } from '@/lib/authStorage';
@@ -66,6 +67,7 @@ export default function Navbar() {
     { href: '/lessons', label: 'Lộ Trình Cấp Độ', icon: BookOpen },
     { href: '/practice', label: 'Phòng Luyện AI', icon: Mic, highlight: true },
     { href: '/leaderboard', label: 'Bảng Xếp Hạng', icon: Trophy },
+    { href: '/pricing', label: 'Nâng Cấp Pro 👑', icon: Crown, pro: true },
     { href: '/notebook', label: 'Sổ Tay', icon: Bookmark },
   ];
 
