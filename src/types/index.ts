@@ -74,6 +74,15 @@ export interface EarTrainingDrill {
   explanationVi: string;
 }
 
+export interface GrammarNote {
+  titleVi: string;
+  structure: string;
+  explanationVi: string;
+  exampleEn: string;
+  exampleIpa?: string;
+  exampleVi: string;
+}
+
 export type LevelId = 'lv0' | 'lv1' | 'lv2' | 'lv3';
 
 export interface Lesson {
@@ -88,6 +97,7 @@ export interface Lesson {
   keyTakeaways: string[];
   vocabulary: VocabItem[];
   dialogue?: DialogueLine[];
+  grammarNotes?: GrammarNote[];
   sentencePattern?: SentencePattern;
   earTrainingDrills?: EarTrainingDrill[];
   vietnamesePronunciationTips: {

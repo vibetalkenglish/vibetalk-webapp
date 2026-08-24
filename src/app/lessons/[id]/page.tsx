@@ -8,6 +8,7 @@ import WordPronounceCard from '@/components/WordPronounceCard';
 import DialoguePlayer from '@/components/DialoguePlayer';
 import SentencePatternCard from '@/components/SentencePatternCard';
 import EarTrainingCard from '@/components/EarTrainingCard';
+import GrammarSpotlightCard from '@/components/GrammarSpotlightCard';
 import { 
   markLessonCompleted, 
   toggleSaveLesson, 
@@ -290,12 +291,31 @@ export default function LessonDetailPage() {
         </section>
       )}
 
-      {/* SECTION 5: EAR-TRAINING ACOUSTIC DRILLS */}
+      {/* SECTION 5: GRAMMAR SPOTLIGHT IN DIALOGUE */}
+      {lesson.grammarNotes && lesson.grammarNotes.length > 0 && (
+        <section className="space-y-4">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm">
+              5
+            </div>
+            <div>
+              <h2 className="text-xl font-bold text-slate-900">
+                Ngữ Pháp Thực Chiến Có Trong Đoạn Hội Thoại
+              </h2>
+              <p className="text-xs text-slate-500">Hiểu bản chất cấu trúc câu để giao tiếp tự nhiên</p>
+            </div>
+          </div>
+
+          <GrammarSpotlightCard notes={lesson.grammarNotes} />
+        </section>
+      )}
+
+      {/* SECTION 6: EAR-TRAINING ACOUSTIC DRILLS */}
       {lesson.earTrainingDrills && lesson.earTrainingDrills.length > 0 && (
         <section className="space-y-4">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-xl bg-purple-100 text-purple-800 flex items-center justify-center font-bold text-sm">
-              {lesson.sentencePattern ? 5 : 4}
+              {lesson.grammarNotes ? 6 : 5}
             </div>
             <div>
               <h2 className="text-xl font-bold text-slate-900">
