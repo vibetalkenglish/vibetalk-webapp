@@ -62,11 +62,11 @@ export default function IpaCard({ sound, onSelectModal }: IpaCardProps) {
         </div>
 
         {/* Symbol & Name */}
-        <div className="flex items-baseline gap-2 mb-2">
-          <span className="text-3xl font-black font-serif text-slate-800 group-hover:text-indigo-600 transition-colors">
+        <div className="flex items-baseline gap-2.5 mb-2">
+          <span className="text-3xl font-black font-ipa text-indigo-700 tracking-wide group-hover:scale-105 transition-transform inline-block">
             /{sound.symbol}/
           </span>
-          <span className="text-xs font-semibold text-slate-500 truncate">
+          <span className="text-xs font-bold text-slate-500 truncate">
             {sound.name}
           </span>
         </div>
@@ -88,11 +88,11 @@ export default function IpaCard({ sound, onSelectModal }: IpaCardProps) {
               <button
                 key={ex.word}
                 onClick={(e) => handlePlaySound(e, ex.word, 0.85)}
-                className="inline-flex items-center gap-1 text-xs px-2 py-1 bg-white hover:bg-indigo-50 border border-slate-200 hover:border-indigo-200 rounded-md text-slate-700 hover:text-indigo-700 transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs px-2.5 py-1 bg-white hover:bg-indigo-50 border border-slate-200 hover:border-indigo-200 rounded-lg text-slate-700 hover:text-indigo-700 transition-colors"
               >
                 <Play className="w-2.5 h-2.5 text-indigo-500 fill-indigo-500" />
-                <span className="font-semibold">{ex.word}</span>
-                <span className="text-[10px] text-slate-400 font-serif">{ex.ipa}</span>
+                <span className="font-bold">{ex.word}</span>
+                <span className="text-xs text-indigo-600/80 font-ipa font-medium">{ex.ipa}</span>
               </button>
             ))}
           </div>

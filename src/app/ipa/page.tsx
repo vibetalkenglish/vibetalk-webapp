@@ -138,7 +138,7 @@ export default function IpaPage() {
             <div className="flex items-start justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="w-16 h-16 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center">
-                  <span className="text-3xl font-black font-serif text-indigo-600">
+                  <span className="text-3xl font-black font-ipa text-indigo-700 tracking-wide">
                     /{activeModalSound.symbol}/
                   </span>
                 </div>
@@ -223,7 +223,7 @@ export default function IpaPage() {
                     <div>
                       <div className="text-sm font-bold text-slate-800 flex items-center gap-2">
                         <span>{ex.word}</span>
-                        <span className="text-xs font-serif text-indigo-600 font-normal">{ex.ipa}</span>
+                        <span className="text-xs font-ipa text-indigo-700 font-bold">{ex.ipa}</span>
                       </div>
                       <span className="text-xs text-slate-500">{ex.meaningVi}</span>
                     </div>

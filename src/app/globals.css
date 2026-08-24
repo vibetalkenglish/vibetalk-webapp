@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,10 +18,18 @@ html {
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+/* Dedicated IPA Phonetic Typography (Charis SIL - International Phonetic Standard) */
+.font-ipa {
+  font-family: 'Charis SIL', 'Gentium Plus', 'Noto Sans', Georgia, Cambria, serif !important;
+  letter-spacing: 0.05em;
+  font-feature-settings: 'liga' 1, 'kern' 1;
+  font-weight: 500;
 }
 
 /* iOS Safe Area Inset Support */

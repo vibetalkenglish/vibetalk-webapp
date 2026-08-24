@@ -55,7 +55,7 @@ export default function WordPronounceCard({ item }: WordPronounceCardProps) {
           </div>
 
           <div className="flex items-center gap-2 mt-1">
-            <span className="text-base font-bold font-serif text-indigo-600 bg-indigo-50/80 px-2.5 py-0.5 rounded-lg border border-indigo-100">
+            <span className="text-base font-bold font-ipa text-indigo-700 bg-indigo-50/90 px-3 py-0.5 rounded-lg border border-indigo-200/80 tracking-wide">
               {item.ipa}
             </span>
           </div>

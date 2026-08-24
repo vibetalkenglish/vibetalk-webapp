@@ -141,7 +141,7 @@ export default function DialoguePlayer({ lines, title = 'Đoạn Hội Thoại T
 
                   {/* IPA Subtitle */}
                   {showIpa && (
-                    <p className="text-xs sm:text-sm font-serif font-semibold text-indigo-600 tracking-wide">
+                    <p className="text-xs sm:text-sm font-ipa font-bold text-indigo-700 tracking-wider">
                       {line.ipa}
                     </p>
                   )}

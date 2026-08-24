@@ -59,7 +59,7 @@ export default function VocabCard({ item, onRemove }: VocabCardProps) {
             <h3 className="text-3xl font-black text-slate-900 mb-1">
               {item.word}
             </h3>
-            <span className="text-base font-serif font-bold text-indigo-600">
+            <span className="text-lg font-ipa font-bold text-indigo-600 tracking-wider">
               {item.ipa}
             </span>
           </div>

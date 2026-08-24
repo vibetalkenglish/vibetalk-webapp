@@ -23,6 +23,7 @@ import { getUserProgress, subscribeToProgress } from '@/lib/storage';
 import { getActiveUser } from '@/lib/authStorage';
 import { UserProgress, UserAccount } from '@/types';
 import AuthModal from './AuthModal';
+import VoiceSettingsModal from './VoiceSettingsModal';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -30,6 +31,7 @@ export default function Navbar() {
   const [activeUser, setActiveUser] = useState<UserAccount | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [isVoiceModalOpen, setIsVoiceModalOpen] = useState(false);
 
   const refreshData = () => {
     setProgress(getUserProgress());
@@ -145,6 +147,16 @@ export default function Navbar() {
                 <span>{progress?.streakDays || 1}d</span>
               </div>
 
+              {/* Voice Settings Button */}
+              <button
+                onClick={() => setIsVoiceModalOpen(true)}
+                title="Cài đặt giọng đọc AI (Giọng Nữ / Giọng Nam)"
+                className="flex items-center gap-1.5 px-2.5 py-1 bg-slate-100 hover:bg-indigo-50 text-slate-700 hover:text-indigo-700 rounded-full text-xs font-bold border border-slate-200 hover:border-indigo-200 transition-colors"
+              >
+                <Volume2 className="w-3.5 h-3.5 text-indigo-600" />
+                <span className="hidden sm:inline">Giọng Mỹ</span>
+              </button>
+
               {/* User EXP Badge & Profile Link */}
               <Link
                 href="/profile"
@@ -259,6 +271,12 @@ export default function Navbar() {
         isOpen={isAuthModalOpen}
         onClose={() => setIsAuthModalOpen(false)}
         onSuccess={() => refreshData()}
+      />
+
+      {/* Voice Settings Modal */}
+      <VoiceSettingsModal
+        isOpen={isVoiceModalOpen}
+        onClose={() => setIsVoiceModalOpen(false)}
       />
     </>
   );
