@@ -2,2982 +2,12297 @@ import { Lesson, LevelInfo } from '@/types';
 
 export const LEVELS_CONFIG: LevelInfo[] = [
   {
-    id: 'lv0',
-    title: 'Level 0: Xóa Mù Phát Âm – Bẻ Khóa Âm Đuôi Giọng Mỹ',
-    subTitle: 'Từ nay "Like" không còn là "Lie" • Làm chủ 44 âm IPA',
-    cefrLevel: 'Chuẩn A1 Foundation',
-    badge: 'Phonetics Master 🥉',
-    descriptionVi: 'Dành cho người mất gốc, hay nuốt âm đuôi /s/, /t/, /d/, /k/, phát âm theo kiểu Vietlish, chưa phân biệt được nguyên âm ngắn/dài trong giọng Anh - Mỹ.',
-    targetVi: 'Triệt tiêu thói quen nuốt âm đuôi, đọc chuẩn 44 âm IPA và tự tin phát âm đúng 100% từ vựng có phiên âm.',
-    color: 'from-amber-500 to-orange-500',
-    lessons: ['lv0-lesson-1', 'lv0-lesson-2', 'lv0-lesson-3', 'lv0-lesson-4', 'lv0-lesson-5', 'lv0-lesson-6'],
-    requiredScoreToPass: 80,
+    "id": "lv0",
+    "title": "Level 0: Xóa Mù Phát Âm – Bẻ Khóa Âm Đuôi Giọng Mỹ",
+    "subTitle": "Từ nay 'Like' không còn là 'Lie' • 12 Bài làm chủ 44 âm IPA",
+    "cefrLevel": "Chuẩn A1 Foundation",
+    "badge": "Phonetics Master 🥉",
+    "descriptionVi": "Dành cho người mất gốc, hay nuốt âm đuôi /s/, /t/, /d/, /k/, phát âm theo kiểu Vietlish, chưa phân biệt được nguyên âm ngắn/dài trong giọng Anh - Mỹ.",
+    "targetVi": "Triệt tiêu thói quen nuốt âm đuôi, đọc chuẩn 44 âm IPA và tự tin phát âm đúng 100% từ vựng có phiên âm.",
+    "color": "from-amber-500 to-orange-500",
+    "lessons": [
+      "lv0-lesson-1",
+      "lv0-lesson-2",
+      "lv0-lesson-3",
+      "lv0-lesson-4",
+      "lv0-lesson-5",
+      "lv0-lesson-6",
+      "lv0-lesson-7",
+      "lv0-lesson-8",
+      "lv0-lesson-9",
+      "lv0-lesson-10",
+      "lv0-lesson-11",
+      "lv0-lesson-12"
+    ],
+    "requiredScoreToPass": 80
   },
   {
-    id: 'lv1',
-    title: 'Level 1: Phản Xạ Đời Thường & Tự Tin Giao Tiếp',
-    subTitle: 'Order Starbucks, Mua sắm, Chỉ đường cho khách Tây',
-    cefrLevel: 'Chuẩn A2 Elementary',
-    badge: 'Daily Speaker 🥈',
-    descriptionVi: 'Xóa bỏ phản xạ dịch nhẩm trong đầu. Tự tin giao tiếp đời sống thực tế: gọi món tại chuỗi quốc tế, mua sắm, chỉ đường cho người nước ngoài tại Việt Nam.',
-    targetVi: 'Tự tin nói các câu giao tiếp hàng ngày tự nhiên theo phong cách người Mỹ, ngắt nghỉ đúng ngữ điệu và phát âm trôi chảy.',
-    color: 'from-blue-500 to-indigo-600',
-    lessons: ['lv1-lesson-1', 'lv1-lesson-2', 'lv1-lesson-3', 'lv1-lesson-4', 'lv1-lesson-5', 'lv1-lesson-6'],
-    requiredScoreToPass: 80,
+    "id": "lv1",
+    "title": "Level 1: Phản Xạ Đời Thường & Sinh Tồn",
+    "subTitle": "18 Bài: Order Starbucks, Mua sắm, Đi ăn nhà hàng, Chỉ đường khách Tây",
+    "cefrLevel": "Chuẩn A2 Elementary",
+    "badge": "Daily Speaker 🥈",
+    "descriptionVi": "Xóa bỏ phản xạ dịch nhẩm trong đầu. Tự tin giao tiếp đời sống thực tế: gọi món tại chuỗi quốc tế, mua sắm, chỉ đường cho người nước ngoài tại Việt Nam.",
+    "targetVi": "Tự tin nói các câu giao tiếp hàng ngày tự nhiên theo phong cách người Mỹ, ngắt nghỉ đúng ngữ điệu và phát âm trôi chảy.",
+    "color": "from-blue-500 to-indigo-600",
+    "lessons": [
+      "lv1-lesson-1",
+      "lv1-lesson-2",
+      "lv1-lesson-3",
+      "lv1-lesson-4",
+      "lv1-lesson-5",
+      "lv1-lesson-6",
+      "lv1-lesson-7",
+      "lv1-lesson-8",
+      "lv1-lesson-9",
+      "lv1-lesson-10",
+      "lv1-lesson-11",
+      "lv1-lesson-12",
+      "lv1-lesson-13",
+      "lv1-lesson-14",
+      "lv1-lesson-15",
+      "lv1-lesson-16",
+      "lv1-lesson-17",
+      "lv1-lesson-18"
+    ],
+    "requiredScoreToPass": 80
   },
   {
-    id: 'lv2',
-    title: 'Level 2: Tiếng Anh Đi Làm, Phỏng Vấn & Công Sở',
-    subTitle: 'Phỏng vấn xin việc, Họp online Zoom, Email chuyên nghiệp',
-    cefrLevel: 'Chuẩn B1 Intermediate',
-    badge: 'Career Ace 🥇',
-    descriptionVi: 'Dành cho người muốn làm việc tại công ty đa quốc gia / FDI tại Việt Nam: Phỏng vấn xin việc, họp Zoom/Teams, Small Talk với sếp Tây và viết email ngắn gọn.',
-    targetVi: 'Làm chủ giao tiếp công sở, phản xạ đàm phán, bày tỏ quan điểm độc lập và nắm bắt cơ hội tăng lương thăng tiến.',
-    color: 'from-emerald-500 to-teal-600',
-    lessons: ['lv2-lesson-1', 'lv2-lesson-2', 'lv2-lesson-3', 'lv2-lesson-4', 'lv2-lesson-5', 'lv2-lesson-6'],
-    requiredScoreToPass: 80,
+    "id": "lv2",
+    "title": "Level 2: Tiếng Anh Đi Làm, Phỏng Vấn & Công Sở",
+    "subTitle": "24 Bài: Phỏng vấn xin việc, Họp Zoom/Teams, Email ngắn gọn, Báo cáo & Phản biện",
+    "cefrLevel": "Chuẩn B1 Intermediate",
+    "badge": "Career Ace 🥇",
+    "descriptionVi": "Dành cho người muốn làm việc tại công ty đa quốc gia / FDI tại Việt Nam: Phỏng vấn xin việc, họp Zoom/Teams, Small Talk với sếp Tây và viết email ngắn gọn.",
+    "targetVi": "Làm chủ giao tiếp công sở, phản xạ đàm phán, bày tỏ quan điểm độc lập và nắm bắt cơ hội tăng lương thăng tiến.",
+    "color": "from-emerald-500 to-teal-600",
+    "lessons": [
+      "lv2-lesson-1",
+      "lv2-lesson-2",
+      "lv2-lesson-3",
+      "lv2-lesson-4",
+      "lv2-lesson-5",
+      "lv2-lesson-6",
+      "lv2-lesson-7",
+      "lv2-lesson-8",
+      "lv2-lesson-9",
+      "lv2-lesson-10",
+      "lv2-lesson-11",
+      "lv2-lesson-12",
+      "lv2-lesson-13",
+      "lv2-lesson-14",
+      "lv2-lesson-15",
+      "lv2-lesson-16",
+      "lv2-lesson-17",
+      "lv2-lesson-18",
+      "lv2-lesson-19",
+      "lv2-lesson-20",
+      "lv2-lesson-21",
+      "lv2-lesson-22",
+      "lv2-lesson-23",
+      "lv2-lesson-24"
+    ],
+    "requiredScoreToPass": 80
   },
   {
-    id: 'lv3',
-    title: 'Level 3: Du Lịch Thế Giới Tự Túc & Phản Xạ B2',
-    subTitle: 'Sân bay quốc tế, Nối âm Connected Speech, Tiếng lóng Mỹ',
-    cefrLevel: 'Chuẩn B1+ / B2 Independent',
-    badge: 'Global Fluency 👑',
-    descriptionVi: 'Xách vali đi du lịch nước ngoài tự túc khắp thế giới, xử lý sự cố sân bay/khách sạn, bẻ khóa nối âm (Connected Speech) và xem phim US-UK không phụ đề.',
-    targetVi: 'Đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker), phản xạ tự nhiên như người bản xứ mà không sợ bí từ.',
-    color: 'from-purple-600 to-pink-600',
-    lessons: ['lv3-lesson-1', 'lv3-lesson-2', 'lv3-lesson-3', 'lv3-lesson-4', 'lv3-lesson-5', 'lv3-lesson-6'],
-    requiredScoreToPass: 80,
-  },
+    "id": "lv3",
+    "title": "Level 3: Du Lịch Thế Giới Tự Túc & Bản Xứ Hoá",
+    "subTitle": "18 Bài: Sân bay quốc tế, Khách sạn, Cấp cứu, Nối âm Gonna/Wanna, Thành ngữ lóng",
+    "cefrLevel": "Chuẩn B1+ / B2 Independent",
+    "badge": "Global Fluency 👑",
+    "descriptionVi": "Xách vali đi du lịch nước ngoài tự túc khắp thế giới, xử lý sự cố sân bay/khách sạn, bẻ khóa nối âm (Connected Speech) và xem phim US-UK không phụ đề.",
+    "targetVi": "Đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker), phản xạ tự nhiên như người bản xứ mà không sợ bí từ.",
+    "color": "from-purple-600 to-pink-600",
+    "lessons": [
+      "lv3-lesson-1",
+      "lv3-lesson-2",
+      "lv3-lesson-3",
+      "lv3-lesson-4",
+      "lv3-lesson-5",
+      "lv3-lesson-6",
+      "lv3-lesson-7",
+      "lv3-lesson-8",
+      "lv3-lesson-9",
+      "lv3-lesson-10",
+      "lv3-lesson-11",
+      "lv3-lesson-12",
+      "lv3-lesson-13",
+      "lv3-lesson-14",
+      "lv3-lesson-15",
+      "lv3-lesson-16",
+      "lv3-lesson-17",
+      "lv3-lesson-18"
+    ],
+    "requiredScoreToPass": 80
+  }
 ];
 
 export const LESSONS: Lesson[] = [
-  // ================= LEVEL 0 (6 BÀI) =================
   {
-    id: 'lv0-lesson-1',
-    levelId: 'lv0',
-    titleEn: 'Mastering Ending Sounds: /s/, /z/, /t/, /d/, /k/',
-    titleVi: 'Bộ 5 Âm Đuôi Sống Còn: Tuyệt Chiêu Không Nuốt Âm',
-    descriptionVi: 'Khắc phục lỗi kinh điển của 90% người Việt: bỏ quên âm kết thúc khiến người nước ngoài không hiểu bạn đang nói từ gì.',
-    icon: 'Sparkles',
-    durationMinutes: 12,
-    tags: ['Âm đuôi', 'IPA Giọng Mỹ', 'Trị nuốt âm'],
-    keyTakeaways: [
-      'Hiểu vì sao tiếng Việt không có âm đuôi bật hơi và cách tạo phản xạ mới',
-      'Phân biệt cặp từ dễ gây hiểu lầm: Like vs Light vs Line vs Lie',
-      'Thực hành xì âm /s/, rung âm /z/ và bật /k/ ở cuối từ giòn tan'
+    "id": "lv0-lesson-1",
+    "levelId": "lv0",
+    "titleEn": "Mastering Ending Sounds: /s/, /z/, /t/, /d/, /k/",
+    "titleVi": "Bộ 5 Âm Đuôi Sống Còn: Tuyệt Chiêu Không Nuốt Âm",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ bộ 5 âm đuôi sống còn: tuyệt chiêu không nuốt âm với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Mastering Ending Sounds: /s/, /z/, /t/, /d/, /k/",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Mẹo Bật Âm /t/ và /d/ Cuối Từ',
-        description: 'Đầu lưỡi chạm mạnh chân răng trên, nén hơi rồi bật nhẹ dứt khoát.',
-        rule: 'Không kéo dài, âm đuôi chỉ chiếm 20% trường độ của từ.',
-        examples: [
-          { en: 'cat', ipa: '/kæt/', vi: 'con mèo', soundTip: 'Bật nhẹ /t/ dứt khoát' },
-          { en: 'need', ipa: '/niːd/', vi: 'cần thiết', soundTip: 'Rung nhẹ /d/ ở cuống lưỡi' },
-          { en: 'light', ipa: '/laɪt/', vi: 'ánh sáng', soundTip: 'Khác với "like" /laɪk/' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Mastering Ending Sounds",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
-      },
-      {
-        title: 'Mẹo Âm /s/ và /z/ Cuối Từ (Âm Xì Gió)',
-        description: 'Hai hàm răng khép hờ, xì luồng hơi gió giòn tan như mở nắp lon nước ngọt.',
-        rule: 'Từ kết thúc bằng nguyên âm + s hoặc phụ âm rung -> đọc là /z/.',
-        examples: [
-          { en: 'is', ipa: '/ɪz/', vi: 'thì/là', soundTip: 'Đọc là /ɪz/ (rung), không đọc /ɪs/' },
-          { en: 'face', ipa: '/feɪs/', vi: 'khuôn mặt', soundTip: 'Đuôi -ce luôn đọc là /s/' },
-          { en: 'six', ipa: '/sɪks/', vi: 'số 6', soundTip: 'Bao gồm cả âm /k/ + /s/' },
-        ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v0-1',
-        word: 'like',
-        ipa: '/laɪk/',
-        partOfSpeech: 'verb',
-        meaningVi: 'thích / giống như',
-        exampleSentence: 'I like this American accent.',
-        exampleSentenceVi: 'Tôi thích chất giọng Anh - Mỹ này.',
-        endingSoundNote: 'Nhớ bật âm /k/ cuối, nếu không sẽ nghe thành từ "lie" (nói dối).',
-        americanTip: 'Bật /k/ giòn trong cổ họng.'
+        "id": "v0-1-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v0-2',
-        word: 'nice',
-        ipa: '/naɪs/',
-        partOfSpeech: 'adj',
-        meaningVi: 'tuyệt vời, đẹp, dễ thương',
-        exampleSentence: 'Have a nice day!',
-        exampleSentenceVi: 'Chúc một ngày tốt lành!',
-        endingSoundNote: 'Đuôi -ce đọc thành âm /s/ xì gió rõ ràng.',
-        americanTip: 'Cười tươi và xì hơi nhẹ.'
+        "id": "v0-1-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'v0-3',
-        word: 'practice',
-        ipa: '/ˈpræk.tɪs/',
-        partOfSpeech: 'noun / verb',
-        meaningVi: 'luyện tập',
-        exampleSentence: 'Practice makes perfect.',
-        exampleSentenceVi: 'Luyện tập tạo nên sự hoàn hảo.',
-        endingSoundNote: 'Trọng âm rơi vào âm tiết đầu PRAC-, đuôi xì /s/.',
-        americanTip: 'Âm /æ/ hạ cằm sâu.'
+        "id": "v0-1-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v0-4',
-        word: 'exact',
-        ipa: '/ɪɡˈzækt/',
-        partOfSpeech: 'adj',
-        meaningVi: 'chính xác',
-        exampleSentence: 'That is the exact word.',
-        exampleSentenceVi: 'Đó chính là từ ngữ chính xác.',
-        endingSoundNote: 'Cụm âm đuôi /kt/ cần bật cả /k/ rồi chuyển sang /t/.',
-        americanTip: 'Giữ luồng hơi ngắt nhẹ dứt khoát.'
+        "id": "v0-1-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd0-1',
-        speaker: 'A',
-        speakerName: 'Alex (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'Do you like to practice English every day?',
-        textVi: 'Bạn có thích luyện tập tiếng Anh mỗi ngày không?',
-        ipa: '/duː juː laɪk tuː ˈpræk.tɪs ˈɪŋ.ɡlɪʃ ˈev.ri deɪ/'
+        "id": "d0-1-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Mastering Ending Sounds today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd0-2',
-        speaker: 'B',
-        speakerName: 'Lan (Học viên)',
-        avatar: '👩‍🎓',
-        textEn: 'Yes! It is very nice and helpful.',
-        textVi: 'Có chứ! Nó rất tuyệt và hữu ích.',
-        ipa: '/jes! ɪt ɪz ˈver.i naɪs ænd ˈhelp.fəl/'
+        "id": "d0-1-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'd0-3',
-        speaker: 'A',
-        speakerName: 'Alex (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'Great job with your ending sounds!',
-        textVi: 'Bạn phát âm các âm đuôi rất chuẩn đấy!',
-        ipa: '/ɡreɪt dʒɑːb wɪð jɔːr ˈen.dɪŋ saʊndz/'
+        "id": "d0-1-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
+      },
+      {
+        "id": "d0-1-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Khẳng Định Sở Thích & Cảm Nhận',
-      pattern: 'I like [Danh từ / Hành động] because it is [Tính từ].',
-      formulaVi: 'Tôi thích [X] bởi vì nó [Y]',
-      usageVi: 'Khuôn mẫu đa năng giúp bạn luyện bật rõ âm /k/ trong "like", âm /z/ trong "is" và âm đuôi tính từ mà không bao giờ bị nuốt âm.',
-      examples: [
-        { en: 'I like this place because it is nice.', ipa: '/aɪ laɪk ðɪs pleɪs bɪˈkɑːz ɪt ɪz naɪs/', vi: 'Tôi thích nơi này vì nó rất đẹp.', fillWord: 'this place / nice' },
-        { en: 'I like to practice because it is fast.', ipa: '/aɪ laɪk tuː ˈpræk.tɪs bɪˈkɑːz ɪt ɪz fæst/', vi: 'Tôi thích luyện tập vì nó nhanh gọn.', fillWord: 'to practice / fast' },
-        { en: 'I like this coffee because it is exact.', ipa: '/aɪ laɪk ðɪs ˈkɑː.fi bɪˈkɑːz ɪt ɪz ɪɡˈzækt/', vi: 'Tôi thích cà phê này vì nó chuẩn vị.', fillWord: 'this coffee / exact' }
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Bộ 5 Âm Đuôi Sống Còn",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-0-1-1',
-        promptVi: 'Nghe và chọn từ phát ra âm /k/ bật ở đuôi (không bị nuốt âm):',
-        audioWord: 'like',
-        options: [
-          { word: 'like', ipa: '/laɪk/', meaningVi: 'thích (bật /k/)' },
-          { word: 'lie', ipa: '/laɪ/', meaningVi: 'nói dối / nằm (không có âm đuôi)' }
+        "id": "drill-0-1-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: 'Từ "like" /laɪk/ có âm đuôi /k/ bật nhẹ trong cổ họng, khác với "lie" /laɪ/ không có âm kết thúc.'
-      },
-      {
-        id: 'drill-0-1-2',
-        promptVi: 'Nghe và chọn từ phát ra âm /s/ xì gió ở đuôi:',
-        audioWord: 'nice',
-        options: [
-          { word: 'nice', ipa: '/naɪs/', meaningVi: 'tuyệt vời (xì /s/)' },
-          { word: 'night', ipa: '/naɪt/', meaningVi: 'buổi đêm (bật /t/)' }
-        ],
-        correctIndex: 0,
-        explanationVi: 'Từ "nice" /naɪs/ có âm xì gió /s/ kéo dài ở cuối, trong khi "night" /naɪt/ ngắt bằng âm bật /t/.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
       }
     ]
   },
   {
-    id: 'lv0-lesson-2',
-    levelId: 'lv0',
-    titleEn: 'Confusing Vowel Pairs: /iː/ vs /ɪ/',
-    titleVi: 'Cặp Âm Gây Lú: Mẹo Cười Tươi vs Mặt Quạu (/iː/ vs /ɪ/)',
-    descriptionVi: 'Tránh những pha "muối mặt" khi phát âm nhầm giữa "sheet" (tờ giấy) và từ bậy, hoặc "beach" (bãi biển) và từ nhạy cảm.',
-    icon: 'Volume2',
-    durationMinutes: 15,
-    tags: ['Nguyên âm', 'Cặp từ gây lú', 'Khẩu hình'],
-    keyTakeaways: [
-      'Cách nhận diện nguyên âm căng môi (Tense) và nguyên âm thả lỏng (Lax)',
-      'Quy tắc kéo dài 1s cho /iː/ và phát âm dứt khoát 0.3s cho /ɪ/',
-      'Thực hành các cặp từ tương phản không sợ nói hớ'
+    "id": "lv0-lesson-2",
+    "levelId": "lv0",
+    "titleEn": "Ending Clusters: /st/, /ks/, /kt/",
+    "titleVi": "Cụm Âm Đuôi Phức Tạp: /st/ (Fast), /ks/ (Box), /kt/ (Exact)",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ cụm âm đuôi phức tạp: /st/ (fast), /ks/ (box), /kt/ (exact) với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Ending Clusters: /st/, /ks/, /kt/",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Cặp /iː/ (Cười Tươi) vs /ɪ/ (Mặt Thả Lỏng)',
-        description: 'Âm /iː/ khóe môi bè sang 2 bên như đang mỉm cười. Âm /ɪ/ cơ mặt thả lỏng, hơi hướng âm "ê" nhẹ.',
-        rule: 'Kéo dài 1s cho /iː/ và phát âm dứt khoát 0.3s cho /ɪ/.',
-        examples: [
-          { en: 'sheet', ipa: '/ʃiːt/', vi: 'tờ giấy / ga trải giường', soundTip: 'Kéo dài môi cười tươi' },
-          { en: 'sit', ipa: '/sɪt/', vi: 'ngồi xuống', soundTip: 'Thả lỏng hàm ngắn gọn' },
-          { en: 'beach', ipa: '/biːtʃ/', vi: 'bãi biển', soundTip: 'Âm /iː/ căng mọng' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Ending Clusters",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v0-5',
-        word: 'beach',
-        ipa: '/biːtʃ/',
-        partOfSpeech: 'noun',
-        meaningVi: 'bãi biển',
-        exampleSentence: 'Let\'s go to the beach this weekend.',
-        exampleSentenceVi: 'Cuối tuần này cùng đi biển nhé.',
-        endingSoundNote: 'Âm /iː/ dài mỉm cười + đuôi /tʃ/ chu môi nổ gió.',
-        americanTip: 'Kéo dài âm ee để không bị nhầm lẫn với từ nhạy cảm.'
+        "id": "v0-2-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v0-6',
-        word: 'ship',
-        ipa: '/ʃɪp/',
-        partOfSpeech: 'noun',
-        meaningVi: 'con tàu lớn',
-        exampleSentence: 'The ship is sailing on the ocean.',
-        exampleSentenceVi: 'Con tàu đang lướt đi trên đại dương.',
-        endingSoundNote: 'Âm đầu /ʃ/ chu mỏ, âm giữa /ɪ/ ngắn thả lỏng.',
-        americanTip: 'Bật nhẹ /p/ ở môi.'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd0-4',
-        speaker: 'A',
-        speakerName: 'Sarah (Mỹ)',
-        avatar: '👩‍🦰',
-        textEn: 'Please sit down and take a look at this sheet.',
-        textVi: 'Xin mời ngồi xuống và xem qua tờ tài liệu này.',
-        ipa: '/pliːz sɪt daʊn ænd teɪk ə lʊk æt ðɪs ʃiːt/'
+        "id": "v0-2-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'd0-5',
-        speaker: 'B',
-        speakerName: 'David (Mỹ)',
-        avatar: '👨‍🦱',
-        textEn: 'Thanks! The view of the beach outside is amazing.',
-        textVi: 'Cảm ơn! Quang cảnh bãi biển bên ngoài thật tuyệt vời.',
-        ipa: '/θæŋks! ðə vjuː ʌv ðə biːtʃ ˌaʊtˈsaɪd ɪz əˈmeɪ.zɪŋ/'
-      }
-    ],
-    sentencePattern: {
-      titleVi: "Khuôn Mẫu Câu: Mời Lịch Sự Với Nguyên Âm Căng & Thả Lỏng",
-      pattern: "Please [Động từ] and take a look at this [Danh từ].",
-      formulaVi: "Xin vui lòng [làm gì] và xem qua [cái gì]",
-      usageVi: "Giúp bạn luyện tập sự tương phản giữa âm /iː/ kéo dài mỉm cười (please, sheet) và âm /ɪ/ thả lỏng ngắn gọn (sit, ship).",
-      examples: [
-            {
-                  en: "Please sit down and take a look at this sheet.",
-                  ipa: "/pliːz sɪt daʊn ænd teɪk ə lʊk æt ðɪs ʃiːt/",
-                  vi: "Xin mời ngồi xuống và xem qua tờ tài liệu này.",
-                  fillWord: "sit down / sheet"
-            },
-            {
-                  en: "Please leave the keys on the ship.",
-                  ipa: "/pliːz liːv ðə kiːz ɑːn ðə ʃɪp/",
-                  vi: "Xin hãy để chìa khóa lại trên tàu.",
-                  fillWord: "leave / ship"
-            }
-      ]
-},
-    earTrainingDrills: [
-      {
-            id: "drill-0-2-1",
-            promptVi: "Nghe và phân biệt: Đây là âm /iː/ (Cười tươi kéo dài) hay /ɪ/ (Thả lỏng ngắn gọn)?",
-            audioWord: "beach",
-            options: [
-                  {
-                        word: "beach",
-                        ipa: "/biːtʃ/",
-                        meaningVi: "bãi biển (âm /iː/ kéo dài)"
-                  },
-                  {
-                        word: "bitch",
-                        ipa: "/bɪtʃ/",
-                        meaningVi: "từ nhạy cảm (âm /ɪ/ ngắn)"
-                  }
-            ],
-            correctIndex: 0,
-            explanationVi: "Từ \"beach\" có nguyên âm /iː/ căng mọng kéo dài khóe môi cười, tuyệt đối không phát âm giật cục kẻo nhầm từ nhạy cảm."
-      }
-]
-  },
-  {
-    id: 'lv0-lesson-3',
-    levelId: 'lv0',
-    titleEn: 'Ash A /æ/ vs Short E /e/',
-    titleVi: 'Âm A Rớt Hàm /æ/ vs /e/ (Mẹo Há To Cắn Burger)',
-    descriptionVi: 'Học cách hạ hàm sâu để phát âm chuẩn xác âm /æ/ bẹt đậm chất Mỹ trong "cat, bag, black, back" mà không bị biến thành âm e tiếng Việt.',
-    icon: 'Maximize2',
-    durationMinutes: 14,
-    tags: ['Âm A rớt hàm', 'Khẩu hình', 'Giọng Mỹ'],
-    keyTakeaways: [
-      'Hạ hàm dưới xuống tối đa khi phát âm âm /æ/',
-      'Phân biệt cặp từ kinh điển: Man vs Men, Bad vs Bed, Pan vs Pen',
-      'Đọc câu liền mạch có nhiều âm /æ/'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Mẹo Hạ Cằm Cho Âm /æ/',
-        description: 'Đặt một ngón tay dưới cằm, khi phát âm "cat", cằm phải đẩy ngón tay xuống sâu ít nhất 2cm.',
-        rule: 'Há to miệng theo cả chiều dọc lẫn chiều ngang.',
-        examples: [
-          { en: 'cat', ipa: '/kæt/', vi: 'con mèo', soundTip: 'Hạ hàm thật sâu' },
-          { en: 'black', ipa: '/blæk/', vi: 'màu đen', soundTip: 'Âm /æ/ bẹt vang' },
-        ]
-      }
-    ],
-    vocabulary: [
-      {
-        id: 'v0-7',
-        word: 'black',
-        ipa: '/blæk/',
-        partOfSpeech: 'adj',
-        meaningVi: 'màu đen',
-        exampleSentence: 'He is wearing a black jacket.',
-        exampleSentenceVi: 'Anh ấy đang mặc một chiếc áo khoác đen.',
-        endingSoundNote: 'Âm /æ/ hạ hàm sâu + đuôi /k/.',
-        americanTip: 'Đừng đọc thành "bờ lếch".'
+        "id": "v0-2-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v0-8',
-        word: 'bag',
-        ipa: '/bæɡ/',
-        partOfSpeech: 'noun',
-        meaningVi: 'cái túi xách, ba lô',
-        exampleSentence: 'Put your laptop in the bag.',
-        exampleSentenceVi: 'Hãy để laptop vào trong túi xách.',
-        endingSoundNote: 'Âm /æ/ + đuôi /ɡ/ rung cổ họng.',
-        americanTip: 'Bật nhẹ /ɡ/ cuối từ.'
+        "id": "v0-2-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd0-8',
-        speaker: 'A',
-        speakerName: 'Jessica',
-        avatar: '👩‍🦳',
-        textEn: 'Is that black bag yours on the desk?',
-        textVi: 'Chiếc túi màu đen trên bàn kia có phải của bạn không?',
-        ipa: '/ɪz ðæt blæk bæɡ jɔːrz ɑːn ðə desk/'
+        "id": "d0-2-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Ending Clusters today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd0-9',
-        speaker: 'B',
-        speakerName: 'Nam',
-        avatar: '🧑',
-        textEn: 'Yes, that is my black bag. Thanks for asking!',
-        textVi: 'Đúng rồi, đó là chiếc túi đen của tôi. Cảm ơn bạn đã hỏi!',
-        ipa: '/jes, ðæt ɪz maɪ blæk bæɡ. θæŋks fɔːr ˈæsk.ɪŋ/'
-      }
-    ],
-    sentencePattern: {
-      titleVi: "Khuôn Mẫu Câu: Hỏi & Xác Nhận Đồ Vật Với Âm A Rớt Hàm",
-      pattern: "Is that [Tính từ màu sắc/kích thước] [Danh từ] yours?",
-      formulaVi: "Chiếc [X] [Y] kia có phải của bạn không?",
-      usageVi: "Luyện tập hạ cằm sâu cho các từ chứa âm /æ/ (that, black, bag) khi hỏi người khác.",
-      examples: [
-            {
-                  en: "Is that black bag yours on the desk?",
-                  ipa: "/ɪz ðæt blæk bæɡ jɔːrz ɑːn ðə desk/",
-                  vi: "Chiếc túi màu đen trên bàn kia có phải của bạn không?",
-                  fillWord: "black bag"
-            },
-            {
-                  en: "Is that black jacket in the back yours?",
-                  ipa: "/ɪz ðæt blæk ˈdʒæk.ɪt ɪn ðə bæk jɔːrz/",
-                  vi: "Chiếc áo khoác đen phía sau kia có phải của bạn không?",
-                  fillWord: "black jacket"
-            }
-      ]
-},
-    earTrainingDrills: [
-      {
-            id: "drill-0-3-1",
-            promptVi: "Nghe và chọn từ phát ra âm /æ/ há to rớt hàm:",
-            audioWord: "cat",
-            options: [
-                  {
-                        word: "cat",
-                        ipa: "/kæt/",
-                        meaningVi: "con mèo (âm /æ/ rớt hàm)"
-                  },
-                  {
-                        word: "cut",
-                        ipa: "/kʌt/",
-                        meaningVi: "cắt (âm /ʌ/ miệng khép hờ)"
-                  }
-            ],
-            correctIndex: 0,
-            explanationVi: "Âm /æ/ trong \"cat\" yêu cầu cằm rớt sâu, âm /ʌ/ trong \"cut\" miệng thả lỏng tự nhiên."
-      }
-]
-  },
-  {
-    id: 'lv0-lesson-4',
-    levelId: 'lv0',
-    titleEn: 'Interdental Sounds: /θ/ & /ð/',
-    titleVi: 'Chiêu Thè Lưỡi Cắn Nhẹ: Cặp Âm /θ/ và /ð/',
-    descriptionVi: 'Tuyệt đối không đọc "think" thành "thinh" hay "this" thành "đít". Nắm vững tuyệt chiêu kẹp lưỡi giữa hai hàm răng.',
-    icon: 'Smile',
-    durationMinutes: 15,
-    tags: ['Thè lưỡi', 'Âm TH', 'Không nói ngọng'],
-    keyTakeaways: [
-      'Thò nhẹ đầu lưỡi ra giữa 2 hàm răng khoảng 0.5cm',
-      'Âm /θ/ là âm gió (không rung họng): think, thank, birthday',
-      'Âm /ð/ là âm rung (rung họng dzzz-dzzz): this, that, mother'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Quy Tắc Đặt Lưỡi Cặp Âm TH',
-        description: 'Nhìn vào gương, đảm bảo nhìn thấy đầu lưỡi thò ra ngoài răng khi phát âm "think" hoặc "this".',
-        rule: 'Không rụt lưỡi vào trong khoang miệng.',
-        examples: [
-          { en: 'think', ipa: '/θɪŋk/', vi: 'suy nghĩ', soundTip: 'Thổi hơi qua đầu lưỡi' },
-          { en: 'this', ipa: '/ðɪs/', vi: 'cái này', soundTip: 'Rung dây thanh âm' },
-        ]
-      }
-    ],
-    vocabulary: [
-      {
-        id: 'v0-9',
-        word: 'think',
-        ipa: '/θɪŋk/',
-        partOfSpeech: 'verb',
-        meaningVi: 'nghĩ, suy nghĩ',
-        exampleSentence: 'I think you are doing a great job.',
-        exampleSentenceVi: 'Tôi nghĩ bạn đang làm rất tốt đấy.',
-        endingSoundNote: 'Đầu lưỡi thò ra + âm đuôi /ŋk/.',
-        americanTip: 'Không đọc thành "thinh".'
+        "id": "d0-2-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'v0-10',
-        word: 'together',
-        ipa: '/təˈɡeð.ɚ/',
-        partOfSpeech: 'adv',
-        meaningVi: 'cùng nhau',
-        exampleSentence: 'We can practice English together.',
-        exampleSentenceVi: 'Chúng ta có thể cùng nhau luyện tập tiếng Anh.',
-        endingSoundNote: 'Âm /ð/ rung ở giữa từ, đuôi -er cong lưỡi.',
-        americanTip: 'Đọc là "tờ-ghe-đờr".'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd0-10',
-        speaker: 'A',
-        speakerName: 'Mark',
-        avatar: '🧔',
-        textEn: 'What do you think about this new method?',
-        textVi: 'Bạn nghĩ gì về phương pháp mới này?',
-        ipa: '/wɑːt duː juː θɪŋk əˈbaʊt ðɪs nuː ˈmeθ.əd/'
+        "id": "d0-2-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
       },
       {
-        id: 'd0-11',
-        speaker: 'B',
-        speakerName: 'Huyền',
-        avatar: '👩',
-        textEn: 'I think it helps us speak more naturally together.',
-        textVi: 'Tôi nghĩ nó giúp chúng ta nói tự nhiên hơn cùng nhau.',
-        ipa: '/aɪ θɪŋk ɪt helps ʌs spiːk mɔːr ˈnætʃ.ɚ.əl.i təˈɡeð.ɚ/'
+        "id": "d0-2-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    sentencePattern: {
-      titleVi: "Khuôn Mẫu Câu: Hỏi Quan Điểm Lịch Sự Với Âm TH Thè Lưỡi",
-      pattern: "What do you think about [Danh từ / Ý tưởng]?",
-      formulaVi: "Bạn nghĩ gì về [điều gì]?",
-      usageVi: "Mẫu câu kinh điển giúp bạn luyện đặt đầu lưỡi ra giữa 2 răng khi phát âm \"think\" và \"this\".",
-      examples: [
-            {
-                  en: "What do you think about this new method?",
-                  ipa: "/wɑːt duː juː θɪŋk əˈbaʊt ðɪs nuː ˈmeθ.əd/",
-                  vi: "Bạn nghĩ gì về phương pháp mới này?",
-                  fillWord: "this new method"
-            },
-            {
-                  en: "What do you think about working together?",
-                  ipa: "/wɑːt duː juː θɪŋk əˈbaʊt ˈwɜːrk.ɪŋ təˈɡeð.ɚ/",
-                  vi: "Bạn nghĩ sao về việc cùng làm việc với nhau?",
-                  fillWord: "working together"
-            }
-      ]
-},
-    earTrainingDrills: [
+    "grammarNotes": [
       {
-            id: "drill-0-4-1",
-            promptVi: "Nghe và phân biệt: Từ này bắt đầu bằng âm thè lưỡi /θ/ hay âm /s/?",
-            audioWord: "think",
-            options: [
-                  {
-                        word: "think",
-                        ipa: "/θɪŋk/",
-                        meaningVi: "suy nghĩ (thè lưỡi cắn nhẹ)"
-                  },
-                  {
-                        word: "sink",
-                        ipa: "/sɪŋk/",
-                        meaningVi: "chìm xuống / bồn rửa (xì răng khép)"
-                  }
-            ],
-            correctIndex: 0,
-            explanationVi: "Âm /θ/ trong \"think\" có đầu lưỡi kẹp nhẹ giữa 2 răng, khác với \"sink\" hai hàm răng khép kín."
-      }
-]
-  },
-  {
-    id: 'lv0-lesson-5',
-    levelId: 'lv0',
-    titleEn: 'Palato-Alveolar Sounds: /ʃ/, /tʃ/, /dʒ/',
-    titleVi: 'Âm Chu Môi Suỵt Im Lặng /ʃ/ & Cặp Âm Bật /tʃ/, /dʒ/',
-    descriptionVi: 'Học cách chu môi tròn để phát âm chuẩn xác "she, watch, job, change" mà không bị lẫn lộn sang âm s nhẹ.',
-    icon: 'Radio',
-    durationMinutes: 16,
-    tags: ['Chu môi', 'Âm bật', 'Phụ âm khó'],
-    keyTakeaways: [
-      'Âm /ʃ/: Chu môi ra hiệu "Suỵt! Trật tự nào" (she, shopping, fish)',
-      'Âm /tʃ/: Bật hơi nổ giòn "tch!" (chair, watch, change)',
-      'Âm /dʒ/: Khẩu hình chu môi bật rung họng "dzzz!" (job, orange, bridge)'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Mẹo Chu Môi Khi Phát Âm /ʃ/ và /tʃ/',
-        description: 'Loe tròn khóe môi về phía trước khoảng 1cm, tạo khoảng trống cộng hưởng âm thanh.',
-        rule: 'She -> chu môi, See -> bè miệng cười.',
-        examples: [
-          { en: 'she', ipa: '/ʃiː/', vi: 'cô ấy', soundTip: 'Chu môi tròn thổi gió' },
-          { en: 'job', ipa: '/dʒɑːb/', vi: 'công việc', soundTip: 'Rung họng giòn tan' },
-        ]
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
       }
     ],
-    vocabulary: [
-      {
-        id: 'v0-11',
-        word: 'job',
-        ipa: '/dʒɑːb/',
-        partOfSpeech: 'noun',
-        meaningVi: 'công việc, nghề nghiệp',
-        exampleSentence: 'He got a great job at an international company.',
-        exampleSentenceVi: 'Anh ấy vừa nhận được một công việc tuyệt vời tại công ty quốc tế.',
-        endingSoundNote: 'Âm đầu /dʒ/ rung + đuôi /b/.',
-        americanTip: 'Mở rộng họng âm /ɑː/.'
-      },
-      {
-        id: 'v0-12',
-        word: 'change',
-        ipa: '/tʃeɪndʒ/',
-        partOfSpeech: 'noun / verb',
-        meaningVi: 'thay đổi / tiền thừa trả lại',
-        exampleSentence: 'Keep the change, please!',
-        exampleSentenceVi: 'Xin cứ giữ lại tiền thừa nhé!',
-        endingSoundNote: 'Bắt đầu bằng /tʃ/ và kết thúc bằng /ndʒ/.',
-        americanTip: 'Bật nhẹ dứt khoát.'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd0-12',
-        speaker: 'A',
-        speakerName: 'Tom',
-        avatar: '👨',
-        textEn: 'She just started a new job this morning.',
-        textVi: 'Cô ấy vừa bắt đầu công việc mới sáng nay.',
-        ipa: '/ʃiː dʒʌst ˈstɑːr.t̬ɪd ə nuː dʒɑːb ðɪs ˈmɔːr.nɪŋ/'
-      },
-      {
-        id: 'd0-13',
-        speaker: 'B',
-        speakerName: 'Mai',
-        avatar: '👩‍🦰',
-        textEn: 'That is wonderful! A positive change for her career.',
-        textVi: 'Tuyệt quá! Một sự thay đổi tích cực cho sự nghiệp của cô ấy.',
-        ipa: '/ðæt ɪz ˈwʌn.dɚ.fəl! ə ˈpɑː.zə.t̬ɪv tʃeɪndʒ fɔːr hɜːr kəˈrɪr/'
-      }
-    ],
-    sentencePattern: {
-      titleVi: "Khuôn Mẫu Câu: Kể Về Sự Kiện Mới Với Âm Chu Môi /ʃ/ & /dʒ/",
-      pattern: "She just [Động từ quá khứ] a new [Danh từ].",
-      formulaVi: "Cô ấy vừa [làm gì] một [cái gì] mới",
-      usageVi: "Luyện chu môi tròn thổi gió cho \"she\" và bật rung nổ giòn cho \"job\", \"change\".",
-      examples: [
-            {
-                  en: "She just started a new job this morning.",
-                  ipa: "/ʃiː dʒʌst ˈstɑːr.t̬ɪd ə nuː dʒɑːb ðɪs ˈmɔːr.nɪŋ/",
-                  vi: "Cô ấy vừa bắt đầu công việc mới sáng nay.",
-                  fillWord: "started / job"
-            },
-            {
-                  en: "She just made a huge change in her career.",
-                  ipa: "/ʃiː dʒʌst meɪd ə hjuːdʒ tʃeɪndʒ ɪn hɜːr kəˈrɪr/",
-                  vi: "Cô ấy vừa tạo ra một bước ngoặt lớn trong sự nghiệp.",
-                  fillWord: "made / change"
-            }
-      ]
-},
-    earTrainingDrills: [
-      {
-            id: "drill-0-5-1",
-            promptVi: "Nghe và chọn từ phát ra âm chu môi /ʃ/:",
-            audioWord: "she",
-            options: [
-                  {
-                        word: "she",
-                        ipa: "/ʃiː/",
-                        meaningVi: "cô ấy (chu mỏ thổi gió)"
-                  },
-                  {
-                        word: "see",
-                        ipa: "/siː/",
-                        meaningVi: "nhìn thấy (bè môi cười)"
-                  }
-            ],
-            correctIndex: 0,
-            explanationVi: "Từ \"she\" /ʃiː/ môi phải chu tròn như ra hiệu suỵt im lặng, khác với \"see\" /siː/ môi bè sang hai bên."
-      }
-]
-  },
-  {
-    id: 'lv0-lesson-6',
-    levelId: 'lv0',
-    titleEn: 'Flap T & Rhotic R-Colored Vowels /ɚ/',
-    titleVi: 'Tuyệt Chiêu Nói Lười: Flap T & Âm Cong Lưỡi /ɚ/',
-    descriptionVi: 'Bí mật số 1 tạo nên chất giọng Anh - Mỹ: Hiện tượng biến âm Flap T và cách cong lưỡi sâu cho các từ có chữ r.',
-    icon: 'Flame',
-    durationMinutes: 16,
-    tags: ['Flap T', 'Cong lưỡi', 'Giọng Mỹ'],
-    keyTakeaways: [
-      'Biến âm /t/ kẹp giữa 2 nguyên âm thành /d/ nhẹ: Water -> Wah-der, City -> Cih-dee',
-      'Âm R-colored /ɚ/ và /ɜːr/: Cong đầu lưỡi vào trong họng (bird, work, learn, better)',
-      'Nói câu trôi chảy không bị vấp và mỏi miệng'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Quy Tắc Flap T & R-Colored',
-        description: 'Thả lỏng đầu lưỡi quẹt nhẹ lên vòm miệng trên khi nói "better", "water".',
-        rule: 'Better -> "Beh-der", Party -> "Par-dee".',
-        examples: [
-          { en: 'water', ipa: '/ˈwɑː.t̬ɚ/', vi: 'nước uống', soundTip: 'Đọc là "oa-đờr"' },
-          { en: 'better', ipa: '/ˈbet̬.ɚ/', vi: 'tốt hơn', soundTip: 'Đọc là "beh-der"' },
-        ]
-      }
-    ],
-    vocabulary: [
-      {
-        id: 'v0-13',
-        word: 'water',
-        ipa: '/ˈwɑː.t̬ɚ/',
-        partOfSpeech: 'noun',
-        meaningVi: 'nước',
-        exampleSentence: 'Could I get a glass of cold water, please?',
-        exampleSentenceVi: 'Cho tôi xin một ly nước lạnh được không?',
-        endingSoundNote: 'Flap T /t̬/ + đuôi -er cong lưỡi.',
-        americanTip: 'Nói lướt "wah-der" cực kỳ tự nhiên.'
-      },
-      {
-        id: 'v0-14',
-        word: 'better',
-        ipa: '/ˈbet̬.ɚ/',
-        partOfSpeech: 'adj',
-        meaningVi: 'tốt hơn',
-        exampleSentence: 'Your English is getting better every day.',
-        exampleSentenceVi: 'Tiếng Anh của bạn đang tiến bộ hơn mỗi ngày.',
-        endingSoundNote: 'Flap T nhẹ nhàng ở giữa từ.',
-        americanTip: 'Quẹt nhẹ đầu lưỡi.'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd0-14',
-        speaker: 'A',
-        speakerName: 'Phục vụ',
-        avatar: '🤵',
-        textEn: 'Would you like some cold water or hot tea?',
-        textVi: 'Bạn muốn dùng chút nước lạnh hay trà nóng?',
-        ipa: '/wʊd juː laɪk sʌm koʊld ˈwɑː.t̬ɚ ɔːr hɑːt tiː/'
-      },
-      {
-        id: 'd0-15',
-        speaker: 'B',
-        speakerName: 'Khách hàng',
-        avatar: '👩',
-        textEn: 'Cold water is much better for me, thank you!',
-        textVi: 'Nước lạnh sẽ tốt hơn nhiều cho tôi, cảm ơn bạn!',
-        ipa: '/koʊld ˈwɑː.t̬ɚ ɪz mʌtʃ ˈbet̬.ɚ fɔːr miː, θæŋk juː/'
-      }
-    ],
-    sentencePattern: {
-      titleVi: "Khuôn Mẫu Câu: So Sánh Hơn Cực Mượt Với Biến Âm Flap T",
-      pattern: "[Danh từ A] is much better for me, thank you!",
-      formulaVi: "[Món A] tốt hơn nhiều cho tôi, cảm ơn bạn!",
-      usageVi: "Luyện nói lướt \"beh-der\" và \"wah-der\" không bị ngắc ngứ khi chọn lựa đồ ăn, nước uống.",
-      examples: [
-            {
-                  en: "Cold water is much better for me, thank you!",
-                  ipa: "/koʊld ˈwɑː.t̬ɚ ɪz mʌtʃ ˈbet̬.ɚ fɔːr miː, θæŋk juː/",
-                  vi: "Nước lạnh tốt hơn nhiều cho tôi, cảm ơn bạn!",
-                  fillWord: "Cold water"
-            },
-            {
-                  en: "This city is much better in winter.",
-                  ipa: "/ðɪs ˈsɪt̬.i ɪz mʌtʃ ˈbet̬.ɚ ɪn ˈwɪn.t̬ɚ/",
-                  vi: "Thành phố này đẹp hơn nhiều vào mùa đông.",
-                  fillWord: "This city"
-            }
-      ]
-},
-    earTrainingDrills: [
-      {
-            id: "drill-0-6-1",
-            promptVi: "Nghe và nhận diện âm Flap T kiểu Mỹ:",
-            audioWord: "water",
-            options: [
-                  {
-                        word: "water",
-                        ipa: "/ˈwɑː.t̬ɚ/",
-                        meaningVi: "nước uống (đọc là wah-der)"
-                  },
-                  {
-                        word: "waiter",
-                        ipa: "/ˈweɪ.t̬ɚ/",
-                        meaningVi: "người bồi bàn (đọc là way-der)"
-                  }
-            ],
-            correctIndex: 0,
-            explanationVi: "Âm /ɑː/ mở rộng họng trong \"water\" khác với nguyên âm đôi /eɪ/ trong \"waiter\"."
-      }
-]
-  },
-
-  // ================= LEVEL 1 (6 BÀI) =================
-  {
-    id: 'lv1-lesson-1',
-    levelId: 'lv1',
-    titleEn: 'Natural Greetings & Making Friends with Foreigners',
-    titleVi: 'Chào Hỏi Tự Nhiên (Nói Không Với "I am fine thank you")',
-    descriptionVi: 'Tạm biệt mẫu câu sách giáo khoa cũ kỹ. Học các câu mở đầu tự nhiên để bắt chuyện với khách Tây tại Việt Nam.',
-    icon: 'Smile',
-    durationMinutes: 14,
-    tags: ['Chào hỏi', 'Bắt chuyện Tây', 'Tự tin'],
-    keyTakeaways: [
-      'Các câu chào tự nhiên: "How\'s it going?", "What\'s up?", "Good to see you"',
-      'Cách giới thiệu bản thân ngắn gọn, lịch thiệp và tạo thiện cảm',
-      'Ngữ điệu xuống giọng tự nhiên ở cuối câu trần thuật'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Nối Âm Câu Chào: How is it going',
-        description: 'Người Mỹ nối âm: How-zit-go-ing -> /ˈhaʊ.zɪt ˈɡoʊ.ɪŋ/',
-        rule: 'Nối âm /z/ từ "is" sang "it".',
-        examples: [
-          { en: 'How\'s it going?', ipa: '/ˈhaʊ.zɪt ˈɡoʊ.ɪŋ/', vi: 'Dạo này thế nào rồi?', soundTip: 'Nối "how-zit"' }
-        ]
-      }
-    ],
-    vocabulary: [
-      {
-        id: 'v1-1',
-        word: 'awesome',
-        ipa: '/ˈɑː.səm/',
-        partOfSpeech: 'adj',
-        meaningVi: 'tuyệt vời, đỉnh chóp',
-        exampleSentence: 'Everything is going awesome!',
-        exampleSentenceVi: 'Mọi thứ đều đang diễn ra cực kỳ tuyệt vời!',
-        endingSoundNote: 'Trọng âm AW-, đuôi Schwa -some đọc nhẹ nhàng.',
-        americanTip: 'Từ cửa miệng cực kỳ phổ biến tại Mỹ.'
-      },
-      {
-        id: 'v1-2',
-        word: 'pleasure',
-        ipa: '/ˈpleʒ.ɚ/',
-        partOfSpeech: 'noun',
-        meaningVi: 'niềm vinh hạnh / niềm vui',
-        exampleSentence: 'It is a pleasure to meet you.',
-        exampleSentenceVi: 'Rất vinh hạnh được làm quen với bạn.',
-        endingSoundNote: 'Âm giữa là /ʒ/ rung và đuôi -er cong lưỡi.',
-        americanTip: 'Đọc êm ái, rung nhẹ cổ họng.'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd1-1',
-        speaker: 'A',
-        speakerName: 'Mike (Khách du lịch)',
-        avatar: '👨‍💼',
-        textEn: 'Hey there! How is it going today?',
-        textVi: 'Chào bạn! Hôm nay mọi việc thế nào rồi?',
-        ipa: '/heɪ ðer! ˈhaʊ.zɪt ˈɡoʊ.ɪŋ təˈdeɪ/'
-      },
-      {
-        id: 'd1-2',
-        speaker: 'B',
-        speakerName: 'Minh (Việt Nam)',
-        avatar: '🧑‍💻',
-        textEn: 'Pretty good! I am Minh from Hanoi. Pleasure to meet you!',
-        textVi: 'Khá tốt! Tôi là Minh đến từ Hà Nội. Rất vui được gặp bạn!',
-        ipa: '/ˈprɪt̬.i ɡʊd! aɪ æm mɪnh frʌm hæˈnɔɪ. ˈpleʒ.ɚ tuː miːtʃ juː/'
-      }
-    ],
-    sentencePattern: {
-      titleVi: "Khuôn Mẫu Câu: Bắt Chuyện Tự Nhiên & Giới Thiệu Bản Thân",
-      pattern: "Pretty good! I am [Tên] from [Thành phố]. Pleasure to meet you!",
-      formulaVi: "Khá tốt! Tôi là [Tên] đến từ [Nơi chốn]. Rất vui được gặp bạn!",
-      usageVi: "Mẫu câu mở đầu thân thiện, tự tin khi gặp gỡ người nước ngoài tại Việt Nam.",
-      examples: [
-            {
-                  en: "Pretty good! I am Minh from Hanoi. Pleasure to meet you!",
-                  ipa: "/ˈprɪt̬.i ɡʊd! aɪ æm mɪnh frʌm hæˈnɔɪ. ˈpleʒ.ɚ tuː miːtʃ juː/",
-                  vi: "Khá tốt! Tôi là Minh đến từ Hà Nội. Rất vui được gặp bạn!",
-                  fillWord: "Minh / Hanoi"
-            }
-      ]
-},
-    earTrainingDrills: [
-      {
-            id: "drill-1-1-1",
-            promptVi: "Nghe câu chào và chọn câu có nối âm How-zit-going:",
-            audioWord: "awesome",
-            options: [
-                  {
-                        word: "awesome",
-                        ipa: "/ˈɑː.səm/",
-                        meaningVi: "tuyệt vời (từ lóng phổ biến)"
-                  },
-                  {
-                        word: "awful",
-                        ipa: "/ˈɑː.fəl/",
-                        meaningVi: "tồi tệ (trái nghĩa)"
-                  }
-            ],
-            correctIndex: 0,
-            explanationVi: "\"Awesome\" /ˈɑː.səm/ có nghĩa là tuyệt vời, rất hay được người Mỹ dùng để trả lời khi được hỏi thăm."
-      }
-]
-  },
-  {
-    id: 'lv1-lesson-2',
-    levelId: 'lv1',
-    titleEn: 'Ordering Food & Drinks at Starbucks & International Chains',
-    titleVi: 'Gọi Đồ Tại Quán Cafe & Chuỗi Quốc Tế (Starbucks, Highlands)',
-    descriptionVi: 'Tự tin gọi kích cỡ ly (Tall, Grande, Venti), chọn loại sữa hạt (Oat milk) và trả lời câu hỏi "For here or to go?".',
-    icon: 'Coffee',
-    durationMinutes: 16,
-    tags: ['Order đồ uống', 'Starbucks', 'Đời sống'],
-    keyTakeaways: [
-      'Cấu trúc gọi đồ chuẩn người Mỹ: "Can I get a [Size] [Drink] with [Milk]?"',
-      'Từ vựng về cà phê & đồ ăn: Iced Americano, Caramel Macchiato, Oat milk',
-      'Trả lời câu hỏi thanh toán: "For here or to go?" (Dùng tại đây hay mang đi)'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Ngữ Điệu Tự Nhiên Khi Order',
-        description: 'Lên giọng nhẹ ở cuối món đồ uống để thể hiện sự lịch thiệp, xuống giọng khi kết thúc câu.',
-        rule: 'Can I get an iced latte? ↗ With oat milk, please. ↘',
-        examples: [
-          { en: 'To go, please', ipa: '/tuː ɡoʊ pliːz/', vi: 'Mang đi giúp tôi nhé', soundTip: 'Âm /oʊ/ chu môi tròn' }
-        ]
-      }
-    ],
-    vocabulary: [
-      {
-        id: 'v1-3',
-        word: 'receipt',
-        ipa: '/rɪˈsiːt/',
-        partOfSpeech: 'noun',
-        meaningVi: 'hóa đơn, biên lai',
-        exampleSentence: 'Would you like your receipt in the bag?',
-        exampleSentenceVi: 'Bạn có muốn bỏ hóa đơn vào túi không?',
-        endingSoundNote: 'Âm "p" là âm câm! Đọc là /rɪˈsiːt/ với đuôi /t/.',
-        americanTip: 'Tuyệt đối không đọc chữ p.'
-      },
-      {
-        id: 'v1-4',
-        word: 'extra',
-        ipa: '/ˈek.strə/',
-        partOfSpeech: 'adj / adv',
-        meaningVi: 'thêm vào, bổ sung',
-        exampleSentence: 'Could I have extra ice, please?',
-        exampleSentenceVi: 'Cho tôi thêm chút đá nhé?',
-        endingSoundNote: 'Cụm /kstr/ cần phát âm liền mạch.',
-        americanTip: 'Nhấn mạnh âm EX-.'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd1-3',
-        speaker: 'A',
-        speakerName: 'Barista',
-        avatar: '☕',
-        textEn: 'Hi! What can I get started for you today?',
-        textVi: 'Xin chào! Hôm nay bạn muốn dùng món gì ạ?',
-        ipa: '/haɪ! wɑːt kæn aɪ ɡet ˈstɑːr.t̬ɪd fɔːr juː təˈdeɪ/'
-      },
-      {
-        id: 'd1-4',
-        speaker: 'B',
-        speakerName: 'Khách hàng',
-        avatar: '👩',
-        textEn: 'Can I get a grande iced Americano with extra ice, to go?',
-        textVi: 'Cho mình 1 ly Americano đá size vừa, nhiều đá, mang đi nhé?',
-        ipa: '/kæn aɪ ɡet ə ˈɡrɑːn.deɪ aɪst əˌmer.ɪˈkɑː.noʊ wɪð ˈek.strə aɪs, tuː ɡoʊ/'
-      }
-    ],
-    sentencePattern: {
-      titleVi: "Khuôn Mẫu Câu: Gọi Đồ Uống Chuẩn Người Mỹ (Starbucks / Cafe)",
-      pattern: "Can I get a [Kích cỡ] [Tên đồ uống] with [Yêu cầu thêm], [To go / For here]?",
-      formulaVi: "Cho tôi 1 ly [cỡ] [món] [yêu cầu], [mang đi / tại quán] nhé?",
-      usageVi: "Chỉ cần thay tên món là bạn có thể tự tin gọi bất kỳ loại đồ uống nào tại các chuỗi quốc tế.",
-      examples: [
-            {
-                  en: "Can I get a grande iced Americano with extra ice, to go?",
-                  ipa: "/kæn aɪ ɡet ə ˈɡrɑːn.deɪ aɪst əˌmer.ɪˈkɑː.noʊ wɪð ˈek.strə aɪs, tuː ɡoʊ/",
-                  vi: "Cho mình 1 ly Americano đá size vừa, nhiều đá, mang đi nhé?",
-                  fillWord: "grande iced Americano / extra ice / to go"
-            },
-            {
-                  en: "Can I get a tall hot latte with oat milk, for here?",
-                  ipa: "/kæn aɪ ɡet ə tɑːl hɑːt ˈlɑː.teɪ wɪð oʊt mɪlk, fɔːr hɪr/",
-                  vi: "Cho mình 1 ly latte nóng size nhỏ, sữa yến mạch, dùng tại đây nhé?",
-                  fillWord: "tall hot latte / oat milk / for here"
-            }
-      ]
-},
-    earTrainingDrills: [
-      {
-            id: "drill-1-2-1",
-            promptVi: "Nghe và chọn từ phát âm đúng (chú ý chữ \"p\" là âm câm):",
-            audioWord: "receipt",
-            options: [
-                  {
-                        word: "receipt",
-                        ipa: "/rɪˈsiːt/",
-                        meaningVi: "hóa đơn (âm p câm, đọc là ri-sít)"
-                  },
-                  {
-                        word: "recipe",
-                        ipa: "/ˈres.ə.pi/",
-                        meaningVi: "công thức nấu ăn (3 âm tiết)"
-                  }
-            ],
-            correctIndex: 0,
-            explanationVi: "Trong từ \"receipt\" /rɪˈsiːt/, chữ \"p\" là âm câm, tuyệt đối không đọc là ri-síp-tờ."
-      }
-]
-  },
-  {
-    id: 'lv1-lesson-3',
-    levelId: 'lv1',
-    titleEn: 'Ordering Food at Fast Food Chains & Restaurants',
-    titleVi: 'Gọi Món Tại Nhà Hàng & Fast Food (McDonald\'s, Pizza 4P\'s)',
-    descriptionVi: 'Cách xem menu, yêu cầu bớt cay, xin thêm gia vị, gọi món combo và yêu cầu tách hóa đơn (Split the bill).',
-    icon: 'Utensils',
-    durationMinutes: 16,
-    tags: ['Nhà hàng', 'Fast food', 'Ăn uống'],
-    keyTakeaways: [
-      'Cấu trúc gọi món: "We are ready to order", "What do you recommend?"',
-      'Yêu cầu đặc biệt: "Less spicy, please", "No onions, please"',
-      'Thanh toán: "Could we split the bill?", "Can I pay by card?"'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Phát Âm Cụm Từ: Split The Bill',
-        description: 'Split /splɪt/ (Bật /t/ dứt khoát), Bill /bɪl/ (Đầu lưỡi chạm răng trên ở âm l).',
-        rule: 'Split the bill -> chia tiền ăn sòng phẳng.',
-        examples: [
-          { en: 'Split the bill', ipa: '/splɪt ðə bɪl/', vi: 'Chia tiền hóa đơn', soundTip: 'Âm /ɪ/ ngắn' }
-        ]
-      }
-    ],
-    vocabulary: [
-      {
-        id: 'v1-5',
-        word: 'recommend',
-        ipa: '/ˌrek.əˈmend/',
-        partOfSpeech: 'verb',
-        meaningVi: 'giới thiệu, gợi ý món ngon',
-        exampleSentence: 'Which dish do you recommend for dinner?',
-        exampleSentenceVi: 'Bạn gợi ý món nào ngon cho bữa tối?',
-        endingSoundNote: 'Trọng âm rơi vào âm tiết thứ 3 -MEND.',
-        americanTip: 'Bật nhẹ /d/ cuối.'
-      },
-      {
-        id: 'v1-6',
-        word: 'delicious',
-        ipa: '/dɪˈlɪʃ.əs/',
-        partOfSpeech: 'adj',
-        meaningVi: 'ngon miệng, thơm ngon',
-        exampleSentence: 'This beef pho is absolutely delicious!',
-        exampleSentenceVi: 'Món phở bò này thực sự ngon tuyệt vời!',
-        endingSoundNote: 'Âm giữa là /ʃ/ chu môi nhẹ.',
-        americanTip: 'Nhấn mạnh LISH-.'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd1-5',
-        speaker: 'A',
-        speakerName: 'Phục vụ bàn',
-        avatar: '👨‍🍳',
-        textEn: 'Are you ready to order, or do you need a few more minutes?',
-        textVi: 'Quý khách đã sẵn sàng gọi món chưa, hay cần thêm vài phút ạ?',
-        ipa: '/ɑːr juː ˈred.i tuː ˈɔːr.dɚ, ɔːr duː juː niːd ə fjuː mɔːr ˈmɪn.ɪts/'
-      },
-      {
-        id: 'd1-6',
-        speaker: 'B',
-        speakerName: 'Bạn',
-        avatar: '🙋‍♂️',
-        textEn: 'We are ready! Could we get two beef burgers and split the bill?',
-        textVi: 'Chúng tôi sẵn sàng rồi! Cho chúng tôi 2 burger bò và chia tiền hóa đơn nhé?',
-        ipa: '/wiː ɑːr ˈred.i! kʊd wiː ɡet tuː biːf ˈbɜːr.ɡɚz ænd splɪt ðə bɪl/'
-      }
-    ],
-    sentencePattern: {
-      titleVi: "Khuôn Mẫu Câu: Gọi Món & Tách Hóa Đơn Nhà Hàng",
-      pattern: "We are ready! Could we get [Số lượng món] and split the bill?",
-      formulaVi: "Chúng tôi sẵn sàng! Cho chúng tôi [món] và chia tiền hóa đơn nhé?",
-      usageVi: "Dùng khi đi ăn uống cùng bạn bè hoặc đối tác tại nhà hàng nước ngoài.",
-      examples: [
-            {
-                  en: "We are ready! Could we get two beef burgers and split the bill?",
-                  ipa: "/wiː ɑːr ˈred.i! kʊd wiː ɡet tuː biːf ˈbɜːr.ɡɚz ænd splɪt ðə bɪl/",
-                  vi: "Cho chúng tôi 2 burger bò và chia tiền hóa đơn nhé?",
-                  fillWord: "two beef burgers"
-            }
-      ]
-},
-    earTrainingDrills: [
-      {
-            id: "drill-1-3-1",
-            promptVi: "Nghe và chọn từ miêu tả món ăn ngon miệng:",
-            audioWord: "delicious",
-            options: [
-                  {
-                        word: "delicious",
-                        ipa: "/dɪˈlɪʃ.əs/",
-                        meaningVi: "thơm ngon, ngon miệng"
-                  },
-                  {
-                        word: "delicate",
-                        ipa: "/ˈdel.ə.kət/",
-                        meaningVi: "tinh tế, mỏng manh"
-                  }
-            ],
-            correctIndex: 0,
-            explanationVi: "\"Delicious\" /dɪˈlɪʃ.əs/ có trọng âm rơi vào âm tiết thứ 2 -LISH-."
-      }
-]
-  },
-  {
-    id: 'lv1-lesson-4',
-    levelId: 'lv1',
-    titleEn: 'Grocery Shopping & Buying Clothes (Fitting Room & Sale)',
-    titleVi: 'Đi Siêu Thị & Mua Sắm Quần Áo (Hỏi Giá, Thử Đồ & Sale)',
-    descriptionVi: 'Cách hỏi tìm quầy hàng trong siêu thị, hỏi phòng thử đồ (Fitting rooms), kích cỡ quần áo và xin giảm giá.',
-    icon: 'ShoppingBag',
-    durationMinutes: 15,
-    tags: ['Mua sắm', 'Siêu thị', 'Thử đồ'],
-    keyTakeaways: [
-      'Tìm đồ trong siêu thị: "Where can I find the milk / fruits?"',
-      'Thử đồ: "Can I try this shirt on?", "Where are the fitting rooms?"',
-      'Hỏi sale: "Is this item on sale?", "Do you have size L?"'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Phát Âm Cụm: Try It On',
-        description: 'Nối âm: Try it on -> /ˈtraɪ.ɪt.ɑːn/ -> "try-it-tahn".',
-        rule: 'Nối /t/ sang /ɑːn/.',
-        examples: [
-          { en: 'Try it on', ipa: '/traɪ ɪt ɑːn/', vi: 'Mặc thử nó vào', soundTip: 'Nối âm mượt mà' }
-        ]
-      }
-    ],
-    vocabulary: [
-      {
-        id: 'v1-7',
-        word: 'discount',
-        ipa: '/ˈdɪs.kaʊnt/',
-        partOfSpeech: 'noun',
-        meaningVi: 'giảm giá, chiết khấu',
-        exampleSentence: 'Is there any special discount today?',
-        exampleSentenceVi: 'Hôm nay có chương trình giảm giá đặc biệt nào không?',
-        endingSoundNote: 'Âm đôi /aʊ/ và đuôi /nt/ dứt khoát.',
-        americanTip: 'Nhấn trọng âm DIS-.'
-      },
-      {
-        id: 'v1-8',
-        word: 'fitting',
-        ipa: '/ˈfɪt̬.ɪŋ/',
-        partOfSpeech: 'noun / adj',
-        meaningVi: 'thử đồ',
-        exampleSentence: 'The fitting rooms are right around the corner.',
-        exampleSentenceVi: 'Phòng thử đồ ở ngay góc rẽ kia nhé.',
-        endingSoundNote: 'Flap T ở giữa từ.',
-        americanTip: 'Đọc là "fit-ding".'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd1-7',
-        speaker: 'A',
-        speakerName: 'Bạn',
-        avatar: '👱‍♀️',
-        textEn: 'Excuse me, could I try this jacket on? Where are the fitting rooms?',
-        textVi: 'Xin lỗi, tôi có thể thử chiếc áo khoác này được không? Phòng thử đồ ở đâu vậy?',
-        ipa: '/ɪkˈskjuːz miː, kʊd aɪ traɪ ðɪs ˈdʒæk.ɪt ɑːn? wer ɑːr ðə ˈfɪt̬.ɪŋ ruːmz/'
-      },
-      {
-        id: 'd1-8',
-        speaker: 'B',
-        speakerName: 'Nhân viên bán hàng',
-        avatar: '👔',
-        textEn: 'Sure! The fitting rooms are straight ahead on your left.',
-        textVi: 'Chắc chắn rồi! Phòng thử đồ ở ngay phía trước bên tay trái của bạn nhé.',
-        ipa: '/ʃʊr! ðə ˈfɪt̬.ɪŋ ruːmz ɑːr streɪt əˈhed ɑːn jɔːr left/'
-      }
-    ]
-  },
-  {
-    id: 'lv1-lesson-5',
-    levelId: 'lv1',
-    titleEn: 'Giving Directions to Tourists & Booking Grab in Vietnam',
-    titleVi: 'Chỉ Đường Cho Khách Tây Tại Việt Nam & Hướng Dẫn Đi Lại',
-    descriptionVi: 'Tự tin hướng dẫn khách Tây tìm đường tại Hà Nội / TP.HCM / Đà Nẵng, giải thích cách bắt Grab và thanh toán.',
-    icon: 'Compass',
-    durationMinutes: 15,
-    tags: ['Chỉ đường', 'Khách du lịch', 'Đi lại'],
-    keyTakeaways: [
-      'Chỉ hướng: "Go straight ahead", "Turn left at the intersection", "Across the street"',
-      'Chỉ địa danh nổi tiếng: Hoan Kiem Lake, Ben Thanh Market, Dragon Bridge',
-      'Hướng dẫn phương tiện: "You can book a Grab bike / taxi easily on your phone"'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Nối Âm: Across The Street',
-        description: 'Across: /əˈkrɑːs/, Street: /striːt/. Phát âm rõ /s/ và /t/.',
-        rule: 'Không đọc thành "xờ trít".',
-        examples: [
-          { en: 'Across the street', ipa: '/əˈkrɑːs ðə striːt/', vi: 'Bên kia đường', soundTip: 'Âm /s/ rõ ràng' }
-        ]
-      }
-    ],
-    vocabulary: [
-      {
-        id: 'v1-9',
-        word: 'intersection',
-        ipa: '/ˌɪn.t̬ɚˈsek.ʃən/',
-        partOfSpeech: 'noun',
-        meaningVi: 'ngã tư, giao lộ',
-        exampleSentence: 'Turn right at the next intersection.',
-        exampleSentenceVi: 'Rẽ phải ở ngã tư tiếp theo nhé.',
-        endingSoundNote: 'Đuôi -tion chu mỏ nhẹ /ʃən/.',
-        americanTip: 'Nhấn trọng âm vào SEC-.'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd1-9',
-        speaker: 'A',
-        speakerName: 'Khách Tây',
-        avatar: '👱‍♂️',
-        textEn: 'Excuse me, how can I get to Ben Thanh Market from here?',
-        textVi: 'Xin lỗi, làm thế nào để tôi đi đến Chợ Bến Thành từ đây?',
-        ipa: '/ɪkˈskjuːz miː, haʊ kæn aɪ ɡet tuː ben thanh ˈmɑːr.kɪt frʌm hɪr/'
-      },
-      {
-        id: 'd1-10',
-        speaker: 'B',
-        speakerName: 'Bạn (Việt Nam)',
-        avatar: '🙋‍♂️',
-        textEn: 'It is about ten minutes on foot. Just go straight and it is across the street!',
-        textVi: 'Đi bộ khoảng 10 phút thôi. Bạn cứ đi thẳng và nó nằm ngay bên kia đường!',
-        ipa: '/ɪt ɪz əˈbaʊt ten ˈmɪn.ɪts ɑːn fʊt. dʒʌst ɡoʊ streɪt ænd ɪt ɪz əˈkrɑːs ðə striːt/'
-      }
-    ]
-  },
-  {
-    id: 'lv1-lesson-6',
-    levelId: 'lv1',
-    titleEn: 'Introducing Yourself & Vietnamese Food Culture to Foreigners',
-    titleVi: 'Giới Thiệu Bản Thân & Đồ Ăn Việt Nam Cho Bạn Bè Quốc Tế',
-    descriptionVi: 'Cách giới thiệu về Phở, Bánh mì, Cà phê trứng bằng các tính từ miêu tả hấp dẫn, tạo ấn tượng thân thiện và mến khách.',
-    icon: 'Heart',
-    durationMinutes: 16,
-    tags: ['Ẩm thực Việt', 'Giới thiệu bản thân', 'Văn hóa'],
-    keyTakeaways: [
-      'Giới thiệu bản thân trong 60s: Tên, nghề nghiệp, sở thích du lịch ẩm thực',
-      'Miêu tả món ăn: "Crispy baguette" (Bánh mì giòn rụm), "Rich broth" (Nước dùng đậm đà)',
-      'Mời bạn bè đi thử món ăn đường phố'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Phát Âm Các Tính Từ Miêu Tả Ẩm Thực',
-        description: 'Crispy: /ˈkrɪs.pi/ (Giòn), Flavorful: /ˈfleɪ.vɚ.fəl/ (Đậm đà hương vị).',
-        rule: 'Nhấn mạnh vào âm tiết đầu tiên.',
-        examples: [
-          { en: 'Crispy', ipa: '/ˈkrɪs.pi/', vi: 'giòn tan', soundTip: 'Bật nhẹ /p/' }
-        ]
-      }
-    ],
-    vocabulary: [
-      {
-        id: 'v1-10',
-        word: 'traditional',
-        ipa: '/trəˈdɪʃ.ən.əl/',
-        partOfSpeech: 'adj',
-        meaningVi: 'truyền thống, lâu đời',
-        exampleSentence: 'Pho is the most famous traditional soup in Vietnam.',
-        exampleSentenceVi: 'Phở là món súp truyền thống nổi tiếng nhất ở Việt Nam.',
-        endingSoundNote: '4 âm tiết, trọng âm rơi vào -DISH-.',
-        americanTip: 'Đuôi -al đọc lướt /əl/.'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd1-11',
-        speaker: 'A',
-        speakerName: 'Emma (Khách Mỹ)',
-        avatar: '👩',
-        textEn: 'What is your favorite Vietnamese food that I must try?',
-        textVi: 'Món ăn Việt Nam yêu thích nào của bạn mà tôi nhất định phải thử?',
-        ipa: '/wɑːt ɪz jɔːr ˈfeɪ.vɚ.ɪt ˌvjet.nəˈmiːz fuːd ðæt aɪ mʌst traɪ/'
-      },
-      {
-        id: 'd1-12',
-        speaker: 'B',
-        speakerName: 'Bạn',
-        avatar: '🧑',
-        textEn: 'You definitely have to try hot Pho and crispy Banh Mi. They are amazing!',
-        textVi: 'Bạn nhất định phải thử món Phở nóng hổi và Bánh mì giòn rụm. Chúng ngon tuyệt đỉnh!',
-        ipa: '/juː ˈdef.ə.nət.li hæv tuː traɪ hɑːt fə ænd ˈkrɪs.pi banh mi. ðeɪ ɑːr əˈmeɪ.zɪŋ/'
-      }
-    ]
-  },
-// ================= LEVEL 2 (6 BÀI) =================
-  {
-    id: 'lv2-lesson-1',
-    levelId: 'lv2',
-    titleEn: 'English Job Interview in Vietnam',
-    titleVi: 'Phỏng Vấn Xin Việc Bằng Tiếng Anh Tại Công Ty Đa Quốc Gia / FDI',
-    descriptionVi: 'Tự tin giới thiệu bản thân, trình bày kinh nghiệm làm việc, điểm mạnh cá nhân và đàm phán mức lương.',
-    icon: 'Briefcase',
-    durationMinutes: 15,
-    tags: ['Phỏng vấn', 'Job Interview', 'Tiếng Anh đi làm'],
-    keyTakeaways: [
-      'Cấu trúc giới thiệu kinh nghiệm: I have X years of experience in...',
-      'Mô tả thế mạnh: Strong problem-solving & teamwork skills',
-      'Cách đặt câu hỏi ngược lại cho nhà tuyển dụng'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Mẹo Phát Âm "Experience" và "Strength"',
-        description: 'Experience /ɪkˈspɪr.i.əns/ có 4 âm tiết, trọng âm rơi vào -SPIR-. Strength /streŋθ/ thè lưỡi âm /θ/ ở đuôi.',
-        rule: 'Không đọc strength thành "xờ-tren".',
-        examples: [
-          { en: 'experience', ipa: '/ɪkˈspɪr.i.əns/', vi: 'kinh nghiệm', soundTip: 'Trọng âm âm 2' },
-          { en: 'strength', ipa: '/streŋθ/', vi: 'thế mạnh', soundTip: 'Thè lưỡi âm th' },
-        ]
-      }
-    ],
-    vocabulary: [
-      {
-        id: 'v2-1-1',
-        word: 'experience',
-        ipa: '/ɪkˈspɪr.i.əns/',
-        partOfSpeech: 'noun',
-        meaningVi: 'kinh nghiệm làm việc',
-        exampleSentence: 'I have four years of experience in finance.',
-        exampleSentenceVi: 'Tôi có 4 năm kinh nghiệm trong ngành tài chính.',
-        endingSoundNote: 'Đuôi -ce đọc thành /s/ xì gió.',
-        americanTip: 'Nhấn mạnh âm -SPIR-.'
-      },
-      {
-        id: 'v2-1-2',
-        word: 'strength',
-        ipa: '/streŋθ/',
-        partOfSpeech: 'noun',
-        meaningVi: 'thế mạnh, điểm mạnh',
-        exampleSentence: 'My greatest strength is problem-solving.',
-        exampleSentenceVi: 'Điểm mạnh lớn nhất của tôi là giải quyết vấn đề.',
-        endingSoundNote: 'Cụm /str/ đầu, âm /θ/ thè lưỡi ở cuối.',
-        americanTip: 'Không đọc mất âm th.'
-      },
-      {
-        id: 'v2-1-3',
-        word: 'teamwork',
-        ipa: '/ˈtiːm.wɜːrk/',
-        partOfSpeech: 'noun',
-        meaningVi: 'kỹ năng làm việc nhóm',
-        exampleSentence: 'I value strong teamwork and open communication.',
-        exampleSentenceVi: 'Tôi đánh giá cao tinh thần đồng đội và giao tiếp cởi mở.',
-        endingSoundNote: 'Bật /k/ ở cuối từ work.',
-        americanTip: 'Trọng âm rơi vào TEAM-.'
-      },
-      {
-        id: 'v2-1-4',
-        word: 'position',
-        ipa: '/pəˈzɪʃ.ən/',
-        partOfSpeech: 'noun',
-        meaningVi: 'vị trí công việc ứng tuyển',
-        exampleSentence: 'Why are you interested in this position?',
-        exampleSentenceVi: 'Tại sao bạn lại quan tâm đến vị trí này?',
-        endingSoundNote: 'Âm giữa là /z/, đuôi /ʃən/.',
-        americanTip: 'Trọng âm rơi vào -ZISH-.'
-      },
-      {
-        id: 'v2-1-5',
-        word: 'contribute',
-        ipa: '/kənˈtrɪb.juːt/',
-        partOfSpeech: 'verb',
-        meaningVi: 'đóng góp, cống hiến',
-        exampleSentence: 'I want to contribute to the company growth.',
-        exampleSentenceVi: 'Tôi muốn đóng góp vào sự phát triển của công ty.',
-        endingSoundNote: 'Bật nhẹ /t/ ở cuối.',
-        americanTip: 'Trọng âm rơi vào -TRIB-.'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd2-1-1',
-        speaker: 'A',
-        speakerName: 'Interviewer (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'Welcome! Could you tell me a little bit about your professional background?',
-        textVi: 'Chào mừng bạn! Bạn có thể chia sẻ đôi nét về quá trình làm việc của mình không?',
-        ipa: '/ˈwel.kəm! kʊd juː tel miː ə ˈlɪt̬.əl bɪt əˈbaʊt jɔːr prəˈfeʃ.ən.əl ˈbæk.ɡraʊnd/'
-      },
-      {
-        id: 'd2-1-2',
-        speaker: 'B',
-        speakerName: 'Minh (Ứng viên)',
-        avatar: '👨‍💼',
-        textEn: 'Certainly! I have four years of experience in project management with strong teamwork skills.',
-        textVi: 'Chắc chắn rồi ạ! Tôi có 4 năm kinh nghiệm quản lý dự án cùng kỹ năng làm việc nhóm tốt.',
-        ipa: '/ˈsɜːr.tən.li! aɪ hæv fɔːr jɪrz ʌv ɪkˈspɪr.i.əns ɪn ˈprɑː.dʒekt ˈmæn.ədʒ.mənt wɪð strɑːŋ ˈtiːm.wɜːrk skɪlz/'
-      },
-      {
-        id: 'd2-1-3',
-        speaker: 'A',
-        speakerName: 'Interviewer (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'Impressive! What would you say is your greatest strength in high-pressure situations?',
-        textVi: 'Rất ấn tượng! Vậy điểm mạnh lớn nhất của bạn trong môi trường áp lực cao là gì?',
-        ipa: '/ɪmˈpres.ɪv! wɑːt wʊd juː seɪ ɪz jɔːr ˈɡreɪ.t̬ɪst streŋθ ɪn haɪ ˈpreʃ.ɚ ˌsɪtʃ.uˈeɪ.ʃənz/'
-      },
-      {
-        id: 'd2-1-4',
-        speaker: 'B',
-        speakerName: 'Minh (Ứng viên)',
-        avatar: '👨‍💼',
-        textEn: 'I excel at problem-solving and keeping my team focused on our core deadlines.',
-        textVi: 'Thế mạnh của tôi là giải quyết vấn đề và giữ cho cả nhóm luôn bám sát các hạn chót then chốt.',
-        ipa: '/aɪ ɪkˈsel æt ˈprɑː.bləm ˌsɑːl.vɪŋ ænd ˈkiː.pɪŋ maɪ tiːm ˈfoʊ.kəst ɑːn ˈaʊ.ɚ kɔːr ˈded.laɪnz/'
-      }
-    ],
-    grammarNotes: [
-      {
-        titleVi: 'Cấu trúc: I have [X] years of experience in + [Field]',
-        structure: 'I have + [Number] years of experience in + [Industry/Skill]',
-        explanationVi: 'Mẫu câu vàng khi trả lời phỏng vấn để nêu rõ số năm kinh nghiệm chuyên môn.',
-        exampleEn: 'I have four years of experience in project management.',
-        exampleIpa: '/aɪ hæv fɔːr jɪrz ʌv ɪkˈspɪr.i.əns ɪn ˈprɑː.dʒekt ˈmæn.ədʒ.mənt/',
-        exampleVi: 'Tôi có 4 năm kinh nghiệm trong quản lý dự án.'
-      }
-    ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Trả Lời Phỏng Vấn Xin Việc (Job Interview)',
-      pattern: 'I have [Số năm] years of experience in [Lĩnh vực] with strong [Kỹ năng] skills.',
-      formulaVi: 'Tôi có [X] năm kinh nghiệm trong [ngành] cùng kỹ năng [thế mạnh] tốt.',
-      usageVi: 'Khung trả lời ngắn gọn, trực diện, thể hiện sự chuyên nghiệp và tự tin trước nhà tuyển dụng.',
-      examples: [
-        { en: 'I have three years of experience in marketing with strong teamwork skills.', ipa: '/aɪ hæv θriː jɪrz ʌv ɪkˈspɪr.i.əns ɪn ˈmɑːr.kɪ.t̬ɪŋ wɪð strɑːŋ ˈtiːm.wɜːrk skɪlz/', vi: 'Tôi có 3 năm kinh nghiệm trong ngành marketing cùng kỹ năng làm việc nhóm tốt.', fillWord: 'three / marketing / teamwork' },
-        { en: 'I have five years of experience in software design with strong problem-solving skills.', ipa: '/aɪ hæv faɪv jɪrz ʌv ɪkˈspɪr.i.əns ɪn ˈsɑːft.wer dɪˈzaɪn wɪð strɑːŋ ˈprɑː.bləm ˌsɑːl.vɪŋ skɪlz/', vi: 'Tôi có 5 năm kinh nghiệm trong ngành thiết kế phần mềm cùng kỹ năng giải quyết vấn đề tốt.', fillWord: 'five / software design / problem-solving' }
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Cụm Âm Đuôi Phức Tạp",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-2-1-1',
-        promptVi: 'Nghe và chọn từ chỉ điểm mạnh cá nhân:',
-        audioWord: 'strength',
-        options: [
-          { word: 'strength', ipa: '/streŋθ/', meaningVi: 'điểm mạnh, thế mạnh' },
-          { word: 'strange', ipa: '/streɪndʒ/', meaningVi: 'kỳ lạ, xa lạ' }
+        "id": "drill-0-2-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: '"Strength" /streŋθ/ kết thúc bằng âm thè lưỡi /θ/, khác với "strange" /streɪndʒ/ kết thúc bằng /dʒ/.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
       }
     ]
   },
   {
-    id: 'lv2-lesson-2',
-    levelId: 'lv2',
-    titleEn: 'Office Small Talk & Water Cooler Chats',
-    titleVi: 'Trò Chuyện Thân Mật Bên Máy Pha Cà Phê Công Sở (Small Talk)',
-    descriptionVi: 'Cách bắt chuyện tự nhiên với đồng nghiệp quốc tế, hỏi thăm cuối tuần, thảo luận thời tiết và tạo mối quan hệ tốt.',
-    icon: 'Coffee',
-    durationMinutes: 15,
-    tags: ['Office', 'Small Talk', 'Công sở'],
-    keyTakeaways: [
-      'Bắt chuyện cuối tuần: Any plans for the weekend?',
-      'Phản hồi hào hứng: That sounds like a blast!',
-      'Tránh các chủ đề nhạy cảm nơi công sở'
+    "id": "lv0-lesson-3",
+    "levelId": "lv0",
+    "titleEn": "Pronouncing -s / -es Endings",
+    "titleVi": "Quy Tắc Đọc Đuôi -s và -es: Khi Nào Xì /s/, Khi Nào Rung /z/",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ quy tắc đọc đuôi -s và -es: khi nào xì /s/, khi nào rung /z/ với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Pronouncing -s / -es Endings",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Mẹo Phát Âm "Colleague" và "Schedule"',
-        description: 'Colleague /ˈkɑː.liːɡ/ chỉ có 2 âm tiết, trọng âm rơi vào âm 1. Schedule /ˈskedʒ.uːl/ theo giọng Mỹ.',
-        rule: 'Không đọc colleague thành "co-lít-gơ".',
-        examples: [
-          { en: 'colleague', ipa: '/ˈkɑː.liːɡ/', vi: 'đồng nghiệp', soundTip: 'Bật nhẹ /ɡ/ đuôi' },
-          { en: 'schedule', ipa: '/ˈskedʒ.uːl/', vi: 'lịch trình', soundTip: 'Âm /sk/ liền mạch' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Pronouncing -s / -es Endings",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v2-2-1',
-        word: 'colleague',
-        ipa: '/ˈkɑː.liːɡ/',
-        partOfSpeech: 'noun',
-        meaningVi: 'đồng nghiệp',
-        exampleSentence: 'She is a very supportive colleague.',
-        exampleSentenceVi: 'Cô ấy là một người đồng nghiệp rất hay giúp đỡ.',
-        endingSoundNote: 'Âm đuôi /ɡ/ rung nhẹ.',
-        americanTip: 'Chỉ có 2 âm tiết, không đọc âm thứ 3.'
+        "id": "v0-3-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v2-2-2',
-        word: 'schedule',
-        ipa: '/ˈskedʒ.uːl/',
-        partOfSpeech: 'noun / verb',
-        meaningVi: 'lịch làm việc, lên lịch',
-        exampleSentence: 'My schedule is quite packed today.',
-        exampleSentenceVi: 'Lịch làm việc của tôi hôm nay khá kín.',
-        endingSoundNote: 'Âm đầu /skedʒ/, âm cuối /uːl/.',
-        americanTip: 'Người Mỹ đọc là "ske-jul", khác giọng Anh "she-dyul".'
+        "id": "v0-3-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'v2-2-3',
-        word: 'packed',
-        ipa: '/pækt/',
-        partOfSpeech: 'adj',
-        meaningVi: 'bận rộn, kín lịch',
-        exampleSentence: 'I have a packed afternoon with meetings.',
-        exampleSentenceVi: 'Buổi chiều của tôi kín lịch họp.',
-        endingSoundNote: 'Đuôi -ed đọc thành âm /t/ sau /k/.',
-        americanTip: 'Âm /æ/ há to cằm.'
+        "id": "v0-3-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v2-2-4',
-        word: 'relaxing',
-        ipa: '/rɪˈlæk.sɪŋ/',
-        partOfSpeech: 'adj',
-        meaningVi: 'thư giãn, thoải mái',
-        exampleSentence: 'Have a relaxing weekend ahead!',
-        exampleSentenceVi: 'Chúc một cuối tuần thư giãn nhé!',
-        endingSoundNote: 'Trọng âm rơi vào -LAK-.',
-        americanTip: 'Dùng khi chúc đồng nghiệp.'
+        "id": "v0-3-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd2-2-1',
-        speaker: 'A',
-        speakerName: 'Brian (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'Morning Trang! Grabbed your morning coffee yet?',
-        textVi: 'Chào buổi sáng Trang! Đã lấy cà phê sáng chưa?',
-        ipa: '/ˈmɔːr.nɪŋ Trang! ɡræbd jɔːr ˈmɔːr.nɪŋ ˈkɑː.fi jet/'
+        "id": "d0-3-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Pronouncing -s / -es Endings today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd2-2-2',
-        speaker: 'B',
-        speakerName: 'Trang (Học viên)',
-        avatar: '👩‍💼',
-        textEn: 'Just got one! My schedule is pretty packed today with project reviews.',
-        textVi: 'Tôi vừa lấy một ly! Hôm nay lịch của tôi khá kín với các buổi đánh giá dự án.',
-        ipa: '/dʒʌst ɡɑːt wʌn! maɪ ˈskedʒ.uːl ɪz ˈprɪt̬.i pækt təˈdeɪ wɪð ˈprɑː.dʒekt rɪˈvjuːz/'
+        "id": "d0-3-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'd2-2-3',
-        speaker: 'A',
-        speakerName: 'Brian (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'Same here! Any relaxing plans once we wrap up for the weekend?',
-        textVi: 'Tôi cũng vậy! Bạn có kế hoạch thư giãn gì sau khi kết thúc công việc cuối tuần chưa?',
-        ipa: '/seɪm hɪr! ˈen.i rɪˈlæk.sɪŋ plænz wʌns wiː ræp ʌp fɔːr ðə ˈwiːk.end/'
+        "id": "d0-3-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
       },
       {
-        id: 'd2-2-4',
-        speaker: 'B',
-        speakerName: 'Trang (Học viên)',
-        avatar: '👩‍💼',
-        textEn: 'I\'m planning to go camping near the mountains with some colleagues.',
-        textVi: 'Tôi dự định đi cắm trại gần vùng núi cùng vài người đồng nghiệp.',
-        ipa: '/aɪm ˈplæn.ɪŋ tuː ɡoʊ ˈkæm.pɪŋ nɪr ðə ˈmaʊn.tənz wɪð sʌm ˈkɑː.liːɡz/'
+        "id": "d0-3-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    grammarNotes: [
+    "grammarNotes": [
       {
-        titleVi: 'Cấu trúc: Any plans for [Event]? (Hỏi kế hoạch ngắn gọn)',
-        structure: 'Any plans for + the weekend / tonight / the holiday?',
-        explanationVi: 'Lược bỏ "Do you have...", tạo cảm giác gần gũi, thân mật nơi công sở.',
-        exampleEn: 'Any plans for the weekend?',
-        exampleIpa: '/ˈen.i plænz fɔːr ðə ˈwiːk.end/',
-        exampleVi: 'Cuối tuần có kế hoạch gì chưa?'
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
       }
     ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Bắt Chuyện Thân Mật Nơi Công Sở',
-      pattern: 'My schedule is pretty packed today with [Công việc]. How about yours?',
-      formulaVi: 'Lịch của tôi hôm nay khá kín với [việc]. Còn bạn thì sao?',
-      usageVi: 'Cách mở đầu trò chuyện nhẹ nhàng, tự nhiên trước khi bắt đầu ngày làm việc.',
-      examples: [
-        { en: 'My schedule is pretty packed today with client meetings. How about yours?', ipa: '/maɪ ˈskedʒ.uːl ɪz ˈprɪt̬.i pækt təˈdeɪ wɪð ˈklaɪ.ənt ˈmiː.t̬ɪŋz. haʊ əˈbaʊt jɔːrz/', vi: 'Lịch hôm nay của tôi khá kín với các cuộc họp khách hàng. Còn bạn thì sao?', fillWord: 'client meetings' }
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Quy Tắc Đọc Đuôi -s và -es",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-2-2-1',
-        promptVi: 'Nghe và chọn từ chỉ đồng nghiệp công ty:',
-        audioWord: 'colleague',
-        options: [
-          { word: 'colleague', ipa: '/ˈkɑː.liːɡ/', meaningVi: 'đồng nghiệp' },
-          { word: 'college', ipa: '/ˈkɑː.lɪdʒ/', meaningVi: 'trường cao đẳng (đuôi /dʒ/)' }
+        "id": "drill-0-3-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: '"Colleague" kết thúc bằng âm /ɡ/ rung nhẹ, còn "college" kết thúc bằng âm /dʒ/ nổ gió.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
       }
     ]
   },
   {
-    id: 'lv2-lesson-3',
-    levelId: 'lv2',
-    titleEn: 'Online Meetings on Zoom & Teams',
-    titleVi: 'Làm Chủ Cuộc Họp Trực Tuyến Qua Zoom & Microsoft Teams',
-    descriptionVi: 'Cách xử lý sự cố mic, chia sẻ màn hình, ngắt lời lịch sự và tóm tắt biên bản cuộc họp.',
-    icon: 'Video',
-    durationMinutes: 15,
-    tags: ['Zoom', 'Teams', 'Họp online'],
-    keyTakeaways: [
-      'Xử lý sự cố mic: You are on mute, Your audio is cutting out',
-      'Chia sẻ màn hình: Can everyone see my screen?',
-      'Ngắt lời lịch sự: Sorry to interrupt, but...'
+    "id": "lv0-lesson-4",
+    "levelId": "lv0",
+    "titleEn": "Pronouncing -ed Endings: /t/, /d/, /ɪd/",
+    "titleVi": "Tuyệt Chiêu Đọc Đuôi -ed Quá Khứ Chuẩn Xác Không Học Vẹt",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ tuyệt chiêu đọc đuôi -ed quá khứ chuẩn xác không học vẹt với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Pronouncing -ed Endings: /t/, /d/, /ɪd/",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Mẹo Phát Âm "Mute" và "Screen"',
-        description: 'Mute /mjuːt/ có âm /j/ ở giữa, kết thúc bằng /t/. Screen /skriːn/ có cụm /skr/.',
-        rule: 'Không đọc mute thành "mút".',
-        examples: [
-          { en: 'on mute', ipa: '/ɑːn mjuːt/', vi: 'đang tắt mic', soundTip: 'Bật /t/ dứt khoát' },
-          { en: 'share screen', ipa: '/ʃer skriːn/', vi: 'chia sẻ màn hình', soundTip: 'Chu môi cho share' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Pronouncing -ed Endings",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v2-3-1',
-        word: 'mute',
-        ipa: '/mjuːt/',
-        partOfSpeech: 'noun / verb',
-        meaningVi: 'tắt tiếng, tắt mic',
-        exampleSentence: 'You are on mute, could you unmute?',
-        exampleSentenceVi: 'Bạn đang tắt mic, bạn bật mic lên nhé?',
-        endingSoundNote: 'Âm /j/ lướt nhẹ, kết thúc bằng /t/.',
-        americanTip: 'Cụm từ phổ biến nhất trong mọi cuộc họp online.'
+        "id": "v0-4-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v2-3-2',
-        word: 'screen',
-        ipa: '/skriːn/',
-        partOfSpeech: 'noun',
-        meaningVi: 'màn hình máy tính',
-        exampleSentence: 'Let me share my screen with you.',
-        exampleSentenceVi: 'Để tôi chia sẻ màn hình với bạn.',
-        endingSoundNote: 'Cụm /skr/, nguyên âm /iː/ kéo dài.',
-        americanTip: 'Đầu lưỡi chạm răng trên cho âm /n/.'
+        "id": "v0-4-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'v2-3-3',
-        word: 'interrupt',
-        ipa: '/ˌɪn.t̬əˈrʌpt/',
-        partOfSpeech: 'verb',
-        meaningVi: 'ngắt lời, chen ngang',
-        exampleSentence: 'Sorry to interrupt, but I have a quick question.',
-        exampleSentenceVi: 'Xin lỗi vì ngắt lời, nhưng tôi có câu hỏi nhanh.',
-        endingSoundNote: 'Cụm đuôi /pt/ bật cả p và t.',
-        americanTip: 'Trọng âm rơi vào âm cuối -RUPT.'
+        "id": "v0-4-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v2-3-4',
-        word: 'summarize',
-        ipa: '/ˈsʌm.ə.raɪz/',
-        partOfSpeech: 'verb',
-        meaningVi: 'tóm tắt, tổng kết',
-        exampleSentence: 'Let me summarize the key takeaways.',
-        exampleSentenceVi: 'Để tôi tóm tắt lại các ý chính.',
-        endingSoundNote: 'Âm cuối /z/ rung nhẹ.',
-        americanTip: 'Trọng âm rơi vào SUM-.'
+        "id": "v0-4-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd2-3-1',
-        speaker: 'A',
-        speakerName: 'Host (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'Hi team! Can everyone hear me clearly and see my shared screen?',
-        textVi: 'Chào cả nhóm! Mọi người có nghe rõ tiếng tôi và thấy màn hình chia sẻ không?',
-        ipa: '/haɪ tiːm! kæn ˈev.ri.wʌn hɪr miː ˈklɪr.li ænd siː maɪ ʃerd skriːn/'
+        "id": "d0-4-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Pronouncing -ed Endings today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd2-3-2',
-        speaker: 'B',
-        speakerName: 'Đức (Học viên)',
-        avatar: '👨‍💻',
-        textEn: 'Yes, we can see it loud and clear! Ready when you are.',
-        textVi: 'Vâng, chúng tôi thấy và nghe rất rõ ràng! Sẵn sàng khi bạn bắt đầu.',
-        ipa: '/jes, wiː kæn siː ɪt laʊd ænd klɪr! ˈred.i wen juː ɑːr/'
+        "id": "d0-4-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'd2-3-3',
-        speaker: 'A',
-        speakerName: 'Host (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'John, you\'re currently on mute if you\'re trying to speak.',
-        textVi: 'John ơi, bạn hiện đang tắt mic nếu như bạn đang định phát biểu đấy.',
-        ipa: '/John, jʊr ˈkɝː.ənt.li ɑːn mjuːt ɪf jʊr ˈtraɪ.ɪŋ tuː spiːk/'
+        "id": "d0-4-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
       },
       {
-        id: 'd2-3-4',
-        speaker: 'B',
-        speakerName: 'Đức (Học viên)',
-        avatar: '👨‍💻',
-        textEn: 'Sorry to interrupt, let me summarize our action items before John speaks.',
-        textVi: 'Xin lỗi vì ngắt lời, để tôi tóm tắt các đầu việc hành động trước khi John nói nhé.',
-        ipa: '/ˈsɑːr.i tuː ˌɪn.t̬əˈrʌpt, let miː ˈsʌm.ə.raɪz ˈaʊ.ɚ ˈæk.ʃən ˈaɪ.t̬əmz bɪˈfɔːr John spiːks/'
+        "id": "d0-4-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    grammarNotes: [
+    "grammarNotes": [
       {
-        titleVi: 'Cấu trúc: Can everyone see/hear...? (Kiểm tra kết nối)',
-        structure: 'Can everyone see my screen / hear me clearly?',
-        explanationVi: 'Câu mở đầu kinh điển trong mọi buổi họp trực tuyến qua Zoom/Teams.',
-        exampleEn: 'Can everyone see my screen?',
-        exampleIpa: '/kæn ˈev.ri.wʌn siː maɪ skriːn/',
-        exampleVi: 'Mọi người có nhìn thấy màn hình của tôi không?'
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
       }
     ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Kiểm Tra Tương Tác Họp Trực Tuyến',
-      pattern: 'Can everyone [Hear / See] my [Audio / Screen] clearly?',
-      formulaVi: 'Mọi người có [nghe / nhìn] thấy [âm thanh / màn hình] rõ ràng không?',
-      usageVi: 'Dùng khi bắt đầu trình bày trong cuộc họp online.',
-      examples: [
-        { en: 'Can everyone see my presentation slides clearly?', ipa: '/kæn ˈev.ri.wʌn siː maɪ ˌprez.ənˈteɪ.ʃən slaɪdz ˈklɪr.li/', vi: 'Mọi người có nhìn thấy slide thuyết trình của tôi rõ không?', fillWord: 'presentation slides' }
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Tuyệt Chiêu Đọc Đuôi -ed Quá Khứ Chuẩn Xác Không Học Vẹt",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-2-3-1',
-        promptVi: 'Nghe và chọn từ chỉ trạng thái tắt mic:',
-        audioWord: 'mute',
-        options: [
-          { word: 'mute', ipa: '/mjuːt/', meaningVi: 'tắt mic' },
-          { word: 'mood', ipa: '/muːd/', meaningVi: 'tâm trạng (đuôi /d/)' }
+        "id": "drill-0-4-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: '"Mute" có âm đuôi /t/ dứt khoát, còn "mood" kết thúc bằng âm /d/ rung nhẹ.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
       }
     ]
   },
   {
-    id: 'lv2-lesson-4',
-    levelId: 'lv2',
-    titleEn: 'US-Style Email & Business Messaging',
-    titleVi: 'Viết Email & Nhắn Tin Công Việc Ngắn Gọn Kiểu Mỹ',
-    descriptionVi: 'Cách viết email trực diện, đi thẳng vào vấn đề (Bottom Line Up Front), gửi file đính kèm và xác nhận tiến độ.',
-    icon: 'Mail',
-    durationMinutes: 15,
-    tags: ['Email', 'Messaging', 'Công sở'],
-    keyTakeaways: [
-      'Mở đầu chuyên nghiệp: I hope this email finds you well',
-      'Đính kèm file: Please find the attached report for your review',
-      'Kêu gọi hành động: Please let me know your thoughts by 5 PM'
+    "id": "lv0-lesson-5",
+    "levelId": "lv0",
+    "titleEn": "Confusing Vowel Pairs: /iː/ vs /ɪ/",
+    "titleVi": "Cặp Âm Gây Lú: Mẹo Cười Tươi vs Mặt Quạu (/iː/ vs /ɪ/)",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ cặp âm gây lú: mẹo cười tươi vs mặt quạu (/iː/ vs /ɪ/) với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Confusing Vowel Pairs: /iː/ vs /ɪ/",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Mẹo Phát Âm "Attached" và "Appreciate"',
-        description: 'Attached /əˈtætʃt/ đuôi -ed đọc thành /t/ sau /tʃ/. Appreciate /əˈpriː.ʃi.eɪt/ có âm /ʃ/.',
-        rule: 'Không đọc attach-chịt.',
-        examples: [
-          { en: 'attached file', ipa: '/əˈtætʃt faɪl/', vi: 'tệp đính kèm', soundTip: 'Bật /t/ dứt khoát' },
-          { en: 'appreciate', ipa: '/əˈpriː.ʃi.eɪt/', vi: 'trân trọng, cảm kích', soundTip: 'Âm /iː/ dài' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Confusing Vowel Pairs",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v2-4-1',
-        word: 'attached',
-        ipa: '/əˈtætʃt/',
-        partOfSpeech: 'adj',
-        meaningVi: 'được đính kèm (tài liệu)',
-        exampleSentence: 'Please review the attached spreadsheet.',
-        exampleSentenceVi: 'Xin vui lòng xem qua bảng tính đính kèm.',
-        endingSoundNote: 'Cụm đuôi /tʃt/ bật nổ dứt khoát.',
-        americanTip: 'Từ luôn có trong các email công việc.'
+        "id": "v0-5-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v2-4-2',
-        word: 'appreciate',
-        ipa: '/əˈpriː.ʃi.eɪt/',
-        partOfSpeech: 'verb',
-        meaningVi: 'đánh giá cao, cảm kích',
-        exampleSentence: 'I really appreciate your timely feedback.',
-        exampleSentenceVi: 'Tôi rất cảm kích phản hồi kịp thời của bạn.',
-        endingSoundNote: 'Âm giữa là /ʃi/, đuôi /eɪt/.',
-        americanTip: 'Dùng thay cho "Thank you very much" trang trọng.'
+        "id": "v0-5-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'v2-4-3',
-        word: 'follow up',
-        ipa: '/ˈfɑːl.oʊ ʌp/',
-        partOfSpeech: 'phrasal verb',
-        meaningVi: 'theo dõi, hỏi thăm tiến độ tiếp theo',
-        exampleSentence: 'I am writing to follow up on our discussion.',
-        exampleSentenceVi: 'Tôi viết email này để theo dõi tiếp cuộc thảo luận của chúng ta.',
-        endingSoundNote: 'Nối âm: fal-low-wup.',
-        americanTip: 'Thuật ngữ tiêu chuẩn trong giao tiếp kinh doanh.'
+        "id": "v0-5-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v2-4-4',
-        word: 'deadline',
-        ipa: '/ˈded.laɪn/',
-        partOfSpeech: 'noun',
-        meaningVi: 'hạn chót hoàn thành',
-        exampleSentence: 'The final deadline is this Friday.',
-        exampleSentenceVi: 'Hạn chót cuối cùng là thứ Sáu tuần này.',
-        endingSoundNote: 'Âm /d/ nén hơi trước line.',
-        americanTip: 'Trọng âm rơi vào DEAD-.'
+        "id": "v0-5-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd2-4-1',
-        speaker: 'A',
-        speakerName: 'Manager (Mỹ)',
-        avatar: '👩‍💼',
-        textEn: 'Hi Linh! Just following up on the quarterly budget draft.',
-        textVi: 'Chào Linh! Tôi nhắn tin để theo dõi bản thảo ngân sách quý.',
-        ipa: '/haɪ Linh! dʒʌst ˈfɑːl.oʊ.ɪŋ ʌp ɑːn ðə ˈkwɔːr.tɚ.li ˈbʌdʒ.ɪt dræft/'
+        "id": "d0-5-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Confusing Vowel Pairs today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd2-4-2',
-        speaker: 'B',
-        speakerName: 'Linh (Học viên)',
-        avatar: '👩‍💻',
-        textEn: 'Good morning! I just emailed you the attached document for your review.',
-        textVi: 'Chào buổi sáng! Tôi vừa gửi email tài liệu đính kèm để bạn xem qua rồi ạ.',
-        ipa: '/ɡʊd ˈmɔːr.nɪŋ! aɪ dʒʌst ˈiː.meɪld juː ðə əˈtætʃt ˈdɑː.kjə.mənt fɔːr jɔːr rɪˈvjuː/'
+        "id": "d0-5-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'd2-4-3',
-        speaker: 'A',
-        speakerName: 'Manager (Mỹ)',
-        avatar: '👩‍💼',
-        textEn: 'Awesome turnaround! I truly appreciate your prompt delivery ahead of the deadline.',
-        textVi: 'Tốc độ xử lý tuyệt vời! Tôi rất cảm kích vì bạn hoàn thành sớm trước hạn chót.',
-        ipa: '/ˈɑː.səm ˈtɝːn.əˌraʊnd! aɪ ˈtruː.li əˈpriː.ʃi.eɪt jɔːr prɑːmpt dɪˈlɪv.ɚ.i əˈhed ʌv ðə ˈded.laɪn/'
+        "id": "d0-5-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
       },
       {
-        id: 'd2-4-4',
-        speaker: 'B',
-        speakerName: 'Linh (Học viên)',
-        avatar: '👩‍💻',
-        textEn: 'You are very welcome. Let me know if you need any adjustments.',
-        textVi: 'Không có chi ạ. Cứ báo tôi nếu cần điều chỉnh thêm nhé.',
-        ipa: '/juː ɑːr ˈver.i ˈwel.kəm. let miː noʊ ɪf juː niːd ˈen.i əˈdʒʌst.mənts/'
+        "id": "d0-5-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    grammarNotes: [
+    "grammarNotes": [
       {
-        titleVi: 'Cấu trúc: I am writing to follow up on + [Topic]',
-        structure: 'I am writing to follow up on + [Topic / Discussion]',
-        explanationVi: 'Mẫu câu mở đầu chuẩn mực khi gửi email nhắc việc hoặc theo dõi dự án.',
-        exampleEn: 'I am writing to follow up on our meeting.',
-        exampleIpa: '/aɪ æm ˈraɪ.t̬ɪŋ tuː ˈfɑːl.oʊ ʌp ɑːn ˈaʊ.ɚ ˈmiː.t̬ɪŋ/',
-        exampleVi: 'Tôi viết thư này để theo dõi nội dung cuộc họp của chúng ta.'
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
       }
     ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Gửi Tài Liệu & Đề Nghị Xem Xét',
-      pattern: 'Please find the attached [Tên tài liệu] for your review by [Thời gian].',
-      formulaVi: 'Xin vui lòng xem qua [tài liệu] đính kèm trước [giờ].',
-      usageVi: 'Mẫu câu viết email hoặc tin nhắn Slack/Teams tiêu chuẩn.',
-      examples: [
-        { en: 'Please find the attached report for your review by 5 PM.', ipa: '/pliːz faɪnd ðə əˈtætʃt rɪˈpɔːrt fɔːr jɔːr rɪˈvjuː baɪ faɪv piː em/', vi: 'Xin vui lòng xem qua báo cáo đính kèm trước 5 giờ chiều.', fillWord: 'report / 5 PM' }
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Cặp Âm Gây Lú",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-2-4-1',
-        promptVi: 'Nghe và chọn từ chỉ tệp đính kèm:',
-        audioWord: 'attached',
-        options: [
-          { word: 'attached', ipa: '/əˈtætʃt/', meaningVi: 'được đính kèm (đuôi /t/)' },
-          { word: 'attacks', ipa: '/əˈtæks/', meaningVi: 'tấn công (đuôi /ks/)' }
+        "id": "drill-0-5-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: '"Attached" có âm đuôi /tʃt/, khác với "attacks" có âm đuôi /ks/.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
       }
     ]
   },
   {
-    id: 'lv2-lesson-5',
-    levelId: 'lv2',
-    titleEn: 'Project Progress & Handling Deadlines',
-    titleVi: 'Báo Cáo Tiến Độ Dự Án & Xử Lý Deadline',
-    descriptionVi: 'Cách báo cáo đúng tiến độ (On track), giải thích sự cố nghẽn cổ chai (Bottleneck) và xin gia hạn deadline chuyên nghiệp.',
-    icon: 'Clock',
-    durationMinutes: 15,
-    tags: ['Tiến độ', 'Deadline', 'Dự án'],
-    keyTakeaways: [
-      'Báo cáo tích cực: Everything is on track for Friday launch',
-      'Nêu khó khăn khéo léo: We encountered a minor bottleneck with...',
-      'Đề xuất giải pháp thay vì chỉ than vãn'
+    "id": "lv0-lesson-6",
+    "levelId": "lv0",
+    "titleEn": "Ash A /æ/ vs Short E /e/",
+    "titleVi": "Âm A Rớt Hàm /æ/ vs /e/ (Mẹo Há To Cắn Burger)",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ âm a rớt hàm /æ/ vs /e/ (mẹo há to cắn burger) với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Ash A /æ/ vs Short E /e/",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Mẹo Phát Âm "Bottleneck" và "Prioritize"',
-        description: 'Bottleneck /ˈbɑː.t̬əl.nek/ có âm Flap T và âm L tối. Prioritize /praɪˈɔːr.ə.taɪz/ có 4 âm tiết.',
-        rule: 'Nhấn trọng âm rõ ràng.',
-        examples: [
-          { en: 'on track', ipa: '/ɑːn træk/', vi: 'đúng tiến độ', soundTip: 'Bật /k/ dứt khoát' },
-          { en: 'bottleneck', ipa: '/ˈbɑː.t̬əl.nek/', vi: 'điểm nghẽn', soundTip: 'Đọc là bah-del-nek' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Ash A /æ/ vs Short E /e/",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v2-5-1',
-        word: 'on track',
-        ipa: '/ɑːn træk/',
-        partOfSpeech: 'idiom / phrase',
-        meaningVi: 'đúng tiến độ dự kiến',
-        exampleSentence: 'We are on track to finish by Friday.',
-        exampleSentenceVi: 'Chúng tôi đang đúng tiến độ để hoàn thành trước thứ Sáu.',
-        endingSoundNote: 'Âm /æ/ há to, kết thúc /k/.',
-        americanTip: 'Cụm từ được các sếp Tây thích nghe nhất.'
+        "id": "v0-6-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v2-5-2',
-        word: 'bottleneck',
-        ipa: '/ˈbɑː.t̬əl.nek/',
-        partOfSpeech: 'noun',
-        meaningVi: 'điểm nghẽn cổ chai gây chậm trễ',
-        exampleSentence: 'Server approval is our main bottleneck.',
-        exampleSentenceVi: 'Phê duyệt máy chủ là điểm nghẽn chính của chúng tôi.',
-        endingSoundNote: 'Flap T ở giữa, bật /k/ ở cuối.',
-        americanTip: 'Dùng khi giải thích lý do chậm tiến độ.'
+        "id": "v0-6-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'v2-5-3',
-        word: 'prioritize',
-        ipa: '/praɪˈɔːr.ə.taɪz/',
-        partOfSpeech: 'verb',
-        meaningVi: 'ưu tiên, đặt lên hàng đầu',
-        exampleSentence: 'We must prioritize client security first.',
-        exampleSentenceVi: 'Chúng ta phải ưu tiên bảo mật của khách hàng trước.',
-        endingSoundNote: 'Âm cuối /z/ rung nhẹ.',
-        americanTip: 'Trọng âm rơi vào -OR-.'
+        "id": "v0-6-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v2-5-4',
-        word: 'milestone',
-        ipa: '/ˈmaɪl.stoʊn/',
-        partOfSpeech: 'noun',
-        meaningVi: 'cột mốc quan trọng của dự án',
-        exampleSentence: 'We reached our first key milestone.',
-        exampleSentenceVi: 'Chúng tôi đã đạt được cột mốc quan trọng đầu tiên.',
-        endingSoundNote: 'Cụm /st/, âm đuôi /n/.',
-        americanTip: 'Trọng âm rơi vào MILE-.'
+        "id": "v0-6-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd2-5-1',
-        speaker: 'A',
-        speakerName: 'Director (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'How is the new product launch shaping up for this quarter?',
-        textVi: 'Tiến độ ra mắt sản phẩm mới trong quý này đang thế nào rồi?',
-        ipa: '/haʊ ɪz ðə nuː ˈprɑː.dʌkt lɑːntʃ ˈʃeɪ.pɪŋ ʌp fɔːr ðɪs ˈkwɔːr.t̬ɚ/'
+        "id": "d0-6-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Ash A /æ/ vs Short E /e/ today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd2-5-2',
-        speaker: 'B',
-        speakerName: 'Bình (Học viên)',
-        avatar: '👨‍💻',
-        textEn: 'We are currently on track to reach our main milestone by next Wednesday.',
-        textVi: 'Chúng tôi hiện đang đúng tiến độ để đạt cột mốc chính trước thứ Tư tới.',
-        ipa: '/wiː ɑːr ˈkɝː.ənt.li ɑːn træk tuː riːtʃ ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn baɪ nekst ˈwenz.deɪ/'
+        "id": "d0-6-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'd2-5-3',
-        speaker: 'A',
-        speakerName: 'Director (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'Are there any potential bottlenecks that could delay the release?',
-        textVi: 'Có bất kỳ điểm nghẽn tiềm ẩn nào có thể làm chậm ngày phát hành không?',
-        ipa: '/ɑːr ðer ˈen.i poʊˈten.ʃəl ˈbɑː.t̬əl.neks ðæt kʊd dɪˈleɪ ðə rɪˈliːs/'
+        "id": "d0-6-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
       },
       {
-        id: 'd2-5-4',
-        speaker: 'B',
-        speakerName: 'Bình (Học viên)',
-        avatar: '👨‍💻',
-        textEn: 'None at all. We prioritized quality testing to prevent any unexpected issues.',
-        textVi: 'Dạ không hề ạ. Chúng tôi đã ưu tiên kiểm thử chất lượng để phòng ngừa mọi sự cố bất ngờ.',
-        ipa: '/nʌn æt ɑːl. wiː praɪˈɔːr.ə.taɪzd ˈkwɑː.lə.t̬i ˈtes.tɪŋ tuː prɪˈvent ˈen.i ˌʌn.ɪkˈspek.tɪd ˈɪʃ.uːz/'
+        "id": "d0-6-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    grammarNotes: [
+    "grammarNotes": [
       {
-        titleVi: 'Cấu trúc: We are on track to + V (Báo cáo đúng tiến độ)',
-        structure: 'We are on track to + Verb + by [Time]',
-        explanationVi: 'Cấu trúc thể hiện sự tự tin và khả năng kiểm soát tiến độ công việc xuất sắc.',
-        exampleEn: 'We are on track to launch next week.',
-        exampleIpa: '/wiː ɑːr ɑːn træk tuː lɑːntʃ nekst wiːk/',
-        exampleVi: 'Chúng tôi đang đúng tiến độ để ra mắt vào tuần tới.'
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
       }
     ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Báo Cáo Tiến Độ Dự Án Chuẩn Xác',
-      pattern: 'We are currently on track to [Mục tiêu] by [Hạn chót].',
-      formulaVi: 'Chúng tôi hiện đang đúng tiến độ để [hoàn thành] trước [hạn chót].',
-      usageVi: 'Dùng khi báo cáo tiến độ trong các buổi họp giao ban.',
-      examples: [
-        { en: 'We are currently on track to complete the testing by Friday.', ipa: '/wiː ɑːr ˈkɝː.ənt.li ɑːn træk tuː kəmˈpliːt ðə ˈtes.tɪŋ baɪ ˈfraɪ.deɪ/', vi: 'Chúng tôi hiện đang đúng tiến độ để hoàn thành kiểm thử trước thứ Sáu.', fillWord: 'complete the testing / Friday' }
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Âm A Rớt Hàm /æ/ vs /e/ (Mẹo Há To Cắn Burger)",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-2-5-1',
-        promptVi: 'Nghe và chọn cụm từ chỉ đúng tiến độ:',
-        audioWord: 'on track',
-        options: [
-          { word: 'on track', ipa: '/ɑːn træk/', meaningVi: 'đúng tiến độ' },
-          { word: 'on time', ipa: '/ɑːn taɪm/', meaningVi: 'đúng giờ' }
+        "id": "drill-0-6-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: '"On track" mang ý nghĩa bám sát tiến độ toàn bộ quá trình.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
       }
     ]
   },
   {
-    id: 'lv2-lesson-6',
-    levelId: 'lv2',
-    titleEn: 'Presenting Ideas & Polite Disagreement',
-    titleVi: 'Thuyết Trình Ý Tưởng & Phản Biện Lịch Sự (Disagree Politely)',
-    descriptionVi: 'Cách trình bày ý tưởng thuyết phục, chuyển ý mượt mà và cách bất đồng quan điểm lịch sự mà không gây mất lòng đồng nghiệp.',
-    icon: 'Award',
-    durationMinutes: 15,
-    tags: ['Thuyết trình', 'Phản biện', 'Công sở'],
-    keyTakeaways: [
-      'Mở đầu ý tưởng: From my perspective, I propose that...',
-      'Bất đồng lịch sự: I see your point, however...',
-      'Tóm tắt kết luận: In conclusion, this approach allows us to...'
+    "id": "lv0-lesson-7",
+    "levelId": "lv0",
+    "titleEn": "Long U /uː/ vs Short U /ʊ/",
+    "titleVi": "Cặp Âm U Dài /uː/ (Food) vs U Ngắn /ʊ/ (Good, Look)",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ cặp âm u dài /uː/ (food) vs u ngắn /ʊ/ (good, look) với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Long U /uː/ vs Short U /ʊ/",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Mẹo Phát Âm "Perspective" và "Proposal"',
-        description: 'Perspective /pɚˈspek.tɪv/ có 3 âm tiết, trọng âm rơi vào -SPEC-. Proposal /prəˈpoʊ.zəl/ âm giữa là /z/.',
-        rule: 'Ngắt nghỉ dứt khoát trước từ however.',
-        examples: [
-          { en: 'perspective', ipa: '/pɚˈspek.tɪv/', vi: 'góc nhìn, quan điểm', soundTip: 'Bật /v/ nhẹ' },
-          { en: 'however', ipa: '/haʊˈev.ɚ/', vi: 'tuy nhiên', soundTip: 'Hạ giọng nhẹ' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Long U /uː/ vs Short U /ʊ/",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v2-6-1',
-        word: 'perspective',
-        ipa: '/pɚˈspek.tɪv/',
-        partOfSpeech: 'noun',
-        meaningVi: 'góc nhìn, quan điểm cá nhân',
-        exampleSentence: 'From my perspective, this strategy is safer.',
-        exampleSentenceVi: 'Theo quan điểm của tôi, chiến lược này an toàn hơn.',
-        endingSoundNote: 'Âm /v/ khép nhẹ ở răng trên môi dưới.',
-        americanTip: 'Cụm "from my perspective" rất trang nhã.'
+        "id": "v0-7-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v2-6-2',
-        word: 'proposal',
-        ipa: '/prəˈpoʊ.zəl/',
-        partOfSpeech: 'noun',
-        meaningVi: 'đề xuất, bản kế hoạch',
-        exampleSentence: 'We submitted the final budget proposal.',
-        exampleSentenceVi: 'Chúng tôi đã nộp bản đề xuất ngân sách cuối cùng.',
-        endingSoundNote: 'Âm giữa là /z/, đuôi /əl/.',
-        americanTip: 'Trọng âm rơi vào -PO-.'
+        "id": "v0-7-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'v2-6-3',
-        word: 'however',
-        ipa: '/haʊˈev.ɚ/',
-        partOfSpeech: 'adv / conjunction',
-        meaningVi: 'tuy nhiên, dẫu vậy',
-        exampleSentence: 'I see your point, however we need more data.',
-        exampleSentenceVi: 'Tôi hiểu ý bạn, tuy nhiên chúng ta cần thêm dữ liệu.',
-        endingSoundNote: 'Âm đuôi /ɚ/ cong lưỡi.',
-        americanTip: 'Dùng để chuyển ý phản biện lịch sự.'
+        "id": "v0-7-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v2-6-4',
-        word: 'conclusion',
-        ipa: '/kənˈkluː.ʒən/',
-        partOfSpeech: 'noun',
-        meaningVi: 'kết luận, tổng kết',
-        exampleSentence: 'In conclusion, this plan saves both time and cost.',
-        exampleSentenceVi: 'Tóm lại, kế hoạch này tiết kiệm cả thời gian lẫn chi phí.',
-        endingSoundNote: 'Âm giữa là /ʒ/ rung lưỡi.',
-        americanTip: 'Dùng chốt bài thuyết trình.'
+        "id": "v0-7-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd2-6-1',
-        speaker: 'A',
-        speakerName: 'VP of Strategy (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'I suggest we immediately shift our entire budget to social media marketing.',
-        textVi: 'Tôi đề xuất chúng ta chuyển ngay toàn bộ ngân sách sang marketing mạng xã hội.',
-        ipa: '/aɪ səˈdʒest wiː ɪˈmiː.di.ət.li ʃɪft ˈaʊ.ɚ ɪnˈtaɪr ˈbʌdʒ.ɪt tuː ˈsoʊ.ʃəl ˈmiː.di.ə ˈmɑːr.kɪ.t̬ɪŋ/'
+        "id": "d0-7-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Long U /uː/ vs Short U /ʊ/ today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd2-6-2',
-        speaker: 'B',
-        speakerName: 'Thành (Học viên)',
-        avatar: '👨‍💼',
-        textEn: 'I see your point; however, from my perspective, keeping our search ads maintains steady revenue.',
-        textVi: 'Tôi hiểu ý bạn; tuy nhiên theo quan điểm của tôi, việc duy trì quảng cáo tìm kiếm giúp giữ vững nguồn doanh thu ổn định.',
-        ipa: '/aɪ siː jɔːr pɔɪnt; haʊˈev.ɚ, frʌm maɪ pɚˈspek.tɪv, ˈkiː.pɪŋ ˈaʊ.ɚ sɜːrtʃ ædz meɪnˈteɪnz ˈsted.i ˈrev.ə.nuː/'
+        "id": "d0-7-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'd2-6-3',
-        speaker: 'A',
-        speakerName: 'VP of Strategy (Mỹ)',
-        avatar: '👨‍💼',
-        textEn: 'That\'s a fair observation. How do you propose we balance both channels?',
-        textVi: 'Đó là một nhận định rất xác đáng. Vậy bạn đề xuất cân bằng cả hai kênh như thế nào?',
-        ipa: '/ðæts ə fer ˌɑːb.zɚˈveɪ.ʃən. haʊ duː juː prəˈpoʊz wiː ˈbæl.əns boʊθ ˈtʃæn.əlz/'
+        "id": "d0-7-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
       },
       {
-        id: 'd2-6-4',
-        speaker: 'B',
-        speakerName: 'Thành (Học viên)',
-        avatar: '👨‍💼',
-        textEn: 'In conclusion, a 70-30 split proposal gives us aggressive growth with minimal risk.',
-        textVi: 'Tóm lại, đề xuất phân bổ 70-30 sẽ mang lại tăng trưởng mạnh mẽ với rủi ro thấp nhất.',
-        ipa: '/ɪn kənˈkluː.ʒən, ə ˈsev.ən.t̬i ˈθɝː.t̬i splɪt prəˈpoʊ.zəl ɡɪvz ʌs əˈɡres.ɪv ɡroʊθ wɪð ˈmɪn.ə.məl rɪsk/'
+        "id": "d0-7-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    grammarNotes: [
+    "grammarNotes": [
       {
-        titleVi: 'Cấu trúc: I see your point; however... (Phản biện lịch sự)',
-        structure: 'I see your point; however, from my perspective + [Clause]',
-        explanationVi: 'Công thức vàng trong đàm phán kinh doanh: ghi nhận ý kiến trước khi đưa ra góc nhìn phản biện.',
-        exampleEn: 'I see your point; however, we need to consider costs.',
-        exampleIpa: '/aɪ siː jɔːr pɔɪnt; haʊˈev.ɚ, wiː niːd tuː kənˈsɪd.ɚ kɑːsts/',
-        exampleVi: 'Tôi hiểu ý bạn; tuy nhiên, chúng ta cần cân nhắc chi phí.'
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
       }
     ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Trình Bày Quan Điểm & Đề Xuất',
-      pattern: 'In conclusion, this approach allows us to [Lợi ích] while [Tối ưu rủi ro].',
-      formulaVi: 'Tóm lại, hướng tiếp cận này cho phép chúng ta [lợi ích] trong khi [tối ưu rủi ro].',
-      usageVi: 'Dùng khi chốt phần kết luận trong các bài thuyết trình trước ban giám đốc.',
-      examples: [
-        { en: 'In conclusion, this approach allows us to expand quickly while minimizing financial risk.', ipa: '/ɪn kənˈkluː.ʒən, ðɪs əˈproʊtʃ əˈlaʊz ʌs tuː ɪkˈspænd ˈkwɪk.li waɪl ˈmɪn.ə.maɪz.ɪŋ faɪˈnæn.ʃəl rɪsk/', vi: 'Tóm lại, giải pháp này cho phép chúng ta mở rộng nhanh chóng trong khi giảm thiểu rủi ro tài chính.', fillWord: 'expand quickly / minimizing financial risk' }
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Cặp Âm U Dài /uː/ (Food) vs U Ngắn /ʊ/ (Good, Look)",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-2-6-1',
-        promptVi: 'Nghe và chọn từ chỉ góc nhìn, quan điểm:',
-        audioWord: 'perspective',
-        options: [
-          { word: 'perspective', ipa: '/pɚˈspek.tɪv/', meaningVi: 'góc nhìn, quan điểm' },
-          { word: 'prospective', ipa: '/prəˈspek.tɪv/', meaningVi: 'tiềm năng, tương lai' }
+        "id": "drill-0-7-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: '"Perspective" có âm đầu /pɚ/, còn "prospective" có âm đầu /prə/.'
-      }
-    ]
-  },
-
-  // ================= LEVEL 3 (6 BÀI) =================
-  {
-    id: 'lv3-lesson-1',
-    levelId: 'lv3',
-    titleEn: 'International Airport & Customs Navigation',
-    titleVi: 'Thủ Tục Sân Bay Quốc Tế, Xuất Nhập Cảnh & Hải Quan',
-    descriptionVi: 'Tự tin trả lời câu hỏi của nhân viên hải quan Mỹ, khai báo hành lý, tìm cổng bay (Gate) và xử lý hành lý thất lạc.',
-    icon: 'Plane',
-    durationMinutes: 15,
-    tags: ['Sân bay', 'Hải quan', 'Du lịch tự túc'],
-    keyTakeaways: [
-      'Trả lời mục đích chuyến đi: I\'m here for vacation / business',
-      'Thời gian lưu trú: I will be staying for 10 days',
-      'Tìm cổng bay và hành lý ký gửi'
-    ],
-    vietnamesePronunciationTips: [
-      {
-        title: 'Mẹo Phát Âm "Passport" và "Customs"',
-        description: 'Passport /ˈpæs.pɔːrt/ có âm /æ/ rớt hàm, cong lưỡi âm /r/ rồi bật /t/. Customs /ˈkʌs.təmz/ đuôi là /mz/.',
-        rule: 'Không đọc customs thành "cát-tơm".',
-        examples: [
-          { en: 'passport', ipa: '/ˈpæs.pɔːrt/', vi: 'hộ chiếu', soundTip: 'Bật /t/ dứt khoát' },
-          { en: 'customs', ipa: '/ˈkʌs.təmz/', vi: 'hải quan', soundTip: 'Rung /z/ đuôi' },
-        ]
-      }
-    ],
-    vocabulary: [
-      {
-        id: 'v3-1-1',
-        word: 'passport',
-        ipa: '/ˈpæs.pɔːrt/',
-        partOfSpeech: 'noun',
-        meaningVi: 'hộ chiếu',
-        exampleSentence: 'Please have your passport and boarding pass ready.',
-        exampleSentenceVi: 'Xin vui lòng chuẩn bị sẵn hộ chiếu và thẻ lên máy bay.',
-        endingSoundNote: 'Âm /æ/ hạ hàm, kết thúc bằng /rt/.',
-        americanTip: 'Vật bất ly thân khi bay quốc tế.'
-      },
-      {
-        id: 'v3-1-2',
-        word: 'destination',
-        ipa: '/ˌdes.təˈneɪ.ʃən/',
-        partOfSpeech: 'noun',
-        meaningVi: 'điểm đến du lịch',
-        exampleSentence: 'What is your final destination today?',
-        exampleSentenceVi: 'Điểm đến cuối cùng của bạn hôm nay là đâu?',
-        endingSoundNote: 'Trọng âm rơi vào -NAY- /neɪ/.',
-        americanTip: 'Nhân viên hải quan thường xuyên hỏi câu này.'
-      },
-      {
-        id: 'v3-1-3',
-        word: 'declare',
-        ipa: '/dɪˈkler/',
-        partOfSpeech: 'verb',
-        meaningVi: 'khai báo hải quan (tiền tệ, hàng hóa)',
-        exampleSentence: 'Do you have anything to declare?',
-        exampleSentenceVi: 'Bạn có thứ gì cần khai báo hải quan không?',
-        endingSoundNote: 'Âm đuôi /er/ cong lưỡi.',
-        americanTip: 'Trả lời: "Nothing to declare" nếu không có hàng đặc biệt.'
-      },
-      {
-        id: 'v3-1-4',
-        word: 'luggage',
-        ipa: '/ˈlʌɡ.ɪdʒ/',
-        partOfSpeech: 'noun',
-        meaningVi: 'hành lý (ký gửi hoặc xách tay)',
-        exampleSentence: 'Where can I claim my luggage?',
-        exampleSentenceVi: 'Tôi có thể nhận lại hành lý ở đâu?',
-        endingSoundNote: 'Âm đuôi là /ɪdʒ/ nổ gió.',
-        americanTip: 'Người Mỹ dùng "luggage" hoặc "baggage".'
-      }
-    ],
-    dialogue: [
-      {
-        id: 'd3-1-1',
-        speaker: 'A',
-        speakerName: 'Officer (Mỹ)',
-        avatar: '👮‍♂️',
-        textEn: 'Passport please. What is the main purpose of your visit to the United States?',
-        textVi: 'Xin cho xem hộ chiếu. Mục đích chính chuyến đi đến Mỹ của bạn là gì?',
-        ipa: '/ˈpæs.pɔːrt pliːz. wɑːt ɪz ðə meɪn ˈpɝː.pəs ʌv jɔːr ˈvɪz.ɪt tuː ðə juːˈnaɪ.t̬ɪd steɪts/'
-      },
-      {
-        id: 'd3-1-2',
-        speaker: 'B',
-        speakerName: 'Khánh (Học viên)',
-        avatar: '👨‍🎓',
-        textEn: 'I am here on vacation for ten days. I will be visiting Los Angeles and San Francisco.',
-        textVi: 'Tôi đến đây để du lịch nghỉ dưỡng trong 10 ngày. Tôi sẽ đi thăm Los Angeles và San Francisco.',
-        ipa: '/aɪ æm hɪr ɑːn veɪˈkeɪ.ʃən fɔːr ten deɪz. aɪ wɪl biː ˈvɪz.ɪt.ɪŋ lɔːs ˈæn.dʒə.ləs ænd sæn frænˈsɪs.koʊ/'
-      },
-      {
-        id: 'd3-1-3',
-        speaker: 'A',
-        speakerName: 'Officer (Mỹ)',
-        avatar: '👮‍♂️',
-        textEn: 'Do you have any food, fruits, or meat products to declare in your luggage?',
-        textVi: 'Bạn có mang theo thức ăn, hoa quả hay thịt hộp nào cần khai báo trong hành lý không?',
-        ipa: '/duː juː hæv ˈen.i fuːd, fruːts, ɔːr miːt ˈprɑː.dʌkts tuː dɪˈkler ɪn jɔːr ˈlʌɡ.ɪdʒ/'
-      },
-      {
-        id: 'd3-1-4',
-        speaker: 'B',
-        speakerName: 'Khánh (Học viên)',
-        avatar: '👨‍🎓',
-        textEn: 'No officer, I have nothing to declare. Just personal clothing.',
-        textVi: 'Dạ không thưa ngài, tôi không có gì cần khai báo. Chỉ có quần áo cá nhân thôi.',
-        ipa: '/noʊ ˈɑː.fə.sɚ, aɪ hæv ˈnʌθ.ɪŋ tuː dɪˈkler. dʒʌst ˈpɝː.sən.əl ˈkloʊ.ðɪŋ/'
-      }
-    ],
-    grammarNotes: [
-      {
-        titleVi: 'Cấu trúc: I am here for [Purpose] for [Duration]',
-        structure: 'I am here on / for + [Purpose] for + [Time duration]',
-        explanationVi: 'Mẫu câu ngắn gọn chuẩn mực nhất để trả lời nhân viên hải quan sân bay chỉ trong 10 giây.',
-        exampleEn: 'I am here on vacation for ten days.',
-        exampleIpa: '/aɪ æm hɪr ɑːn veɪˈkeɪ.ʃən fɔːr ten deɪz/',
-        exampleVi: 'Tôi đến đây đi du lịch trong 10 ngày.'
-      }
-    ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Trả Lời Hải Quan Sân Bay Quốc Tế',
-      pattern: 'I am here for [Mục đích chuyến đi] for [Số ngày / tuần] days.',
-      formulaVi: 'Tôi đến đây vì mục đích [du lịch/nghỉ dưỡng] trong [X] ngày.',
-      usageVi: 'Câu trả lời chuẩn mực giúp bạn qua cổng hải quan sân bay chỉ trong 30 giây.',
-      examples: [
-        { en: 'I am here for a vacation for seven days.', ipa: '/aɪ æm hɪr fɔːr ə veɪˈkeɪ.ʃən fɔːr ˈsev.ən deɪz/', vi: 'Tôi đến đây để du lịch nghỉ dưỡng trong 7 ngày.', fillWord: 'a vacation / seven' },
-        { en: 'I am here for a business conference for four days.', ipa: '/aɪ æm hɪr fɔːr ə ˈbɪz.nɪs ˈkɑːn.fɚ.əns fɔːr fɔːr deɪz/', vi: 'Tôi đến đây tham dự hội nghị công tác trong 4 ngày.', fillWord: 'a business conference / four' }
-      ]
-    },
-    earTrainingDrills: [
-      {
-        id: 'drill-3-1-1',
-        promptVi: 'Nghe và chọn từ phát âm có âm đuôi /t/ dứt khoát:',
-        audioWord: 'passport',
-        options: [
-          { word: 'passport', ipa: '/ˈpæs.pɔːrt/', meaningVi: 'hộ chiếu' },
-          { word: 'password', ipa: '/ˈpæs.wɜːrd/', meaningVi: 'mật khẩu (đuôi /d/)' }
-        ],
-        correctIndex: 0,
-        explanationVi: '"Passport" kết thúc bằng /rt/ bật /t/, còn "password" kết thúc bằng /rd/ rung nhẹ.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
       }
     ]
   },
   {
-    id: 'lv3-lesson-2',
-    levelId: 'lv3',
-    titleEn: 'Hotel Check-in, Amenities & Tour Booking',
-    titleVi: 'Check-in Khách Sạn, Yêu Cầu Dịch Vụ & Đặt Tour Du Lịch',
-    descriptionVi: 'Cách nhận phòng, hỏi pass Wi-Fi, yêu cầu dọn phòng, xin nâng cấp phòng (Room upgrade) và đặt xe đưa đón.',
-    icon: 'Home',
-    durationMinutes: 15,
-    tags: ['Khách sạn', 'Check-in', 'Du lịch tự túc'],
-    keyTakeaways: [
-      'Nhận phòng: I have a reservation under the name...',
-      'Hỏi tiện ích miễn phí: Is breakfast complimentary?',
-      'Xử lý vấn đề phòng: The air conditioner is not working properly'
+    "id": "lv0-lesson-8",
+    "levelId": "lv0",
+    "titleEn": "Open O /ɑː/ vs Rounded /ɔː/",
+    "titleVi": "Cặp Âm O Mở Họng /ɑː/ (Hot, Coffee) vs /ɔː/ (Talk, Water)",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ cặp âm o mở họng /ɑː/ (hot, coffee) vs /ɔː/ (talk, water) với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Open O /ɑː/ vs Rounded /ɔː/",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Mẹo Phát Âm "Reservation" và "Complimentary"',
-        description: 'Reservation /ˌrez.ɚˈveɪ.ʃən/ nhấn âm 3. Complimentary /ˌkɑːm.pləˈmen.t̬ɚ.i/ có nghĩa là miễn phí đi kèm.',
-        rule: 'Trọng âm rõ ràng.',
-        examples: [
-          { en: 'reservation', ipa: '/ˌrez.ɚˈveɪ.ʃən/', vi: 'đặt phòng trước', soundTip: 'Âm /z/ ở giữa' },
-          { en: 'complimentary', ipa: '/ˌkɑːm.pləˈmen.t̬ɚ.i/', vi: 'miễn phí đi kèm', soundTip: 'Đọc flap T' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Open O /ɑː/ vs Rounded /ɔː/",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v3-2-1',
-        word: 'reservation',
-        ipa: '/ˌrez.ɚˈveɪ.ʃən/',
-        partOfSpeech: 'noun',
-        meaningVi: 'đặt chỗ, đặt phòng trước',
-        exampleSentence: 'I have a reservation for three nights.',
-        exampleSentenceVi: 'Tôi có đặt phòng trước cho ba đêm.',
-        endingSoundNote: 'Trọng âm rơi vào -VAY- /veɪ/.',
-        americanTip: 'Dùng khi check-in khách sạn, nhà hàng.'
+        "id": "v0-8-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v3-2-2',
-        word: 'complimentary',
-        ipa: '/ˌkɑːm.pləˈmen.t̬ɚ.i/',
-        partOfSpeech: 'adj',
-        meaningVi: 'miễn phí đi kèm dịch vụ',
-        exampleSentence: 'Breakfast and Wi-Fi are complimentary.',
-        exampleSentenceVi: 'Bữa sáng và Wi-Fi là dịch vụ miễn phí đi kèm.',
-        endingSoundNote: 'Flap T ở giữa từ.',
-        americanTip: 'Từ sang trọng thay cho chữ "free".'
+        "id": "v0-8-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'v3-2-3',
-        word: 'upgrade',
-        ipa: '/ˈʌp.ɡreɪd/',
-        partOfSpeech: 'noun / verb',
-        meaningVi: 'nâng cấp (hạng phòng, vé máy bay)',
-        exampleSentence: 'Could we get a complimentary room upgrade?',
-        exampleSentenceVi: 'Chúng tôi có thể được nâng cấp phòng miễn phí không?',
-        endingSoundNote: 'Âm đuôi /d/ rung nhẹ.',
-        americanTip: 'Bí quyết xin phòng view đẹp khi đi du lịch.'
+        "id": "v0-8-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v3-2-4',
-        word: 'keycard',
-        ipa: '/ˈkiː.kɑːrd/',
-        partOfSpeech: 'noun',
-        meaningVi: 'thẻ từ mở cửa phòng',
-        exampleSentence: 'Here is your electronic keycard.',
-        exampleSentenceVi: 'Đây là thẻ từ mở khóa phòng của bạn.',
-        endingSoundNote: 'Bật /d/ ở cuối từ card.',
-        americanTip: 'Trọng âm rơi vào KEY-.'
+        "id": "v0-8-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd3-2-1',
-        speaker: 'A',
-        speakerName: 'Receptionist (Mỹ)',
-        avatar: '👩‍💼',
-        textEn: 'Good afternoon! Welcome to Grand Palace Hotel. How may I assist you today?',
-        textVi: 'Chào buổi chiều! Chào mừng quý khách đến khách sạn Grand Palace. Tôi có thể hỗ trợ gì ạ?',
-        ipa: '/ɡʊd ˌæf.tɚˈnuːn! ˈwel.kəm tuː ɡrænd ˈpæl.əs hoʊˈtel. haʊ meɪ aɪ əˈsɪst juː təˈdeɪ/'
+        "id": "d0-8-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Open O /ɑː/ vs Rounded /ɔː/ today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd3-2-2',
-        speaker: 'B',
-        speakerName: 'Hoàng (Học viên)',
-        avatar: '👨‍💼',
-        textEn: 'Hi! I have a reservation for three nights under the name Hoang Nguyen.',
-        textVi: 'Chào bạn! Tôi có đặt phòng trước 3 đêm dưới tên Nguyễn Hoàng.',
-        ipa: '/haɪ! aɪ hæv ə ˌrez.ɚˈveɪ.ʃən fɔːr θriː naɪts ˈʌn.dɚ ðə neɪm Hoang Nguyen/'
+        "id": "d0-8-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'd3-2-3',
-        speaker: 'A',
-        speakerName: 'Receptionist (Mỹ)',
-        avatar: '👩‍💼',
-        textEn: 'I found your booking! We upgraded you to an ocean view suite with complimentary breakfast.',
-        textVi: 'Tôi tìm thấy phòng của bạn rồi! Chúng tôi đã nâng cấp bạn lên phòng suite hướng biển có bữa sáng miễn phí.',
-        ipa: '/aɪ faʊnd jɔːr ˈbʊk.ɪŋ! wiː ˈʌp.ɡreɪ.dɪd juː tuː ən ˈoʊ.ʃən vjuː swiːt wɪð ˌkɑːm.pləˈmen.t̬ɚ.i ˈbrek.fəst/'
+        "id": "d0-8-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
       },
       {
-        id: 'd3-2-4',
-        speaker: 'B',
-        speakerName: 'Hoàng (Học viên)',
-        avatar: '👨‍💼',
-        textEn: 'That is fantastic news! Thank you so much for the wonderful hospitality.',
-        textVi: 'Tin tuyệt vời quá! Cảm ơn bạn rất nhiều vì sự hiếu khách chu đáo này.',
-        ipa: '/ðæt ɪz fænˈtæs.tɪk nuːz! θæŋk juː soʊ mʌtʃ fɔːr ðə ˈwʌn.dɚ.fəl ˌhɑː.spɪˈtæl.ə.t̬i/'
+        "id": "d0-8-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    grammarNotes: [
+    "grammarNotes": [
       {
-        titleVi: 'Cấu trúc: I have a reservation under the name [Name]',
-        structure: 'I have a reservation under the name + [Your Name]',
-        explanationVi: 'Mẫu câu chuẩn quốc tế khi check-in tại mọi khách sạn và nhà hàng trên thế giới.',
-        exampleEn: 'I have a reservation under the name Hoang Nguyen.',
-        exampleIpa: '/aɪ hæv ə ˌrez.ɚˈveɪ.ʃən ˈʌn.dɚ ðə neɪm Hoang Nguyen/',
-        exampleVi: 'Tôi có đặt phòng trước dưới tên Nguyễn Hoàng.'
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
       }
     ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Check-in Nhận Phòng Khách Sạn',
-      pattern: 'I have a reservation for [Số đêm] nights under the name [Tên].',
-      formulaVi: 'Tôi có đặt phòng trước cho [X] đêm dưới tên [Tên].',
-      usageVi: 'Dùng khi làm thủ tục nhận phòng ở mọi khách sạn quốc tế.',
-      examples: [
-        { en: 'I have a reservation for three nights under the name David.', ipa: '/aɪ hæv ə ˌrez.ɚˈveɪ.ʃən fɔːr θriː naɪts ˈʌn.dɚ ðə neɪm ˈdeɪ.vɪd/', vi: 'Tôi có đặt phòng 3 đêm dưới tên David.', fillWord: 'three / David' }
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Cặp Âm O Mở Họng /ɑː/ (Hot, Coffee) vs /ɔː/ (Talk, Water)",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-3-2-1',
-        promptVi: 'Nghe và chọn từ mang nghĩa đặt phòng trước:',
-        audioWord: 'reservation',
-        options: [
-          { word: 'reservation', ipa: '/ˌrez.ɚˈveɪ.ʃən/', meaningVi: 'đặt phòng trước' },
-          { word: 'preservation', ipa: '/ˌprez.ɚˈveɪ.ʃən/', meaningVi: 'bảo tồn, giữ gìn' }
+        "id": "drill-0-8-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: '"Reservation" có âm đầu /rez/, còn "preservation" có âm đầu /prez/.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
       }
     ]
   },
   {
-    id: 'lv3-lesson-3',
-    levelId: 'lv3',
-    titleEn: 'Travel Emergencies & Pharmacy Assistance',
-    titleVi: 'Cứu Nguy Sự Cố Du Lịch, Mua Thuốc Tây & Bệnh Viện',
-    descriptionVi: 'Cách trình bày triệu chứng bệnh khi vào hiệu thuốc Tây (Pharmacy), hỏi liều dùng và giải quyết khi bị mất hộ chiếu/đồ đạc.',
-    icon: 'AlertCircle',
-    durationMinutes: 15,
-    tags: ['Hiệu thuốc', 'Sự cố', 'Khẩn cấp'],
-    keyTakeaways: [
-      'Nêu triệu chứng: I have a headache / fever / sore throat',
-      'Hỏi liều lượng: How many times a day should I take this?',
-      'Báo mất đồ: I lost my wallet, where is the nearest police station?'
+    "id": "lv0-lesson-9",
+    "levelId": "lv0",
+    "titleEn": "Interdental Sounds: /θ/ & /ð/",
+    "titleVi": "Chiêu Thè Lưỡi Cắn Nhẹ: Âm /θ/ (Think) & /ð/ (This)",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ chiêu thè lưỡi cắn nhẹ: âm /θ/ (think) & /ð/ (this) với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Interdental Sounds: /θ/ & /ð/",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Mẹo Phát Âm "Pharmacy" và "Prescription"',
-        description: 'Pharmacy /ˈfɑːr.mə.si/ âm đầu là /f/. Prescription /prɪˈskrɪp.ʃən/ có cụm /skr/.',
-        rule: 'Không đọc pharmacy thành "phát-ma-si".',
-        examples: [
-          { en: 'pharmacy', ipa: '/ˈfɑːr.mə.si/', vi: 'tiệm thuốc tây', soundTip: 'Trọng âm âm 1' },
-          { en: 'headache', ipa: '/ˈhed.eɪk/', vi: 'đau đầu', soundTip: 'Bật /k/ đuôi' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Interdental Sounds",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v3-3-1',
-        word: 'pharmacy',
-        ipa: '/ˈfɑːr.mə.si/',
-        partOfSpeech: 'noun',
-        meaningVi: 'hiệu thuốc tây',
-        exampleSentence: 'Where is the nearest 24-hour pharmacy?',
-        exampleSentenceVi: 'Hiệu thuốc mở cửa 24/7 gần nhất ở đâu?',
-        endingSoundNote: 'Âm đầu /f/, âm đuôi xì /si/.',
-        americanTip: 'Ở Mỹ dùng "pharmacy" hoặc "drugstore".'
+        "id": "v0-9-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v3-3-2',
-        word: 'prescription',
-        ipa: '/prɪˈskrɪp.ʃən/',
-        partOfSpeech: 'noun',
-        meaningVi: 'đơn thuốc của bác sĩ',
-        exampleSentence: 'Do I need a doctor prescription for this medicine?',
-        exampleSentenceVi: 'Tôi có cần đơn của bác sĩ cho loại thuốc này không?',
-        endingSoundNote: 'Cụm /skr/, đuôi /ʃən/.',
-        americanTip: 'Thuốc không cần đơn gọi là OTC (Over-the-counter).'
+        "id": "v0-9-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'v3-3-3',
-        word: 'painkiller',
-        ipa: '/ˈpeɪnˌkɪl.ɚ/',
-        partOfSpeech: 'noun',
-        meaningVi: 'thuốc giảm đau (Panadol, Tylenol)',
-        exampleSentence: 'Can you recommend an effective painkiller?',
-        exampleSentenceVi: 'Bạn có thể gợi ý loại thuốc giảm đau hiệu quả không?',
-        endingSoundNote: 'Âm đuôi /ɚ/ cong lưỡi.',
-        americanTip: 'Tylenol và Advil là 2 loại phổ biến nhất ở Mỹ.'
+        "id": "v0-9-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v3-3-4',
-        word: 'symptom',
-        ipa: '/ˈsɪmp.təm/',
-        partOfSpeech: 'noun',
-        meaningVi: 'triệu chứng bệnh',
-        exampleSentence: 'My main symptoms are fever and a sore throat.',
-        exampleSentenceVi: 'Triệu chứng chính của tôi là sốt và đau họng.',
-        endingSoundNote: 'Âm /p/ nén hơi trước t.',
-        americanTip: 'Trọng âm rơi vào SYMP-.'
+        "id": "v0-9-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd3-3-1',
-        speaker: 'A',
-        speakerName: 'Pharmacist (Mỹ)',
-        avatar: '👩‍⚕️',
-        textEn: 'Hello! How can I help you today? Are you experiencing any symptoms?',
-        textVi: 'Xin chào! Tôi có thể giúp gì cho bạn? Bạn đang có triệu chứng gì không?',
-        ipa: '/həˈloʊ! haʊ kæn aɪ help juː təˈdeɪ? ɑːr juː ɪkˈspɪr.i.əns.ɪŋ ˈen.i ˈsɪmp.təmz/'
+        "id": "d0-9-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Interdental Sounds today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd3-3-2',
-        speaker: 'B',
-        speakerName: 'Ngân (Học viên)',
-        avatar: '👩‍🎓',
-        textEn: 'I have a terrible headache and mild fever since yesterday.',
-        textVi: 'Tôi bị đau đầu dữ dội và sốt nhẹ từ hôm qua.',
-        ipa: '/aɪ hæv ə ˈter.ə.bəl ˈhed.eɪk ænd maɪld ˈfiː.vɚ sɪns ˈjes.tɚ.deɪ/'
+        "id": "d0-9-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'd3-3-3',
-        speaker: 'A',
-        speakerName: 'Pharmacist (Mỹ)',
-        avatar: '👩‍⚕️',
-        textEn: 'I recommend this painkiller. Take one tablet every six hours with water.',
-        textVi: 'Tôi khuyên bạn dùng loại thuốc giảm đau này. Uống 1 viên mỗi 6 tiếng cùng với nước nhé.',
-        ipa: '/aɪ ˌrek.əˈmend ðɪs ˈpeɪnˌkɪl.ɚ. teɪk wʌn ˈtæb.lət ˈev.ri sɪks ˈaʊ.ɚz wɪð ˈwɑː.t̬ɚ/'
+        "id": "d0-9-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
       },
       {
-        id: 'd3-3-4',
-        speaker: 'B',
-        speakerName: 'Ngân (Học viên)',
-        avatar: '👩‍🎓',
-        textEn: 'Thank you so much! Does it cause any drowsiness?',
-        textVi: 'Cảm ơn bạn rất nhiều! Thuốc này có gây buồn ngủ không?',
-        ipa: '/θæŋk juː soʊ mʌtʃ! dʌz ɪt kɑːz ˈen.i ˈdraʊ.zi.nəs/'
+        "id": "d0-9-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    grammarNotes: [
+    "grammarNotes": [
       {
-        titleVi: 'Cấu trúc: I have a + [Tên triệu chứng]',
-        structure: 'I have a headache / sore throat / fever / stomachache',
-        explanationVi: 'Mẫu câu diễn đạt tình trạng sức khỏe khi gặp bác sĩ hoặc dược sĩ.',
-        exampleEn: 'I have a terrible headache.',
-        exampleIpa: '/aɪ hæv ə ˈter.ə.bəl ˈhed.eɪk/',
-        exampleVi: 'Tôi bị đau đầu khủng khiếp.'
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
       }
     ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Trình Bày Triệu Chứng Tại Hiệu Thuốc',
-      pattern: 'I have a [Triệu chứng bệnh]. What medicine do you recommend?',
-      formulaVi: 'Tôi bị [triệu chứng]. Bạn gợi ý loại thuốc nào phù hợp?',
-      usageVi: 'Dùng khi vào hiệu thuốc tây ở nước ngoài.',
-      examples: [
-        { en: 'I have a mild fever. What medicine do you recommend?', ipa: '/aɪ hæv ə maɪld ˈfiː.vɚ. wɑːt ˈmed.ə.sən duː juː ˌrek.əˈmend/', vi: 'Tôi bị sốt nhẹ. Bạn khuyên nên uống thuốc gì?', fillWord: 'mild fever' }
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Chiêu Thè Lưỡi Cắn Nhẹ",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-3-3-1',
-        promptVi: 'Nghe và chọn từ chỉ hiệu thuốc tây:',
-        audioWord: 'pharmacy',
-        options: [
-          { word: 'pharmacy', ipa: '/ˈfɑːr.mə.si/', meaningVi: 'tiệm thuốc tây' },
-          { word: 'farmer', ipa: '/ˈfɑːr.mɚ/', meaningVi: 'người nông dân' }
+        "id": "drill-0-9-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: '"Pharmacy" có 3 âm tiết kết thúc bằng /si/.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
       }
     ]
   },
   {
-    id: 'lv3-lesson-4',
-    levelId: 'lv3',
-    titleEn: 'Public Transit & Metro Navigation in Big Cities',
-    titleVi: 'Đi Tàu Điện Ngầm (Subway/Metro), Xe Buýt & Mua Vé Tự Động',
-    descriptionVi: 'Cách đọc bản đồ tàu điện ngầm New York/Tokyo/London, chuyển tuyến (Transfer), nạp thẻ và hỏi nhân viên nhà ga.',
-    icon: 'Compass',
-    durationMinutes: 15,
-    tags: ['Metro', 'Subway', 'Phương tiện công cộng'],
-    keyTakeaways: [
-      'Hỏi tuyến tàu: Does this train go directly to Times Square?',
-      'Chuyển tuyến: You need to transfer to the Blue Line',
-      'Mua vé tự động: Where can I top up my transit card?'
+    "id": "lv0-lesson-10",
+    "levelId": "lv0",
+    "titleEn": "Palato-Alveolar Sounds: /ʃ/, /tʃ/, /dʒ/",
+    "titleVi": "Bộ Ba Chu Môi Suỵt Gió: /ʃ/ (She), /tʃ/ (Cheap), /dʒ/ (Job)",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ bộ ba chu môi suỵt gió: /ʃ/ (she), /tʃ/ (cheap), /dʒ/ (job) với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Palato-Alveolar Sounds: /ʃ/, /tʃ/, /dʒ/",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Mẹo Phát Âm "Subway" và "Transfer"',
-        description: 'Subway /ˈsʌb.weɪ/ âm đầu là /sʌb/. Transfer /ˈtræns.fɝː/ có âm A rớt hàm /æ/.',
-        rule: 'Trọng âm rõ ràng.',
-        examples: [
-          { en: 'subway station', ipa: '/ˈsʌb.weɪ ˈsteɪ.ʃən/', vi: 'ga tàu điện ngầm', soundTip: 'Âm /s/ giòn' },
-          { en: 'transfer', ipa: '/ˈtræns.fɝː/', vi: 'chuyển tuyến', soundTip: 'Âm /æ/ hạ hàm' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Palato-Alveolar Sounds",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v3-4-1',
-        word: 'subway',
-        ipa: '/ˈsʌb.weɪ/',
-        partOfSpeech: 'noun',
-        meaningVi: 'tàu điện ngầm (ở Mỹ)',
-        exampleSentence: 'The subway is the fastest way to travel.',
-        exampleSentenceVi: 'Tàu điện ngầm là cách di chuyển nhanh nhất.',
-        endingSoundNote: 'Âm đầu /sʌb/, đuôi /weɪ/.',
-        americanTip: 'Ở Anh gọi là "Underground" hoặc "Tube".'
+        "id": "v0-10-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v3-4-2',
-        word: 'transfer',
-        ipa: '/ˈtræns.fɝː/',
-        partOfSpeech: 'verb / noun',
-        meaningVi: 'chuyển tuyến (đổi sang tàu khác)',
-        exampleSentence: 'You need to transfer at Central Station.',
-        exampleSentenceVi: 'Bạn cần chuyển tuyến tại Ga Trung Tâm.',
-        endingSoundNote: 'Âm /æ/ rớt hàm, đuôi /fɝː/ cong lưỡi.',
-        americanTip: 'Thuật ngữ quan trọng khi đi metro.'
+        "id": "v0-10-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'v3-4-3',
-        word: 'platform',
-        ipa: '/ˈplæt.fɔːrm/',
-        partOfSpeech: 'noun',
-        meaningVi: 'sân ga, ke ga chờ tàu',
-        exampleSentence: 'The train to airport departs from platform 3.',
-        exampleSentenceVi: 'Chuyến tàu đi sân bay khởi hành từ ke số 3.',
-        endingSoundNote: 'Âm /æ/ hạ hàm, kết thúc /rm/.',
-        americanTip: 'Luôn kiểm tra số platform trước khi lên tàu.'
+        "id": "v0-10-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v3-4-4',
-        word: 'fare',
-        ipa: '/fer/',
-        partOfSpeech: 'noun',
-        meaningVi: 'giá vé tàu, xe buýt',
-        exampleSentence: 'What is the standard subway fare?',
-        exampleSentenceVi: 'Giá vé tàu điện ngầm tiêu chuẩn là bao nhiêu?',
-        endingSoundNote: 'Nguyên âm đôi /eə/ rồi cong lưỡi /r/.',
-        americanTip: 'Đọc giống từ "fair".'
+        "id": "v0-10-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd3-4-1',
-        speaker: 'A',
-        speakerName: 'Station Agent (Mỹ)',
-        avatar: '👨‍✈️',
-        textEn: 'Hello! Looking for a train platform? Where are you heading?',
-        textVi: 'Xin chào! Bạn đang tìm ke ga tàu à? Bạn đang đi đến đâu?',
-        ipa: '/həˈloʊ! ˈlʊk.ɪŋ fɔːr ə treɪn ˈplæt.fɔːrm? wer ɑːr juː ˈhed.ɪŋ/'
+        "id": "d0-10-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Palato-Alveolar Sounds today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd3-4-2',
-        speaker: 'B',
-        speakerName: 'Dũng (Học viên)',
-        avatar: '👨‍🎓',
-        textEn: 'Hi! Does this subway line go directly to the airport terminal?',
-        textVi: 'Chào bạn! Tuyến tàu điện ngầm này có đi thẳng đến nhà ga sân bay không?',
-        ipa: '/haɪ! dʌz ðɪs ˈsʌb.weɪ laɪn ɡoʊ daɪˈrekt.li tuː ðə ˈer.pɔːrt ˈtɝː.mən.əl/'
+        "id": "d0-10-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'd3-4-3',
-        speaker: 'A',
-        speakerName: 'Station Agent (Mỹ)',
-        avatar: '👨‍✈️',
-        textEn: 'No, you\'ll need to take this train to 42nd Street and transfer to the Blue Line on Platform 2.',
-        textVi: 'Không, bạn cần đi chuyến này đến Phố 42 rồi chuyển sang Tuyến Xanh ở Ke số 2.',
-        ipa: '/noʊ, jʊl niːd tuː teɪk ðɪs treɪn tuː ˈfɔːr.t̬i ˈsek.ənd striːt ænd ˈtræns.fɝː tuː ðə bluː laɪn ɑːn ˈplæt.fɔːrm tuː/'
+        "id": "d0-10-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
       },
       {
-        id: 'd3-4-4',
-        speaker: 'B',
-        speakerName: 'Dũng (Học viên)',
-        avatar: '👨‍🎓',
-        textEn: 'Got it! How much is the one-way fare for that transfer?',
-        textVi: 'Tôi hiểu rồi! Giá vé một chiều cho lần chuyển tuyến đó là bao nhiêu?',
-        ipa: '/ɡɑːt ɪt! haʊ mʌtʃ ɪz ðə wʌn weɪ fer fɔːr ðæt ˈtræns.fɝː/'
+        "id": "d0-10-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    grammarNotes: [
+    "grammarNotes": [
       {
-        titleVi: 'Cấu trúc: Does this [Train/Bus] go directly to [Place]?',
-        structure: 'Does this line / train go directly to + [Destination]?',
-        explanationVi: 'Mẫu câu nhanh nhất để tránh bị lên nhầm tàu hoặc đi nhầm hướng.',
-        exampleEn: 'Does this train go directly to the airport?',
-        exampleIpa: '/dʌz ðɪs treɪn ɡoʊ daɪˈrekt.li tuː ðə ˈer.pɔːrt/',
-        exampleVi: 'Tàu này có đi thẳng ra sân bay không?'
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
       }
     ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Hỏi Tuyến Phương Tiện Công Cộng',
-      pattern: 'Does this [Phương tiện] go directly to [Địa điểm]?',
-      formulaVi: 'Tuyến [tàu/xe] này có đi thẳng đến [địa điểm] không?',
-      usageVi: 'Dùng khi đi tàu điện hoặc xe buýt tại các thành phố lớn.',
-      examples: [
-        { en: 'Does this subway line go directly to Times Square?', ipa: '/dʌz ðɪs ˈsʌb.weɪ laɪn ɡoʊ daɪˈrekt.li tuː taɪmz skwer/', vi: 'Tuyến tàu điện ngầm này có đi thẳng đến Quảng trường Thời Đại không?', fillWord: 'subway line / Times Square' }
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Bộ Ba Chu Môi Suỵt Gió",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-3-4-1',
-        promptVi: 'Nghe và chọn từ chỉ giá vé:',
-        audioWord: 'fare',
-        options: [
-          { word: 'fare', ipa: '/fer/', meaningVi: 'tiền vé tàu xe' },
-          { word: 'fair', ipa: '/fer/', meaningVi: 'hội chợ / công bằng (đồng âm)' }
+        "id": "drill-0-10-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: '"Fare" và "fair" là cặp từ đồng âm phát âm /fer/.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
       }
     ]
   },
   {
-    id: 'lv3-lesson-5',
-    levelId: 'lv3',
-    titleEn: 'Connected Speech: Gonna, Wanna, Gotta, Lemme',
-    titleVi: 'Nói Lướt Như Người Bản Xứ: Gonna, Wanna, Gotta, Lemme',
-    descriptionVi: 'Bẻ khóa kỹ thuật nói nuốt âm rút gọn trong đàm thoại hàng ngày của người Mỹ để nói chuyện trôi chảy tự nhiên.',
-    icon: 'Zap',
-    durationMinutes: 15,
-    tags: ['Connected Speech', 'Nói lướt', 'Giọng Mỹ'],
-    keyTakeaways: [
-      'Going to -> Gonna, Want to -> Wanna, Have got to -> Gotta',
-      'Let me -> Lemme, Give me -> Gimme',
-      'Quy tắc khi nào nên dùng (Văn nói thân mật)'
+    "id": "lv0-lesson-11",
+    "levelId": "lv0",
+    "titleEn": "Flap T & R-Colored Vowel: /ɚ/ & /ɝː/",
+    "titleVi": "Bí Mật Giọng Mỹ: Biến Âm Flap T & Âm R Cuộn Lưỡi",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ bí mật giọng mỹ: biến âm flap t & âm r cuộn lưỡi với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Flap T & R-Colored Vowel: /ɚ/ & /ɝː/",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Mẹo Bật Ngữ Điệu Của "Gonna" và "Wanna"',
-        description: 'Gonna /ˈɡʌn.ə/ phát âm nhẹ và lướt nhanh, trọng âm dồn vào động từ chính đi phía sau.',
-        rule: 'Chỉ dùng trong văn nói, không viết trong email công việc trang trọng.',
-        examples: [
-          { en: 'I\'m gonna do it', ipa: '/aɪm ˈɡʌn.ə duː ɪt/', vi: 'Tôi sẽ làm điều đó', soundTip: 'Nói lướt 1 hơi' },
-          { en: 'wanna grab food', ipa: '/ˈwɑːn.ə ɡræb fuːd/', vi: 'muốn đi ăn chút gì', soundTip: 'Wanna nối grab' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Flap T & R-Colored Vowel",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v3-5-1',
-        word: 'gonna',
-        ipa: '/ˈɡʌn.ə/',
-        partOfSpeech: 'slang / contraction',
-        meaningVi: 'sẽ (viết tắt của going to)',
-        exampleSentence: 'I\'m gonna call you later.',
-        exampleSentenceVi: 'Lát nữa tôi sẽ gọi cho bạn nhé.',
-        endingSoundNote: 'Âm /ʌ/ ngắn, kết thúc bằng /ə/.',
-        americanTip: 'Từ nói lướt thông dụng nhất ở Mỹ.'
+        "id": "v0-11-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v3-5-2',
-        word: 'wanna',
-        ipa: '/ˈwɑːn.ə/',
-        partOfSpeech: 'slang / contraction',
-        meaningVi: 'muốn (viết tắt của want to)',
-        exampleSentence: 'Do you wanna grab some iced coffee?',
-        exampleSentenceVi: 'Bạn có muốn đi uống cafe đá không?',
-        endingSoundNote: 'Âm /ɑː/ mở rộng, đuôi /ə/.',
-        americanTip: 'Dùng khi rủ rê bạn bè thân mật.'
+        "id": "v0-11-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'v3-5-3',
-        word: 'gotta',
-        ipa: '/ˈɡɑː.t̬ə/',
-        partOfSpeech: 'slang / contraction',
-        meaningVi: 'phải làm gì (viết tắt của have got to)',
-        exampleSentence: 'I gotta run now, see ya!',
-        exampleSentenceVi: 'Tôi phải đi ngay đây, gặp lại sau nhé!',
-        endingSoundNote: 'Flap T ở giữa từ.',
-        americanTip: 'Đọc là "gah-da".'
+        "id": "v0-11-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v3-5-4',
-        word: 'lemme',
-        ipa: '/ˈlem.i/',
-        partOfSpeech: 'slang / contraction',
-        meaningVi: 'để tôi (viết tắt của let me)',
-        exampleSentence: 'Lemme check my schedule real quick.',
-        exampleSentenceVi: 'Để tôi xem nhanh lịch làm việc của mình nhé.',
-        endingSoundNote: 'Âm /m/ kéo dài nhẹ.',
-        americanTip: 'Đọc là "leh-mee".'
+        "id": "v0-11-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd3-5-1',
-        speaker: 'A',
-        speakerName: 'Jake (Mỹ)',
-        avatar: '👱‍♂️',
-        textEn: 'Hey bro! Do you wanna grab some food after work tonight?',
-        textVi: 'Ê bạn ơi! Tối nay tan làm có muốn đi ăn chút gì không?',
-        ipa: '/heɪ broʊ! duː juː ˈwɑːn.ə ɡræb sʌm fuːd ˈæf.tɚ wɜːrk təˈnaɪt/'
+        "id": "d0-11-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Flap T & R-Colored Vowel today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd3-5-2',
-        speaker: 'B',
-        speakerName: 'Bảo (Học viên)',
-        avatar: '👨‍🎓',
-        textEn: 'I\'d love to! Lemme finish this report first and I\'m gonna meet you at 6.',
-        textVi: 'Tôi rất thích! Để tôi làm xong báo cáo này rồi tôi sẽ gặp bạn lúc 6 giờ nhé.',
-        ipa: '/aɪd lʌv tuː! ˈlem.i ˈfɪn.ɪʃ ðɪs rɪˈpɔːrt fɜːrst ænd aɪm ˈɡʌn.ə miːt juː æt sɪks/'
+        "id": "d0-11-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'd3-5-3',
-        speaker: 'A',
-        speakerName: 'Jake (Mỹ)',
-        avatar: '👱‍♂️',
-        textEn: 'Sounds like a plan! I gotta run to a quick client meeting right now.',
-        textVi: 'Chốt kèo nhé! Tôi phải chạy đi họp nhanh với khách hàng bây giờ đây.',
-        ipa: '/saʊndz laɪk ə plæn! aɪ ˈɡɑː.t̬ə rʌn tuː ə kwɪk ˈklaɪ.ənt ˈmiː.t̬ɪŋ raɪt naʊ/'
+        "id": "d0-11-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
       },
       {
-        id: 'd3-5-4',
-        speaker: 'B',
-        speakerName: 'Bảo (Học viên)',
-        avatar: '👨‍🎓',
-        textEn: 'No worries, see ya at the restaurant later!',
-        textVi: 'Không sao đâu, lát gặp lại bạn ở nhà hàng nhé!',
-        ipa: '/noʊ ˈwɝː.iz, siː jɑː æt ðə ˈres.trɑːnt ˈleɪ.t̬ɚ/'
+        "id": "d0-11-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    grammarNotes: [
+    "grammarNotes": [
       {
-        titleVi: 'Cấu trúc: I\'m gonna + V / Do you wanna + V?',
-        structure: 'I\'m gonna + Verb / Do you wanna + Verb?',
-        explanationVi: 'Quy tắc nói lướt đàm thoại tự nhiên của người bản xứ Mỹ trong đời sống hàng ngày.',
-        exampleEn: 'I\'m gonna call you later.',
-        exampleIpa: '/aɪm ˈɡʌn.ə kɑːl juː ˈleɪ.t̬ɚ/',
-        exampleVi: 'Lát nữa tôi sẽ gọi cho bạn nhé.'
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
       }
     ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Giao Tiếp Thân Mật Bằng Connected Speech',
-      pattern: 'I\'m gonna [Hành động tương lai] because I wanna [Mong muốn].',
-      formulaVi: 'Tôi sẽ [làm gì] bởi vì tôi muốn [làm gì].',
-      usageVi: 'Giúp bạn nói tiếng Anh mượt mà như xem phim Hollywood.',
-      examples: [
-        { en: 'I\'m gonna take a walk because I wanna get fresh air.', ipa: '/aɪm ˈɡʌn.ə teɪk ə wɑːk bɪˈkɑːz aɪ ˈwɑːn.ə ɡet freʃ er/', vi: 'Tôi sẽ đi dạo vì tôi muốn hít thở không khí trong lành.', fillWord: 'take a walk / get fresh air' }
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Bí Mật Giọng Mỹ",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-3-5-1',
-        promptVi: 'Nghe và chọn cụm từ nói lướt của "going to":',
-        audioWord: 'gonna',
-        options: [
-          { word: 'gonna', ipa: '/ˈɡʌn.ə/', meaningVi: 'sẽ (going to)' },
-          { word: 'gunner', ipa: '/ˈɡʌn.ɚ/', meaningVi: 'pháo thủ (đuôi /ɚ/)' }
+        "id": "drill-0-11-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: '"Gonna" kết thúc bằng âm /ə/ nhẹ, còn "gunner" kết thúc bằng âm /ɚ/ cuộn lưỡi.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
       }
     ]
   },
   {
-    id: 'lv3-lesson-6',
-    levelId: 'lv3',
-    titleEn: 'American Slang & Everyday Idioms',
-    titleVi: 'Tiếng Lóng & Thành Ngữ Cửa Miệng Hàng Ngày Của Người Mỹ',
-    descriptionVi: 'Hiểu và sử dụng các thành ngữ lóng thông dụng: Piece of cake (Dễ ợt), Hit the sack (Đi ngủ), Under the weather (Mệt trong người), Touch base (Bắt liên lạc).',
-    icon: 'Sparkles',
-    durationMinutes: 15,
-    tags: ['Thành ngữ', 'Slang', 'Bản xứ'],
-    keyTakeaways: [
-      'Thành ngữ phổ biến: Piece of cake, No biggie, Touch base',
-      'Hiểu nghĩa bóng không dịch từng từ theo nghĩa đen',
-      'Tự tin giao tiếp và xem phim không cần phụ đề'
+    "id": "lv0-lesson-12",
+    "levelId": "lv0",
+    "titleEn": "Dark L & Linking Secrets",
+    "titleVi": "Bí Mật Âm L Tối (Dark L) & Nối Âm Cơ Bản Giọng Mỹ",
+    "descriptionVi": "Bài học thực chiến Level 0 giúp bạn làm chủ bí mật âm l tối (dark l) & nối âm cơ bản giọng mỹ với các bài tập bóc tách khẩu hình chuẩn giọng Mỹ.",
+    "icon": "Sparkles",
+    "durationMinutes": 15,
+    "tags": [
+      "IPA Giọng Mỹ",
+      "Phát âm chuẩn",
+      "Level 0 Foundation"
     ],
-    vietnamesePronunciationTips: [
+    "keyTakeaways": [
+      "Hiểu rõ bản chất và khẩu hình chuẩn xác của Dark L & Linking Secrets",
+      "Luyện tập các cặp từ tương phản không sợ phát âm nhầm lẫn",
+      "Thực hành ứng dụng trực tiếp vào câu giao tiếp hàng ngày"
+    ],
+    "vietnamesePronunciationTips": [
       {
-        title: 'Mẹo Phát Âm "Piece of cake" và "Touch base"',
-        description: 'Piece of cake /piːs əv keɪk/ nối âm xì /s/ sang of: pee-səv cake. Touch base /tʌtʃ beɪs/ có âm /tʃ/ và /s/.',
-        rule: 'Ngữ điệu tự nhiên, thoải mái.',
-        examples: [
-          { en: 'piece of cake', ipa: '/piːs əv keɪk/', vi: 'dễ như ăn bánh', soundTip: 'Nối âm mượt mà' },
-          { en: 'no biggie', ipa: '/noʊ ˈbɪɡ.i/', vi: 'chuyện nhỏ ấy mà', soundTip: 'Vui vẻ' },
+        "title": "Mẹo Khẩu Hình Chuẩn Cho Dark L & Linking Secrets",
+        "description": "Thả lỏng cơ hàm, tập trung luồng hơi và vị trí đặt lưỡi chính xác.",
+        "rule": "Không phát âm giật cục, giữ độ vang tự nhiên của giọng Mỹ.",
+        "examples": [
+          {
+            "en": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "vi": "luyện tập",
+            "soundTip": "Bật âm rõ ràng"
+          },
+          {
+            "en": "perfect",
+            "ipa": "/ˈpɜːr.fɪkt/",
+            "vi": "hoàn hảo",
+            "soundTip": "Cong lưỡi âm r"
+          }
         ]
       }
     ],
-    vocabulary: [
+    "vocabulary": [
       {
-        id: 'v3-6-1',
-        word: 'piece of cake',
-        ipa: '/piːs əv keɪk/',
-        partOfSpeech: 'idiom',
-        meaningVi: 'dễ như ăn kẹo, cực kỳ dễ dàng',
-        exampleSentence: 'That English test was a piece of cake!',
-        exampleSentenceVi: 'Bài kiểm tra tiếng Anh đó dễ như ăn kẹo!',
-        endingSoundNote: 'Nối âm: pee-səv cake.',
-        americanTip: 'Thành ngữ miêu tả độ dễ phổ biến nhất.'
+        "id": "v0-12-1",
+        "word": "practice",
+        "ipa": "/ˈpræk.tɪs/",
+        "partOfSpeech": "verb / noun",
+        "meaningVi": "luyện tập đều đặn",
+        "exampleSentence": "Practice makes perfect every day.",
+        "exampleSentenceVi": "Luyện tập mỗi ngày tạo nên sự hoàn hảo.",
+        "endingSoundNote": "Đuôi xì gió /s/ rõ ràng.",
+        "americanTip": "Âm A rớt hàm /æ/."
       },
       {
-        id: 'v3-6-2',
-        word: 'no biggie',
-        ipa: '/noʊ ˈbɪɡ.i/',
-        partOfSpeech: 'slang / phrase',
-        meaningVi: 'không có gì to tát, chuyện nhỏ',
-        exampleSentence: 'Thanks for helping! - No biggie!',
-        exampleSentenceVi: 'Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!',
-        endingSoundNote: 'Âm /ɡ/ giòn tan.',
-        americanTip: 'Dùng thay cho "You are welcome" thân thiện.'
+        "id": "v0-12-2",
+        "word": "confident",
+        "ipa": "/ˈkɑːn.fə.dənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự tin",
+        "exampleSentence": "I feel confident speaking American English.",
+        "exampleSentenceVi": "Tôi cảm thấy tự tin khi nói tiếng Anh - Mỹ.",
+        "endingSoundNote": "Bật nhẹ /t/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào CON-."
       },
       {
-        id: 'v3-6-3',
-        word: 'touch base',
-        ipa: '/tʌtʃ beɪs/',
-        partOfSpeech: 'idiom / phrase',
-        meaningVi: 'liên lạc ngắn gọn, cập nhật tình hình',
-        exampleSentence: 'Let\'s touch base next Monday.',
-        exampleSentenceVi: 'Thứ Hai tuần tới chúng ta liên lạc cập nhật nhé.',
-        endingSoundNote: 'Âm /tʃ/ nổ gió trong touch, /s/ trong base.',
-        americanTip: 'Xuất phát từ môn bóng chày Mỹ.'
+        "id": "v0-12-3",
+        "word": "natural",
+        "ipa": "/ˈnætʃ.ɚ.əl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tự nhiên như người bản xứ",
+        "exampleSentence": "Your pronunciation sounds very natural.",
+        "exampleSentenceVi": "Phát âm của bạn nghe rất tự nhiên.",
+        "endingSoundNote": "Âm giữa /tʃ/, đuôi /əl/.",
+        "americanTip": "Âm A rớt hàm ở đầu."
       },
       {
-        id: 'v3-6-4',
-        word: 'hit the sack',
-        ipa: '/hɪt ðə sæk/',
-        partOfSpeech: 'idiom',
-        meaningVi: 'đi ngủ (khi đã quá mệt mỏi)',
-        exampleSentence: 'I\'m exhausted, time to hit the sack.',
-        exampleSentenceVi: 'Tôi kiệt sức rồi, đến giờ đi ngủ thôi.',
-        endingSoundNote: 'Bật /t/ trong hit, /k/ trong sack.',
-        americanTip: 'Nghĩa là leo lên giường đi ngủ.'
+        "id": "v0-12-4",
+        "word": "fluent",
+        "ipa": "/ˈfluː.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "trôi chảy, lưu loát",
+        "exampleSentence": "I want to become fluent in six months.",
+        "exampleSentenceVi": "Tôi muốn nói trôi chảy trong vòng 6 tháng.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Nguyên âm /uː/ chu tròn môi."
       }
     ],
-    dialogue: [
+    "dialogue": [
       {
-        id: 'd3-6-1',
-        speaker: 'A',
-        speakerName: 'Rachel (Mỹ)',
-        avatar: '👩‍🦰',
-        textEn: 'How did your English level presentation go today?',
-        textVi: 'Bài thuyết trình thăng cấp tiếng Anh của bạn hôm nay thế nào rồi?',
-        ipa: '/haʊ dɪd jɔːr ˈɪŋ.ɡlɪʃ ˈlev.əl ˌprez.ənˈteɪ.ʃən ɡoʊ təˈdeɪ/'
+        "id": "d0-12-1",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Are you ready to master Dark L & Linking Secrets today?",
+        "textVi": "Bạn đã sẵn sàng để làm chủ bài học hôm nay chưa?",
+        "ipa": "/ɑːr juː ˈred.i tuː ˈmæs.tɚ ðɪs ˈles.ən təˈdeɪ/"
       },
       {
-        id: 'd3-6-2',
-        speaker: 'B',
-        speakerName: 'Khang (Học viên)',
-        avatar: '👨‍🎓',
-        textEn: 'It was a piece of cake! The judges loved my American accent.',
-        textVi: 'Dễ như ăn kẹo vậy! Ban giám khảo rất thích chất giọng Mỹ của tôi.',
-        ipa: '/ɪt wɑːz ə piːs əv keɪk! ðə ˈdʒʌdʒ.ɪz lʌvd maɪ əˈmer.ɪˈkæn ˈæk.sent/'
+        "id": "d0-12-2",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Yes! I am practicing with the AI scorer to speak naturally.",
+        "textVi": "Có chứ! Tôi đang luyện tập cùng AI chấm điểm để nói tự nhiên hơn.",
+        "ipa": "/jes! aɪ æm ˈpræk.tɪs.ɪŋ wɪð ðə eɪ aɪ ˈskɔːr.ɚ tuː spiːk ˈnætʃ.ɚ.əl.i/"
       },
       {
-        id: 'd3-6-3',
-        speaker: 'A',
-        speakerName: 'Rachel (Mỹ)',
-        avatar: '👩‍🦰',
-        textEn: 'I knew you could do it! Let\'s touch base this weekend to celebrate.',
-        textVi: 'Tôi biết bạn làm được mà! Cuối tuần này hẹn gặp nhau ăn mừng nhé.',
-        ipa: '/aɪ nuː juː kʊd duː ɪt! lets tʌtʃ beɪs ðɪs ˈwiːk.end tuː ˈsel.ə.breɪt/'
+        "id": "d0-12-3",
+        "speaker": "A",
+        "speakerName": "Alex (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Your progress is fantastic. Keep up the great consistency!",
+        "textVi": "Tiến bộ của bạn thật tuyệt vời. Hãy giữ vững sự đều đặn này nhé!",
+        "ipa": "/jɔːr ˈprɑː.ɡres ɪz fænˈtæs.tɪk. kiːp ʌp ðə ɡreɪt kənˈsɪs.tən.si/"
       },
       {
-        id: 'd3-6-4',
-        speaker: 'B',
-        speakerName: 'Khang (Học viên)',
-        avatar: '👨‍🎓',
-        textEn: 'Definitely! No biggie at all, coffee is on me this time.',
-        textVi: 'Chắc chắn rồi! Chuyện nhỏ ấy mà, lần này để tôi mời cà phê nhé.',
-        ipa: '/ˈdef.ən.ət.li! noʊ ˈbɪɡ.i æt ɑːl, ˈkɑː.fi ɪz ɑːn miː ðɪs taɪm/'
+        "id": "d0-12-4",
+        "speaker": "B",
+        "speakerName": "Lan (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Thank you! I feel much more confident opening my mouth now.",
+        "textVi": "Cảm ơn bạn! Giờ tôi đã cảm thấy tự tin hơn rất nhiều khi mở miệng nói.",
+        "ipa": "/θæŋk juː! aɪ fiːl mʌtʃ mɔːr ˈkɑːn.fə.dənt ˈoʊ.pən.ɪŋ maɪ maʊθ naʊ/"
       }
     ],
-    grammarNotes: [
+    "grammarNotes": [
       {
-        titleVi: 'Cấu trúc: It was a piece of cake! (Khen dễ dàng)',
-        structure: 'It is / was a piece of cake!',
-        explanationVi: 'Thành ngữ cửa miệng thông dụng nhất của người Mỹ để diễn tả một việc cực kỳ dễ dàng và trôi chảy.',
-        exampleEn: 'That test was a piece of cake!',
-        exampleIpa: '/ðæt test wɑːz ə piːs əv keɪk/',
-        exampleVi: 'Bài thi đó dễ ợt ấy mà!'
+        "titleVi": "Cấu trúc: Be + Practicing + to V (Đang nỗ lực làm gì)",
+        "structure": "Subject + am/is/are + practicing + to-Infinitive",
+        "explanationVi": "Diễn tả hành động đang tích cực rèn luyện để đạt được mục tiêu giao tiếp.",
+        "exampleEn": "I am practicing to speak naturally.",
+        "exampleIpa": "/aɪ æm ˈpræk.tɪs.ɪŋ tuː spiːk ˈnætʃ.ɚ.əl.i/",
+        "exampleVi": "Tôi đang luyện tập để nói tự nhiên hơn."
       }
     ],
-    sentencePattern: {
-      titleVi: 'Khuôn Mẫu Câu: Thành Ngữ & Tiếng Lóng Thân Mật',
-      pattern: 'No biggie! Whenever you want to [Hành động], let\'s touch base.',
-      formulaVi: 'Chuyện nhỏ ấy mà! Bất cứ khi nào bạn muốn [làm gì], cứ liên lạc nhé.',
-      usageVi: 'Cách giao tiếp thân mật, phóng khoáng đậm chất Mỹ.',
-      examples: [
-        { en: 'No biggie! Whenever you want to practice English, let\'s touch base.', ipa: '/noʊ ˈbɪɡ.i! wenˈev.ɚ juː wɑːnt tuː ˈpræk.tɪs ˈɪŋ.ɡlɪʃ, lets tʌtʃ beɪs/', vi: 'Chuyện nhỏ! Bất cứ khi nào bạn muốn luyện tiếng Anh, cứ liên lạc nhé.', fillWord: 'practice English' }
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Thực Hành Bí Mật Âm L Tối (Dark L) & Nối Âm Cơ Bản Giọng Mỹ",
+      "pattern": "I am practicing [Kỹ năng] every day to become [Mục tiêu].",
+      "formulaVi": "Tôi đang luyện tập [X] mỗi ngày để trở nên [Y].",
+      "usageVi": "Mẫu câu khẳng định mục tiêu học tập đầy quyết tâm.",
+      "examples": [
+        {
+          "en": "I am practicing American accent every day to become fluent.",
+          "ipa": "/aɪ æm ˈpræk.tɪs.ɪŋ əˈmer.ɪˈkæn ˈæk.sent ˈev.ri deɪ tuː bɪˈkʌm ˈfluː.ənt/",
+          "vi": "Tôi đang luyện giọng Mỹ mỗi ngày để nói trôi chảy.",
+          "fillWord": "American accent / fluent"
+        }
       ]
     },
-    earTrainingDrills: [
+    "earTrainingDrills": [
       {
-        id: 'drill-3-6-1',
-        promptVi: 'Nghe và chọn thành ngữ chỉ sự dễ dàng:',
-        audioWord: 'piece of cake',
-        options: [
-          { word: 'piece of cake', ipa: '/piːs əv keɪk/', meaningVi: 'dễ như ăn kẹo' },
-          { word: 'peace of mind', ipa: '/piːs əv maɪnd/', meaningVi: 'bình yên trong tâm trí' }
+        "id": "drill-0-12-1",
+        "promptVi": "Nghe và chọn từ phát âm chuẩn giọng Mỹ:",
+        "audioWord": "practice",
+        "options": [
+          {
+            "word": "practice",
+            "ipa": "/ˈpræk.tɪs/",
+            "meaningVi": "luyện tập"
+          },
+          {
+            "word": "practical",
+            "ipa": "/ˈpræk.tɪ.kəl/",
+            "meaningVi": "thực tế"
+          }
         ],
-        correctIndex: 0,
-        explanationVi: '"Piece of cake" kết thúc bằng /keɪk/, còn "peace of mind" kết thúc bằng /maɪnd/.'
+        "correctIndex": 0,
+        "explanationVi": "'Practice' kết thúc bằng âm xì gió /s/ ở cuối từ."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-1",
+    "levelId": "lv1",
+    "titleEn": "Natural American Greetings & Small Talk",
+    "titleVi": "Chào Hỏi Tự Nhiên & Mở Đầu Cuộc Trò Chuyện Kiểu Mỹ",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống chào hỏi tự nhiên & mở đầu cuộc trò chuyện kiểu mỹ mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Chào Hỏi Tự Nhiên & Mở Đầu Cuộc Trò Chuyện Kiểu Mỹ",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-1-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-1-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-1-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-1-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-1-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-1-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-1-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-1-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Chào Hỏi Tự Nhiên & Mở Đầu Cuộc Trò Chuyện Kiểu Mỹ",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-1-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-2",
+    "levelId": "lv1",
+    "titleEn": "Ordering Drinks at Starbucks & Cafes",
+    "titleVi": "Tự Tin Order Starbucks & Cafe Chuỗi Quốc Tế Chuẩn Mỹ",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống tự tin order starbucks & cafe chuỗi quốc tế chuẩn mỹ mà không cần dịch nhẩm trong đầu.",
+    "icon": "Coffee",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Tự Tin Order Starbucks & Cafe Chuỗi Quốc Tế Chuẩn Mỹ",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-2-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-2-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-2-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-2-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-2-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-2-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-2-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-2-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Tự Tin Order Starbucks & Cafe Chuỗi Quốc Tế Chuẩn Mỹ",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-2-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-3",
+    "levelId": "lv1",
+    "titleEn": "Fast Food & Restaurant Dining",
+    "titleVi": "Gọi Món Nhà Hàng & Tách Tiền Hóa Đơn (Split The Bill)",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống gọi món nhà hàng & tách tiền hóa đơn (split the bill) mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Gọi Món Nhà Hàng & Tách Tiền Hóa Đơn (Split The Bill)",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-3-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-3-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-3-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-3-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-3-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-3-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-3-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-3-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Gọi Món Nhà Hàng & Tách Tiền Hóa Đơn (Split The Bill)",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-3-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-4",
+    "levelId": "lv1",
+    "titleEn": "Shopping & Fitting Room Experience",
+    "titleVi": "Mua Sắm Quần Áo, Thử Đồ & Hỏi Size/Giá",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống mua sắm quần áo, thử đồ & hỏi size/giá mà không cần dịch nhẩm trong đầu.",
+    "icon": "ShoppingBag",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Mua Sắm Quần Áo, Thử Đồ & Hỏi Size/Giá",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-4-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-4-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-4-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-4-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-4-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-4-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-4-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-4-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Mua Sắm Quần Áo, Thử Đồ & Hỏi Size/Giá",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-4-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-5",
+    "levelId": "lv1",
+    "titleEn": "Giving Directions to Tourists in Vietnam",
+    "titleVi": "Chỉ Đường Cho Khách Du Lịch Nước Ngoài Tại Việt Nam",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống chỉ đường cho khách du lịch nước ngoài tại việt nam mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Chỉ Đường Cho Khách Du Lịch Nước Ngoài Tại Việt Nam",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-5-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-5-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-5-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-5-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-5-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-5-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-5-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-5-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Chỉ Đường Cho Khách Du Lịch Nước Ngoài Tại Việt Nam",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-5-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-6",
+    "levelId": "lv1",
+    "titleEn": "Introducing Vietnamese Food to Foreigners",
+    "titleVi": "Giới Thiệu Ẩm Thực Việt Nam (Phở, Bánh Mì, Cà Phê Trứng)",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống giới thiệu ẩm thực việt nam (phở, bánh mì, cà phê trứng) mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Giới Thiệu Ẩm Thực Việt Nam (Phở, Bánh Mì, Cà Phê Trứng)",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-6-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-6-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-6-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-6-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-6-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-6-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-6-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-6-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Giới Thiệu Ẩm Thực Việt Nam (Phở, Bánh Mì, Cà Phê Trứng)",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-6-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-7",
+    "levelId": "lv1",
+    "titleEn": "Supermarket & Grocery Shopping",
+    "titleVi": "Đi Siêu Thị, Hỏi Vị Trí Hàng Hóa & Cân Nặng",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống đi siêu thị, hỏi vị trí hàng hóa & cân nặng mà không cần dịch nhẩm trong đầu.",
+    "icon": "ShoppingBag",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Đi Siêu Thị, Hỏi Vị Trí Hàng Hóa & Cân Nặng",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-7-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-7-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-7-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-7-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-7-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-7-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-7-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-7-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Đi Siêu Thị, Hỏi Vị Trí Hàng Hóa & Cân Nặng",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-7-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-8",
+    "levelId": "lv1",
+    "titleEn": "Haircut, Nails & Spa Services",
+    "titleVi": "Đi Cắt Tóc, Làm Móng & Mô Tả Dịch Vụ Yêu Cầu",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống đi cắt tóc, làm móng & mô tả dịch vụ yêu cầu mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Đi Cắt Tóc, Làm Móng & Mô Tả Dịch Vụ Yêu Cầu",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-8-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-8-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-8-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-8-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-8-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-8-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-8-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-8-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Đi Cắt Tóc, Làm Móng & Mô Tả Dịch Vụ Yêu Cầu",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-8-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-9",
+    "levelId": "lv1",
+    "titleEn": "Exchange, Refund & Product Warranty",
+    "titleVi": "Đổi Trả Hàng & Chính Sách Bảo Hành Khi Mua Sắm",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống đổi trả hàng & chính sách bảo hành khi mua sắm mà không cần dịch nhẩm trong đầu.",
+    "icon": "ShoppingBag",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Đổi Trả Hàng & Chính Sách Bảo Hành Khi Mua Sắm",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-9-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-9-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-9-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-9-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-9-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-9-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-9-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-9-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Đổi Trả Hàng & Chính Sách Bảo Hành Khi Mua Sắm",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-9-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-10",
+    "levelId": "lv1",
+    "titleEn": "Bargaining Politely at Night Markets",
+    "titleVi": "Mặc Cả Lịch Sự Tại Chợ Đêm & Khu Du Lịch",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống mặc cả lịch sự tại chợ đêm & khu du lịch mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Mặc Cả Lịch Sự Tại Chợ Đêm & Khu Du Lịch",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-10-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-10-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-10-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-10-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-10-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-10-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-10-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-10-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Mặc Cả Lịch Sự Tại Chợ Đêm & Khu Du Lịch",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-10-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-11",
+    "levelId": "lv1",
+    "titleEn": "Explaining Vietnamese Coffee Culture",
+    "titleVi": "Kể Về Văn Hóa Cà Phê Vỉa Hè & Cà Phê Muối Việt Nam",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống kể về văn hóa cà phê vỉa hè & cà phê muối việt nam mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Kể Về Văn Hóa Cà Phê Vỉa Hè & Cà Phê Muối Việt Nam",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-11-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-11-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-11-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-11-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-11-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-11-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-11-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-11-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Kể Về Văn Hóa Cà Phê Vỉa Hè & Cà Phê Muối Việt Nam",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-11-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-12",
+    "levelId": "lv1",
+    "titleEn": "Helping Foreigners with Grab & Taxi",
+    "titleVi": "Hướng Dẫn Khách Tây Đặt Xe Công Nghệ & Bắt Taxi",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống hướng dẫn khách tây đặt xe công nghệ & bắt taxi mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Hướng Dẫn Khách Tây Đặt Xe Công Nghệ & Bắt Taxi",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-12-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-12-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-12-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-12-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-12-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-12-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-12-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-12-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Hướng Dẫn Khách Tây Đặt Xe Công Nghệ & Bắt Taxi",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-12-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-13",
+    "levelId": "lv1",
+    "titleEn": "Exchanging Currency & Banking Basics",
+    "titleVi": "Đổi Tiền Ngoại Tệ & Giao Dịch Ngân Hàng Cơ Bản",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống đổi tiền ngoại tệ & giao dịch ngân hàng cơ bản mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Đổi Tiền Ngoại Tệ & Giao Dịch Ngân Hàng Cơ Bản",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-13-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-13-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-13-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-13-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-13-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-13-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-13-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-13-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Đổi Tiền Ngoại Tệ & Giao Dịch Ngân Hàng Cơ Bản",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-13-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-14",
+    "levelId": "lv1",
+    "titleEn": "Talking About Hobbies & Weekend Plans",
+    "titleVi": "Trò Chuyện Về Sở Thích, Phim Ảnh & Kế Hoạch Cuối Tuần",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống trò chuyện về sở thích, phim ảnh & kế hoạch cuối tuần mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Trò Chuyện Về Sở Thích, Phim Ảnh & Kế Hoạch Cuối Tuần",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-14-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-14-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-14-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-14-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-14-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-14-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-14-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-14-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Trò Chuyện Về Sở Thích, Phim Ảnh & Kế Hoạch Cuối Tuần",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-14-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-15",
+    "levelId": "lv1",
+    "titleEn": "Handling Restaurant Complaints Politely",
+    "titleVi": "Phản Ánh Món Ăn Bị Nguội Hoặc Mang Nhầm Lịch Sự",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống phản ánh món ăn bị nguội hoặc mang nhầm lịch sự mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Phản Ánh Món Ăn Bị Nguội Hoặc Mang Nhầm Lịch Sự",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-15-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-15-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-15-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-15-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-15-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-15-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-15-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-15-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Phản Ánh Món Ăn Bị Nguội Hoặc Mang Nhầm Lịch Sự",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-15-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-16",
+    "levelId": "lv1",
+    "titleEn": "Introducing Vietnamese Traditional Festivals",
+    "titleVi": "Kể Về Tết Nguyên Đán, Tết Trung Thu & Lễ Hội VN",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống kể về tết nguyên đán, tết trung thu & lễ hội vn mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Kể Về Tết Nguyên Đán, Tết Trung Thu & Lễ Hội VN",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-16-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-16-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-16-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-16-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-16-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-16-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-16-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-16-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Kể Về Tết Nguyên Đán, Tết Trung Thu & Lễ Hội VN",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-16-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-17",
+    "levelId": "lv1",
+    "titleEn": "Saying Goodbye & Exchanging Social Contacts",
+    "titleVi": "Tạm Biệt Lịch Thiệp & Xin Facebook / Instagram / Zalo",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống tạm biệt lịch thiệp & xin facebook / instagram / zalo mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Tạm Biệt Lịch Thiệp & Xin Facebook / Instagram / Zalo",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-17-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-17-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-17-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-17-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-17-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-17-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-17-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-17-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Tạm Biệt Lịch Thiệp & Xin Facebook / Instagram / Zalo",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-17-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv1-lesson-18",
+    "levelId": "lv1",
+    "titleEn": "Inviting Friends & Making Casual Plans",
+    "titleVi": "Rủ Bạn Bè Đi Chơi, Đi Xem Phim & Hẹn Giờ Gặp Mặt",
+    "descriptionVi": "Bài học thực chiến Level 1 giúp bạn tự tin xử lý tình huống rủ bạn bè đi chơi, đi xem phim & hẹn giờ gặp mặt mà không cần dịch nhẩm trong đầu.",
+    "icon": "Smile",
+    "durationMinutes": 15,
+    "tags": [
+      "Giao tiếp đời thường",
+      "Sinh tồn A2",
+      "Level 1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ toàn bộ từ vựng và câu cửa miệng trong tình huống Rủ Bạn Bè Đi Chơi, Đi Xem Phim & Hẹn Giờ Gặp Mặt",
+      "Phản xạ đáp lời tức thì trong vòng 3 giây",
+      "Nói chuẩn ngữ điệu lên bổng xuống trầm tự nhiên của người Mỹ"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Ngữ Điệu Lên Xuống Tự Nhiên",
+        "description": "Lên giọng nhẹ ở cuối câu hỏi Yes/No, xuống giọng ở cuối câu trần thuật.",
+        "rule": "Nói liền mạch cụm từ, không ngắt quãng từng chữ đơn lẻ.",
+        "examples": [
+          {
+            "en": "Could I get that?",
+            "ipa": "/kʊd aɪ ɡet ðæt/",
+            "vi": "Cho tôi xin cái đó được không?",
+            "soundTip": "Lên giọng cuối câu"
+          },
+          {
+            "en": "Here you go.",
+            "ipa": "/hɪr juː ɡoʊ/",
+            "vi": "Của bạn đây.",
+            "soundTip": "Xuống giọng dứt khoát"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v1-18-1",
+        "word": "recommend",
+        "ipa": "/ˌrek.əˈmend/",
+        "partOfSpeech": "verb",
+        "meaningVi": "gợi ý, giới thiệu món ngon / dịch vụ tốt",
+        "exampleSentence": "What do you recommend here?",
+        "exampleSentenceVi": "Ở đây bạn có món gì gợi ý không?",
+        "endingSoundNote": "Bật nhẹ /d/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -MEND."
+      },
+      {
+        "id": "v1-18-2",
+        "word": "available",
+        "ipa": "/əˈveɪ.lə.bəl/",
+        "partOfSpeech": "adj",
+        "meaningVi": "có sẵn, còn hàng",
+        "exampleSentence": "Is this item currently available?",
+        "exampleSentenceVi": "Món đồ này hiện có sẵn không?",
+        "endingSoundNote": "Âm /v/, đuôi /bəl/.",
+        "americanTip": "Trọng âm rơi vào -VAY-."
+      },
+      {
+        "id": "v1-18-3",
+        "word": "convenient",
+        "ipa": "/kənˈviː.ni.ənt/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tiện lợi, thuận tiện",
+        "exampleSentence": "Taking Grab is very convenient in Vietnam.",
+        "exampleSentenceVi": "Đi Grab rất tiện lợi ở Việt Nam.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm /iː/ kéo dài mỉm cười."
+      },
+      {
+        "id": "v1-18-4",
+        "word": "awesome",
+        "ipa": "/ˈɑː.səm/",
+        "partOfSpeech": "adj",
+        "meaningVi": "tuyệt vời, ấn tượng",
+        "exampleSentence": "That sounds like an awesome plan.",
+        "exampleSentenceVi": "Nghe có vẻ là một kế hoạch tuyệt vời.",
+        "endingSoundNote": "Âm đầu /ɑː/ mở rộng họng.",
+        "americanTip": "Từ cửa miệng thông dụng nhất ở Mỹ."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d1-18-1",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excuse me! Could you help me with this real quick?",
+        "textVi": "Xin lỗi bạn! Bạn có thể giúp tôi việc này một chút được không?",
+        "ipa": "/ɪkˈskjuːz miː! kʊd juː help miː wɪð ðɪs riːl kwɪk/"
+      },
+      {
+        "id": "d1-18-2",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "Sure thing! I\\'d be happy to assist you.",
+        "textVi": "Chắc chắn rồi! Tôi rất sẵn lòng giúp bạn.",
+        "ipa": "/ʃʊr θɪŋ! aɪd biː ˈhæp.i tuː əˈsɪst juː/"
+      },
+      {
+        "id": "d1-18-3",
+        "speaker": "A",
+        "speakerName": "John (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "What do you recommend for the best local experience?",
+        "textVi": "Bạn gợi ý gì để có trải nghiệm địa phương tuyệt vời nhất?",
+        "ipa": "/wɑːt duː juː ˌrek.əˈmend fɔːr ðə best ˈloʊ.kəl ɪkˈspɪr.i.əns/"
+      },
+      {
+        "id": "d1-18-4",
+        "speaker": "B",
+        "speakerName": "Nam (Học viên)",
+        "avatar": "👨‍🎓",
+        "textEn": "You should definitely try this spot! It is very convenient and authentic.",
+        "textVi": "Bạn nhất định nên thử địa điểm này! Nó rất thuận tiện và đậm chất bản địa.",
+        "ipa": "/juː ʃʊd ˈdef.ən.ət.li traɪ ðɪs spɑːt! ɪt ɪz ˈver.i kənˈviː.ni.ənt ænd ɑːˈθen.tɪk/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: Could you help me with...? (Nhờ vả lịch sự)",
+        "structure": "Could you help me with + [Noun phrase / V-ing]?",
+        "explanationVi": "Mẫu câu nhờ giúp đỡ lịch thiệp, tạo thiện cảm ngay lập tức.",
+        "exampleEn": "Could you help me with this real quick?",
+        "exampleIpa": "/kʊd juː help miː wɪð ðɪs riːl kwɪk/",
+        "exampleVi": "Bạn giúp tôi việc này một lát được không?"
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Xử Lý Tình Huống Rủ Bạn Bè Đi Chơi, Đi Xem Phim & Hẹn Giờ Gặp Mặt",
+      "pattern": "Could I get [Món / Dịch vụ] with [Yêu cầu thêm], please?",
+      "formulaVi": "Cho tôi lấy [món] kèm theo [yêu cầu] nhé?",
+      "usageVi": "Công thức vạn năng áp dụng trong mọi quầy giao dịch, nhà hàng, siêu thị.",
+      "examples": [
+        {
+          "en": "Could I get this item with extra ice, please?",
+          "ipa": "/kʊd aɪ ɡet ðɪs ˈaɪ.t̬əm wɪð ˈek.strə aɪs, pliːz/",
+          "vi": "Cho tôi lấy món này thêm nhiều đá nhé?",
+          "fillWord": "this item / extra ice"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-1-18-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa gợi ý món ăn/dịch vụ:",
+        "audioWord": "recommend",
+        "options": [
+          {
+            "word": "recommend",
+            "ipa": "/ˌrek.əˈmend/",
+            "meaningVi": "gợi ý, giới thiệu"
+          },
+          {
+            "word": "remember",
+            "ipa": "/rɪˈmem.bɚ/",
+            "meaningVi": "ghi nhớ"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Recommend' có trọng âm rơi vào âm tiết cuối cùng -MEND."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-1",
+    "levelId": "lv2",
+    "titleEn": "English Job Interview in Vietnam",
+    "titleVi": "Phỏng Vấn Xin Việc Bằng Tiếng Anh Tại Công Ty Đa Quốc Gia / FDI",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: phỏng vấn xin việc bằng tiếng anh tại công ty đa quốc gia / fdi giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Briefcase",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Phỏng Vấn Xin Việc Bằng Tiếng Anh Tại Công Ty Đa Quốc Gia / FDI",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-1-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-1-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-1-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-1-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-1-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-1-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-1-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-1-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Phỏng Vấn Xin Việc Bằng Tiếng Anh Tại Công Ty Đa Quốc Gia / FDI)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-1-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-2",
+    "levelId": "lv2",
+    "titleEn": "60-Second Elevator Pitch",
+    "titleVi": "Giới Thiệu Bản Thân Đỉnh Cao Trong 60 Giây (Elevator Pitch)",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: giới thiệu bản thân đỉnh cao trong 60 giây (elevator pitch) giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Giới Thiệu Bản Thân Đỉnh Cao Trong 60 Giây (Elevator Pitch)",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-2-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-2-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-2-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-2-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-2-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-2-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-2-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-2-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Giới Thiệu Bản Thân Đỉnh Cao Trong 60 Giây (Elevator Pitch))",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-2-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-3",
+    "levelId": "lv2",
+    "titleEn": "Presenting Work Achievements (STAR Method)",
+    "titleVi": "Trình Bày Thành Tựu & Kinh Nghiệm Theo Mô Hình STAR",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: trình bày thành tựu & kinh nghiệm theo mô hình star giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Trình Bày Thành Tựu & Kinh Nghiệm Theo Mô Hình STAR",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-3-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-3-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-3-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-3-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-3-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-3-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-3-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-3-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Trình Bày Thành Tựu & Kinh Nghiệm Theo Mô Hình STAR)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-3-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-4",
+    "levelId": "lv2",
+    "titleEn": "Handling Tough Interview Questions",
+    "titleVi": "Xử Lý Khéo Léo Các Câu Hỏi Tình Huống Hóc Búa",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: xử lý khéo léo các câu hỏi tình huống hóc búa giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Briefcase",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Xử Lý Khéo Léo Các Câu Hỏi Tình Huống Hóc Búa",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-4-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-4-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-4-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-4-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-4-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-4-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-4-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-4-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Xử Lý Khéo Léo Các Câu Hỏi Tình Huống Hóc Búa)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-4-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-5",
+    "levelId": "lv2",
+    "titleEn": "Salary Expectation & Benefits Negotiation",
+    "titleVi": "Đàm Phán Mức Lương & Gói Phúc Lợi Chuyên Nghiệp",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: đàm phán mức lương & gói phúc lợi chuyên nghiệp giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Đàm Phán Mức Lương & Gói Phúc Lợi Chuyên Nghiệp",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-5-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-5-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-5-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-5-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-5-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-5-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-5-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-5-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Đàm Phán Mức Lương & Gói Phúc Lợi Chuyên Nghiệp)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-5-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-6",
+    "levelId": "lv2",
+    "titleEn": "Office Small Talk & Water Cooler Chats",
+    "titleVi": "Trò Chuyện Thân Mật Bên Máy Pha Cà Phê Công Sở",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: trò chuyện thân mật bên máy pha cà phê công sở giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Trò Chuyện Thân Mật Bên Máy Pha Cà Phê Công Sở",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-6-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-6-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-6-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-6-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-6-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-6-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-6-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-6-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Trò Chuyện Thân Mật Bên Máy Pha Cà Phê Công Sở)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-6-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-7",
+    "levelId": "lv2",
+    "titleEn": "Asking for Help & Expressing Gratitude",
+    "titleVi": "Nhờ Vả Đồng Nghiệp Hỗ Trợ & Cảm Ơn Tinh Tế",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: nhờ vả đồng nghiệp hỗ trợ & cảm ơn tinh tế giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Nhờ Vả Đồng Nghiệp Hỗ Trợ & Cảm Ơn Tinh Tế",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-7-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-7-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-7-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-7-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-7-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-7-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-7-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-7-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Nhờ Vả Đồng Nghiệp Hỗ Trợ & Cảm Ơn Tinh Tế)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-7-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-8",
+    "levelId": "lv2",
+    "titleEn": "Sick Leave & Vacation Requests",
+    "titleVi": "Xin Phép Nghỉ Ốm, Đi Muộn & Nghỉ Phép Hàng Năm",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: xin phép nghỉ ốm, đi muộn & nghỉ phép hàng năm giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Xin Phép Nghỉ Ốm, Đi Muộn & Nghỉ Phép Hàng Năm",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-8-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-8-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-8-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-8-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-8-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-8-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-8-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-8-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Xin Phép Nghỉ Ốm, Đi Muộn & Nghỉ Phép Hàng Năm)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-8-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-9",
+    "levelId": "lv2",
+    "titleEn": "Complimenting Colleagues on Achievements",
+    "titleVi": "Khen Ngợi & Động Viên Đồng Nghiệp Khi Đạt Thành Tích",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: khen ngợi & động viên đồng nghiệp khi đạt thành tích giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Khen Ngợi & Động Viên Đồng Nghiệp Khi Đạt Thành Tích",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-9-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-9-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-9-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-9-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-9-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-9-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-9-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-9-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Khen Ngợi & Động Viên Đồng Nghiệp Khi Đạt Thành Tích)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-9-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-10",
+    "levelId": "lv2",
+    "titleEn": "Online Meetings on Zoom & Teams",
+    "titleVi": "Làm Chủ Cuộc Họp Trực Tuyến Qua Zoom & Microsoft Teams",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: làm chủ cuộc họp trực tuyến qua zoom & microsoft teams giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Video",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Làm Chủ Cuộc Họp Trực Tuyến Qua Zoom & Microsoft Teams",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-10-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-10-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-10-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-10-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-10-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-10-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-10-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-10-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Làm Chủ Cuộc Họp Trực Tuyến Qua Zoom & Microsoft Teams)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-10-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-11",
+    "levelId": "lv2",
+    "titleEn": "Handling Audio & Screen Sharing Glitches",
+    "titleVi": "Xử Lý Sự Cố Đường Truyền Lag & Màn Hình Chia Sẻ",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: xử lý sự cố đường truyền lag & màn hình chia sẻ giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Xử Lý Sự Cố Đường Truyền Lag & Màn Hình Chia Sẻ",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-11-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-11-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-11-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-11-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-11-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-11-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-11-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-11-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Xử Lý Sự Cố Đường Truyền Lag & Màn Hình Chia Sẻ)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-11-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-12",
+    "levelId": "lv2",
+    "titleEn": "Reporting Project Progress & Milestones",
+    "titleVi": "Báo Cáo Tiến Độ Dự Án & Đạt Các Cột Mốc Milestone",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: báo cáo tiến độ dự án & đạt các cột mốc milestone giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Báo Cáo Tiến Độ Dự Án & Đạt Các Cột Mốc Milestone",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-12-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-12-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-12-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-12-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-12-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-12-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-12-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-12-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Báo Cáo Tiến Độ Dự Án & Đạt Các Cột Mốc Milestone)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-12-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-13",
+    "levelId": "lv2",
+    "titleEn": "Pitching New Ideas & Solutions",
+    "titleVi": "Đề Xuất Ý Tưởng Sáng Tạo & Giải Pháp Mới",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: đề xuất ý tưởng sáng tạo & giải pháp mới giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Đề Xuất Ý Tưởng Sáng Tạo & Giải Pháp Mới",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-13-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-13-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-13-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-13-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-13-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-13-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-13-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-13-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Đề Xuất Ý Tưởng Sáng Tạo & Giải Pháp Mới)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-13-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-14",
+    "levelId": "lv2",
+    "titleEn": "Presenting Ideas & Polite Disagreement",
+    "titleVi": "Thuyết Trình Ý Tưởng & Phản Biện Lịch Sự",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: thuyết trình ý tưởng & phản biện lịch sự giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Thuyết Trình Ý Tưởng & Phản Biện Lịch Sự",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-14-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-14-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-14-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-14-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-14-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-14-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-14-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-14-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Thuyết Trình Ý Tưởng & Phản Biện Lịch Sự)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-14-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-15",
+    "levelId": "lv2",
+    "titleEn": "Leading Brainstorming Sessions",
+    "titleVi": "Chủ Trì Buổi Động Não Thảo Luận Nhóm (Brainstorming)",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: chủ trì buổi động não thảo luận nhóm (brainstorming) giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Chủ Trì Buổi Động Não Thảo Luận Nhóm (Brainstorming)",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-15-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-15-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-15-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-15-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-15-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-15-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-15-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-15-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Chủ Trì Buổi Động Não Thảo Luận Nhóm (Brainstorming))",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-15-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-16",
+    "levelId": "lv2",
+    "titleEn": "Meeting Minutes & Action Items",
+    "titleVi": "Tóm Tắt Biên Bản Cuộc Họp & Phân Công Đầu Việc",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: tóm tắt biên bản cuộc họp & phân công đầu việc giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Video",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Tóm Tắt Biên Bản Cuộc Họp & Phân Công Đầu Việc",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-16-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-16-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-16-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-16-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-16-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-16-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-16-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-16-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Tóm Tắt Biên Bản Cuộc Họp & Phân Công Đầu Việc)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-16-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-17",
+    "levelId": "lv2",
+    "titleEn": "US-Style Email & Business Messaging",
+    "titleVi": "Viết Email & Nhắn Tin Công Việc Ngắn Gọn Kiểu Mỹ",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: viết email & nhắn tin công việc ngắn gọn kiểu mỹ giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Mail",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Viết Email & Nhắn Tin Công Việc Ngắn Gọn Kiểu Mỹ",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-17-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-17-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-17-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-17-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-17-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-17-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-17-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-17-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Viết Email & Nhắn Tin Công Việc Ngắn Gọn Kiểu Mỹ)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-17-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-18",
+    "levelId": "lv2",
+    "titleEn": "Sending Attachments & Deadline Reminders",
+    "titleVi": "Gửi Tài Liệu Đính Kèm & Nhắc Nhở Hạn Chót",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: gửi tài liệu đính kèm & nhắc nhở hạn chót giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Gửi Tài Liệu Đính Kèm & Nhắc Nhở Hạn Chót",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-18-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-18-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-18-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-18-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-18-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-18-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-18-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-18-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Gửi Tài Liệu Đính Kèm & Nhắc Nhở Hạn Chót)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-18-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-19",
+    "levelId": "lv2",
+    "titleEn": "Follow-up Emails on Projects",
+    "titleVi": "Viết Email Theo Dõi Tiến Độ Công Việc (Follow-up)",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: viết email theo dõi tiến độ công việc (follow-up) giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Mail",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Viết Email Theo Dõi Tiến Độ Công Việc (Follow-up)",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-19-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-19-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-19-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-19-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-19-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-19-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-19-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-19-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Viết Email Theo Dõi Tiến Độ Công Việc (Follow-up))",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-19-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-20",
+    "levelId": "lv2",
+    "titleEn": "Writing Professional Apologies for Delays",
+    "titleVi": "Viết Thư Xin Lỗi Vì Chậm Trễ Một Cách Chuyên Nghiệp",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: viết thư xin lỗi vì chậm trễ một cách chuyên nghiệp giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Viết Thư Xin Lỗi Vì Chậm Trễ Một Cách Chuyên Nghiệp",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-20-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-20-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-20-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-20-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-20-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-20-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-20-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-20-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Viết Thư Xin Lỗi Vì Chậm Trễ Một Cách Chuyên Nghiệp)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-20-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-21",
+    "levelId": "lv2",
+    "titleEn": "Slack & Microsoft Teams Etiquette",
+    "titleVi": "Văn Hóa Nhắn Tin Qua Slack & Microsoft Teams",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: văn hóa nhắn tin qua slack & microsoft teams giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Văn Hóa Nhắn Tin Qua Slack & Microsoft Teams",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-21-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-21-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-21-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-21-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-21-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-21-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-21-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-21-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Văn Hóa Nhắn Tin Qua Slack & Microsoft Teams)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-21-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-22",
+    "levelId": "lv2",
+    "titleEn": "Replying to Partner Inquiries & RSVP",
+    "titleVi": "Trả Lời Thư Đối Tác & Xác Nhận Tham Gia Sự Kiện",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: trả lời thư đối tác & xác nhận tham gia sự kiện giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Trả Lời Thư Đối Tác & Xác Nhận Tham Gia Sự Kiện",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-22-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-22-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-22-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-22-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-22-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-22-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-22-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-22-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Trả Lời Thư Đối Tác & Xác Nhận Tham Gia Sự Kiện)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-22-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-23",
+    "levelId": "lv2",
+    "titleEn": "Writing Resignation Letters Politely",
+    "titleVi": "Viết Thư Từ Chức & Bàn Giao Công Việc Văn Minh",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: viết thư từ chức & bàn giao công việc văn minh giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Viết Thư Từ Chức & Bàn Giao Công Việc Văn Minh",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-23-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-23-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-23-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-23-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-23-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-23-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-23-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-23-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Viết Thư Từ Chức & Bàn Giao Công Việc Văn Minh)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-23-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv2-lesson-24",
+    "levelId": "lv2",
+    "titleEn": "Cross-Cultural Communication with US Clients",
+    "titleVi": "Giao Tiếp Khác Biệt Văn Hóa Với Khách Hàng Mỹ",
+    "descriptionVi": "Bài học thực chiến Level 2 nâng tầm tiếng Anh công sở: giao tiếp khác biệt văn hóa với khách hàng mỹ giúp bạn thăng tiến sự nghiệp và tự tin làm việc với sếp/đối tác Tây.",
+    "icon": "Award",
+    "durationMinutes": 15,
+    "tags": [
+      "Tiếng Anh công sở",
+      "Career Ace",
+      "Level 2 B1"
+    ],
+    "keyTakeaways": [
+      "Làm chủ bộ từ vựng và thuật ngữ chuyên môn trong Giao Tiếp Khác Biệt Văn Hóa Với Khách Hàng Mỹ",
+      "Nắm vững các mẫu câu đàm phán, thuyết trình và viết email chuẩn văn hóa Mỹ",
+      "Tự tin bày tỏ quan điểm độc lập và xử lý sự cố công việc êm đẹp"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Trọng Âm Thuật Ngữ Kinh Doanh",
+        "description": "Các danh từ ghép thường nhấn trọng âm vào từ đầu (deadline, teamwork, milestone).",
+        "rule": "Phát âm dứt khoát các âm đuôi /t, d, s, z/ để giữ phong thái chuyên nghiệp.",
+        "examples": [
+          {
+            "en": "milestone",
+            "ipa": "/ˈmaɪl.stoʊn/",
+            "vi": "cột mốc",
+            "soundTip": "Nhấn âm 1"
+          },
+          {
+            "en": "prioritize",
+            "ipa": "/praɪˈɔːr.ə.taɪz/",
+            "vi": "ưu tiên",
+            "soundTip": "Nhấn âm 2"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v2-24-1",
+        "word": "experience",
+        "ipa": "/ɪkˈspɪr.i.əns/",
+        "partOfSpeech": "noun",
+        "meaningVi": "kinh nghiệm chuyên môn",
+        "exampleSentence": "I have extensive experience in project execution.",
+        "exampleSentenceVi": "Tôi có nhiều kinh nghiệm trong việc triển khai dự án.",
+        "endingSoundNote": "Đuôi xì gió /s/.",
+        "americanTip": "Nhấn mạnh âm -SPIR-."
+      },
+      {
+        "id": "v2-24-2",
+        "word": "perspective",
+        "ipa": "/pɚˈspek.tɪv/",
+        "partOfSpeech": "noun",
+        "meaningVi": "góc nhìn, quan điểm cá nhân",
+        "exampleSentence": "From my perspective, this solution is optimal.",
+        "exampleSentenceVi": "Theo quan điểm của tôi, giải pháp này là tối ưu.",
+        "endingSoundNote": "Khép nhẹ /v/ ở cuối.",
+        "americanTip": "Trọng âm rơi vào -SPEC-."
+      },
+      {
+        "id": "v2-24-3",
+        "word": "collaborate",
+        "ipa": "/kəˈlæb.ə.reɪt/",
+        "partOfSpeech": "verb",
+        "meaningVi": "hợp tác làm việc cùng nhau",
+        "exampleSentence": "We collaborate closely across all departments.",
+        "exampleSentenceVi": "Chúng tôi phối hợp chặt chẽ giữa các phòng ban.",
+        "endingSoundNote": "Bật /t/ dứt khoát.",
+        "americanTip": "Âm A rớt hàm /æ/ ở giữa."
+      },
+      {
+        "id": "v2-24-4",
+        "word": "efficiency",
+        "ipa": "/ɪˈfɪʃ.ən.si/",
+        "partOfSpeech": "noun",
+        "meaningVi": "hiệu suất, tính hiệu quả công việc",
+        "exampleSentence": "This automation improves our team efficiency.",
+        "exampleSentenceVi": "Sự tự động hóa này cải thiện hiệu suất của nhóm.",
+        "endingSoundNote": "Âm giữa /ʃ/, đuôi /si/.",
+        "americanTip": "Trọng âm rơi vào -FISH-."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d2-24-1",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Could you provide an update regarding our current progress on this?",
+        "textVi": "Bạn có thể cập nhật tiến độ hiện tại của chúng ta về việc này không?",
+        "ipa": "/kʊd juː prəˈvaɪd ən ˈʌp.deɪt rɪˈɡɑːr.dɪŋ ˈaʊ.ɚ ˈkɝː.ənt ˈprɑː.ɡres ɑːn ðɪs/"
+      },
+      {
+        "id": "d2-24-2",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "Everything is on track! We collaborated closely to achieve our main milestone.",
+        "textVi": "Mọi thứ đều đúng tiến độ! Chúng tôi đã phối hợp chặt chẽ để đạt cột mốc chính.",
+        "ipa": "/ˈev.ri.θɪŋ ɪz ɑːn træk! wiː kəˈlæb.ə.reɪ.t̬ɪd ˈkloʊs.li tuː əˈtʃiːv ˈaʊ.ɚ meɪn ˈmaɪl.stoʊn/"
+      },
+      {
+        "id": "d2-24-3",
+        "speaker": "A",
+        "speakerName": "Manager (Mỹ)",
+        "avatar": "👨‍💼",
+        "textEn": "Excellent work! What are the next action items we should prioritize?",
+        "textVi": "Làm việc rất xuất sắc! Các đầu việc tiếp theo chúng ta nên ưu tiên là gì?",
+        "ipa": "/ˈek.səl.ənt wɜːrk! wɑːt ɑːr ðə nekst ˈæk.ʃən ˈaɪ.t̬əmz wiː ʃʊd praɪˈɔːr.ə.taɪz/"
+      },
+      {
+        "id": "d2-24-4",
+        "speaker": "B",
+        "speakerName": "Thắng (Học viên)",
+        "avatar": "👨‍💻",
+        "textEn": "From my perspective, focusing on final quality testing ensures maximum efficiency.",
+        "textVi": "Theo quan điểm của tôi, tập trung kiểm thử chất lượng cuối cùng sẽ đảm bảo hiệu suất cao nhất.",
+        "ipa": "/frʌm maɪ pɚˈspek.tɪv, ˈfoʊ.kəs.ɪŋ ɑːn ˈfaɪ.nəl ˈkwɑː.lə.t̬i ˈtes.tɪŋ ɪnˈʃʊrz ˈmæk.sə.məm ɪˈfɪʃ.ən.si/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: From my perspective, + [Clause] (Nêu quan điểm)",
+        "structure": "From my perspective / viewpoint, + [Sentence]",
+        "explanationVi": "Mẫu câu trang trọng, chuyên nghiệp khi phát biểu ý kiến trước sếp hoặc đối tác.",
+        "exampleEn": "From my perspective, this is the best approach.",
+        "exampleIpa": "/frʌm maɪ pɚˈspek.tɪv, ðɪs ɪz ðə best əˈproʊtʃ/",
+        "exampleVi": "Theo quan điểm của tôi, đây là hướng đi tốt nhất."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Công Sở & Đàm Phán (Giao Tiếp Khác Biệt Văn Hóa Với Khách Hàng Mỹ)",
+      "pattern": "We are on track to [Mục tiêu công việc] with high [Tiêu chuẩn].",
+      "formulaVi": "Chúng tôi đang đúng tiến độ để [làm gì] với [tiêu chuẩn cao].",
+      "usageVi": "Mẫu câu báo cáo tiến độ mang lại sự an tâm tuyệt đối cho ban lãnh đạo.",
+      "examples": [
+        {
+          "en": "We are on track to complete the deliverables with high efficiency.",
+          "ipa": "/wiː ɑːr ɑːn træk tuː kəmˈpliːt ðə dɪˈlɪv.ɚ.ə.bəlz wɪð haɪ ɪˈfɪʃ.ən.si/",
+          "vi": "Chúng tôi đang đúng tiến độ để bàn giao sản phẩm với hiệu suất cao.",
+          "fillWord": "complete the deliverables / efficiency"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-2-24-1",
+        "promptVi": "Nghe và chọn từ chỉ góc nhìn chuyên môn:",
+        "audioWord": "perspective",
+        "options": [
+          {
+            "word": "perspective",
+            "ipa": "/pɚˈspek.tɪv/",
+            "meaningVi": "góc nhìn, quan điểm"
+          },
+          {
+            "word": "prospective",
+            "ipa": "/prəˈspek.tɪv/",
+            "meaningVi": "tiềm năng"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Perspective' có âm đầu /pɚ/, nhấn mạnh vào âm tiết -SPEC-."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-1",
+    "levelId": "lv3",
+    "titleEn": "International Airport & Customs Navigation",
+    "titleVi": "Thủ Tục Sân Bay Quốc Tế, Xuất Nhập Cảnh & Hải Quan",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: thủ tục sân bay quốc tế, xuất nhập cảnh & hải quan giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Plane",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Thủ Tục Sân Bay Quốc Tế, Xuất Nhập Cảnh & Hải Quan",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-1-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-1-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-1-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-1-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-1-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-1-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-1-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-1-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Thủ Tục Sân Bay Quốc Tế, Xuất Nhập Cảnh & Hải Quan)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-1-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-2",
+    "levelId": "lv3",
+    "titleEn": "Handling Flight Delays & Lost Baggage",
+    "titleVi": "Xử Lý Hoãn Chuyến Bay & Thủ Tục Thất Lạc Hành Lý",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: xử lý hoãn chuyến bay & thủ tục thất lạc hành lý giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Plane",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Xử Lý Hoãn Chuyến Bay & Thủ Tục Thất Lạc Hành Lý",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-2-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-2-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-2-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-2-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-2-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-2-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-2-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-2-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Xử Lý Hoãn Chuyến Bay & Thủ Tục Thất Lạc Hành Lý)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-2-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-3",
+    "levelId": "lv3",
+    "titleEn": "Hotel Check-in, Amenities & Room Upgrades",
+    "titleVi": "Check-in Khách Sạn, Yêu Cầu Dịch Vụ & Xin Nâng Cấp Phòng",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: check-in khách sạn, yêu cầu dịch vụ & xin nâng cấp phòng giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Home",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Check-in Khách Sạn, Yêu Cầu Dịch Vụ & Xin Nâng Cấp Phòng",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-3-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-3-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-3-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-3-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-3-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-3-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-3-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-3-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Check-in Khách Sạn, Yêu Cầu Dịch Vụ & Xin Nâng Cấp Phòng)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-3-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-4",
+    "levelId": "lv3",
+    "titleEn": "Hotel Issues & Housekeeping Requests",
+    "titleVi": "Xử Lý Sự Cố Phòng (Máy Lạnh, Nước Nóng) & Gọi Dọn Phòng",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: xử lý sự cố phòng (máy lạnh, nước nóng) & gọi dọn phòng giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Home",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Xử Lý Sự Cố Phòng (Máy Lạnh, Nước Nóng) & Gọi Dọn Phòng",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-4-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-4-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-4-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-4-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-4-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-4-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-4-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-4-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Xử Lý Sự Cố Phòng (Máy Lạnh, Nước Nóng) & Gọi Dọn Phòng)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-4-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-5",
+    "levelId": "lv3",
+    "titleEn": "Travel Emergencies & Pharmacy Assistance",
+    "titleVi": "Cứu Nguy Sự Cố Du Lịch, Mua Thuốc Tây & Bệnh Viện",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: cứu nguy sự cố du lịch, mua thuốc tây & bệnh viện giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Compass",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Cứu Nguy Sự Cố Du Lịch, Mua Thuốc Tây & Bệnh Viện",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-5-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-5-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-5-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-5-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-5-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-5-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-5-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-5-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Cứu Nguy Sự Cố Du Lịch, Mua Thuốc Tây & Bệnh Viện)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-5-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-6",
+    "levelId": "lv3",
+    "titleEn": "Reporting Lost Passport & Police Assistance",
+    "titleVi": "Báo Cảnh Sát Khi Bị Mất Hộ Chiếu, Mất Ví Tiền Hoặc Lạc",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: báo cảnh sát khi bị mất hộ chiếu, mất ví tiền hoặc lạc giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Compass",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Báo Cảnh Sát Khi Bị Mất Hộ Chiếu, Mất Ví Tiền Hoặc Lạc",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-6-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-6-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-6-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-6-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-6-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-6-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-6-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-6-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Báo Cảnh Sát Khi Bị Mất Hộ Chiếu, Mất Ví Tiền Hoặc Lạc)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-6-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-7",
+    "levelId": "lv3",
+    "titleEn": "Public Transit & Metro Navigation in Big Cities",
+    "titleVi": "Đi Tàu Điện Ngầm (Subway/Metro), Xe Buýt & Mua Vé Tự Động",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: đi tàu điện ngầm (subway/metro), xe buýt & mua vé tự động giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Compass",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Đi Tàu Điện Ngầm (Subway/Metro), Xe Buýt & Mua Vé Tự Động",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-7-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-7-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-7-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-7-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-7-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-7-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-7-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-7-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Đi Tàu Điện Ngầm (Subway/Metro), Xe Buýt & Mua Vé Tự Động)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-7-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-8",
+    "levelId": "lv3",
+    "titleEn": "Uber, Lyft & Taxi Ride Navigation",
+    "titleVi": "Bắt Xe Công Nghệ (Uber/Lyft), Chỉ Đường & Thanh Toán",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: bắt xe công nghệ (uber/lyft), chỉ đường & thanh toán giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Compass",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Bắt Xe Công Nghệ (Uber/Lyft), Chỉ Đường & Thanh Toán",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-8-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-8-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-8-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-8-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-8-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-8-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-8-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-8-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Bắt Xe Công Nghệ (Uber/Lyft), Chỉ Đường & Thanh Toán)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-8-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-9",
+    "levelId": "lv3",
+    "titleEn": "Car Rental & Gas Station Navigation",
+    "titleVi": "Thuê Xe Tự Lái Nước Ngoài, Quy Định Bằng Lái & Đổ Xăng",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: thuê xe tự lái nước ngoài, quy định bằng lái & đổ xăng giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Compass",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Thuê Xe Tự Lái Nước Ngoài, Quy Định Bằng Lái & Đổ Xăng",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-9-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-9-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-9-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-9-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-9-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-9-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-9-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-9-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Thuê Xe Tự Lái Nước Ngoài, Quy Định Bằng Lái & Đổ Xăng)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-9-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-10",
+    "levelId": "lv3",
+    "titleEn": "Booking Tours & Sightseeing Attractions",
+    "titleVi": "Đặt Tour Du Lịch Trong Ngày & Mua Vé Điểm Tham Quan",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: đặt tour du lịch trong ngày & mua vé điểm tham quan giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Compass",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Đặt Tour Du Lịch Trong Ngày & Mua Vé Điểm Tham Quan",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-10-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-10-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-10-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-10-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-10-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-10-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-10-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-10-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Đặt Tour Du Lịch Trong Ngày & Mua Vé Điểm Tham Quan)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-10-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-11",
+    "levelId": "lv3",
+    "titleEn": "Connected Speech: Gonna, Wanna, Gotta, Lemme",
+    "titleVi": "Nói Lướt Như Người Bản Xứ: Gonna, Wanna, Gotta, Lemme",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: nói lướt như người bản xứ: gonna, wanna, gotta, lemme giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Zap",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Nói Lướt Như Người Bản Xứ: Gonna, Wanna, Gotta, Lemme",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-11-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-11-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-11-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-11-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-11-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-11-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-11-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-11-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Nói Lướt Như Người Bản Xứ)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-11-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-12",
+    "levelId": "lv3",
+    "titleEn": "Consonant-to-Vowel Linking Secrets",
+    "titleVi": "Bí Mật Nối Phụ Âm Sang Nguyên Âm Liền Mạch Một Hơi",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: bí mật nối phụ âm sang nguyên âm liền mạch một hơi giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Compass",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Bí Mật Nối Phụ Âm Sang Nguyên Âm Liền Mạch Một Hơi",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-12-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-12-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-12-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-12-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-12-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-12-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-12-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-12-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Bí Mật Nối Phụ Âm Sang Nguyên Âm Liền Mạch Một Hơi)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-12-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-13",
+    "levelId": "lv3",
+    "titleEn": "Top 20 American Youth Slang Expressions",
+    "titleVi": "20 Cụm Từ Lóng (Slang) Cửa Miệng Của Giới Trẻ Mỹ",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: 20 cụm từ lóng (slang) cửa miệng của giới trẻ mỹ giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Zap",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong 20 Cụm Từ Lóng (Slang) Cửa Miệng Của Giới Trẻ Mỹ",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-13-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-13-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-13-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-13-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-13-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-13-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-13-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-13-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (20 Cụm Từ Lóng (Slang) Cửa Miệng Của Giới Trẻ Mỹ)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-13-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-14",
+    "levelId": "lv3",
+    "titleEn": "American Slang & Everyday Idioms",
+    "titleVi": "Tiếng Lóng & Thành Ngữ Cửa Miệng Hàng Ngày Của Người Mỹ",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: tiếng lóng & thành ngữ cửa miệng hàng ngày của người mỹ giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Zap",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Tiếng Lóng & Thành Ngữ Cửa Miệng Hàng Ngày Của Người Mỹ",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-14-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-14-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-14-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-14-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-14-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-14-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-14-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-14-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Tiếng Lóng & Thành Ngữ Cửa Miệng Hàng Ngày Của Người Mỹ)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-14-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-15",
+    "levelId": "lv3",
+    "titleEn": "Casual Banter at Bars, Pubs & Social Lounges",
+    "titleVi": "Văn Hóa Tán Gẫu Trong Quán Bar, Pub & Kết Bạn Quốc Tế",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: văn hóa tán gẫu trong quán bar, pub & kết bạn quốc tế giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Compass",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Văn Hóa Tán Gẫu Trong Quán Bar, Pub & Kết Bạn Quốc Tế",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-15-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-15-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-15-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-15-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-15-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-15-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-15-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-15-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Văn Hóa Tán Gẫu Trong Quán Bar, Pub & Kết Bạn Quốc Tế)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-15-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-16",
+    "levelId": "lv3",
+    "titleEn": "Discussing Pop Culture & Hollywood Movies",
+    "titleVi": "Thảo Luận Về Phim Ảnh Hollywood, Âm Nhạc & Show Truyền Hình",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: thảo luận về phim ảnh hollywood, âm nhạc & show truyền hình giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Compass",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Thảo Luận Về Phim Ảnh Hollywood, Âm Nhạc & Show Truyền Hình",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-16-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-16-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-16-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-16-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-16-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-16-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-16-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-16-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Thảo Luận Về Phim Ảnh Hollywood, Âm Nhạc & Show Truyền Hình)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-16-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-17",
+    "levelId": "lv3",
+    "titleEn": "Debating Lifestyle, Tech & Social Trends",
+    "titleVi": "Bày Tỏ Quan Điểm Về Lối Sống, Công Nghệ & Xu Hướng Xã Hội",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: bày tỏ quan điểm về lối sống, công nghệ & xu hướng xã hội giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Compass",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Bày Tỏ Quan Điểm Về Lối Sống, Công Nghệ & Xu Hướng Xã Hội",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-17-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-17-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-17-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-17-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-17-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-17-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-17-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-17-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Bày Tỏ Quan Điểm Về Lối Sống, Công Nghệ & Xu Hướng Xã Hội)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-17-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
+      }
+    ]
+  },
+  {
+    "id": "lv3-lesson-18",
+    "levelId": "lv3",
+    "titleEn": "Mastering Independent Fluent Conversations",
+    "titleVi": "Làm Chủ Đàm Thoại Độc Lập Trôi Chảy Không Giới Hạn",
+    "descriptionVi": "Bài học thực chiến Level 3 bứt phá: làm chủ đàm thoại độc lập trôi chảy không giới hạn giúp bạn đạt ngưỡng người dùng tiếng Anh độc lập (Independent Speaker).",
+    "icon": "Compass",
+    "durationMinutes": 15,
+    "tags": [
+      "Du lịch tự túc",
+      "Bản xứ hóa",
+      "Level 3 B2"
+    ],
+    "keyTakeaways": [
+      "Tự tin xử lý 100% tình huống thực tế trong Làm Chủ Đàm Thoại Độc Lập Trôi Chảy Không Giới Hạn",
+      "Nắm vững các kỹ thuật nối âm (Connected speech) và từ lóng bản xứ",
+      "Xem phim US-UK và du lịch nước ngoài độc lập không cần phiên dịch"
+    ],
+    "vietnamesePronunciationTips": [
+      {
+        "title": "Mẹo Nối Âm Lướt Connected Speech",
+        "description": "Biến going to thành gonna, want to thành wanna, have got to thành gotta.",
+        "rule": "Thả lỏng khẩu hình miệng, nhấn mạnh vào từ mang thông tin chính.",
+        "examples": [
+          {
+            "en": "I'm gonna do it",
+            "ipa": "/aɪm ˈɡʌn.ə duː ɪt/",
+            "vi": "Tôi sẽ làm điều đó",
+            "soundTip": "Lướt 1 hơi"
+          },
+          {
+            "en": "piece of cake",
+            "ipa": "/piːs əv keɪk/",
+            "vi": "dễ như ăn kẹo",
+            "soundTip": "Nối pee-səv"
+          }
+        ]
+      }
+    ],
+    "vocabulary": [
+      {
+        "id": "v3-18-1",
+        "word": "destination",
+        "ipa": "/ˌdes.təˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "meaningVi": "điểm đến du lịch",
+        "exampleSentence": "This is our final destination on the itinerary.",
+        "exampleSentenceVi": "Đây là điểm đến cuối cùng trong lịch trình của chúng tôi.",
+        "endingSoundNote": "Trọng âm rơi vào -NAY-.",
+        "americanTip": "Từ luôn gặp khi đi du lịch."
+      },
+      {
+        "id": "v3-18-2",
+        "word": "complimentary",
+        "ipa": "/ˌkɑːm.pləˈmen.t̬ɚ.i/",
+        "partOfSpeech": "adj",
+        "meaningVi": "miễn phí đi kèm dịch vụ cao cấp",
+        "exampleSentence": "Enjoy your complimentary drinks at the lounge.",
+        "exampleSentenceVi": "Hãy thưởng thức đồ uống miễn phí tại sảnh chờ nhé.",
+        "endingSoundNote": "Flap T ở giữa từ.",
+        "americanTip": "Từ sang trọng thay cho chữ free."
+      },
+      {
+        "id": "v3-18-3",
+        "word": "gonna",
+        "ipa": "/ˈɡʌn.ə/",
+        "partOfSpeech": "slang / contraction",
+        "meaningVi": "sẽ (viết tắt của going to)",
+        "exampleSentence": "I'm gonna explore the city center today.",
+        "exampleSentenceVi": "Hôm nay tôi sẽ đi khám phá trung tâm thành phố.",
+        "endingSoundNote": "Kết thúc bằng /ə/ nhẹ.",
+        "americanTip": "Từ nói lướt thông dụng nhất ở Mỹ."
+      },
+      {
+        "id": "v3-18-4",
+        "word": "no biggie",
+        "ipa": "/noʊ ˈbɪɡ.i/",
+        "partOfSpeech": "slang / phrase",
+        "meaningVi": "chuyện nhỏ, không có gì to tát",
+        "exampleSentence": "Thanks for your help! - No biggie!",
+        "exampleSentenceVi": "Cảm ơn đã giúp nhé! - Chuyện nhỏ ấy mà!",
+        "endingSoundNote": "Âm /ɡ/ giòn tan.",
+        "americanTip": "Dùng thay cho 'You are welcome'."
+      }
+    ],
+    "dialogue": [
+      {
+        "id": "d3-18-1",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Welcome! Are you ready to explore our vibrant city today?",
+        "textVi": "Chào mừng bạn! Bạn đã sẵn sàng để khám phá thành phố sôi động hôm nay chưa?",
+        "ipa": "/ˈwel.kəm! ɑːr juː ˈred.i tuː ɪkˈsplɔːr ˈaʊ.ɚ ˈvaɪ.brənt ˈsɪt̬.i təˈdeɪ/"
+      },
+      {
+        "id": "d3-18-2",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "Absolutely! I\\'m gonna visit all the top destinations on our list.",
+        "textVi": "Chắc chắn rồi! Tôi sẽ đi thăm tất cả các điểm đến hàng đầu trong danh sách.",
+        "ipa": "/ˌæb.səˈluːt.li! aɪm ˈɡʌn.ə ˈvɪz.ɪt ɑːl ðə tɑːp ˌdes.təˈneɪ.ʃənz ɑːn ˈaʊ.ɚ lɪst/"
+      },
+      {
+        "id": "d3-18-3",
+        "speaker": "A",
+        "speakerName": "Local Guide (Mỹ)",
+        "avatar": "🤠",
+        "textEn": "Sounds like an awesome adventure. Let me know if you need any local tips!",
+        "textVi": "Nghe như một chuyến phiêu lưu tuyệt vời. Cứ bảo tôi nếu bạn cần mẹo hay nhé!",
+        "ipa": "/saʊndz laɪk ən ˈɑː.səm ədˈven.tʃɚ. let miː noʊ ɪf juː niːd ˈen.i ˈloʊ.kəl tɪps/"
+      },
+      {
+        "id": "d3-18-4",
+        "speaker": "B",
+        "speakerName": "Hương (Học viên)",
+        "avatar": "👩‍🎓",
+        "textEn": "No biggie! Your guidance has been incredibly helpful. Thank you!",
+        "textVi": "Chuyện nhỏ ấy mà! Sự hướng dẫn của bạn cực kỳ hữu ích. Cảm ơn bạn nhé!",
+        "ipa": "/noʊ ˈbɪɡ.i! jɔːr ˈɡaɪ.dəns hæz biːn ɪnˈkred.ə.bli ˈhelp.fəl. θæŋk juː/"
+      }
+    ],
+    "grammarNotes": [
+      {
+        "titleVi": "Cấu trúc: I'm gonna + V (Nói về dự định tương lai)",
+        "structure": "Subject + am/is/are + gonna + Base Verb",
+        "explanationVi": "Cách nói lướt rút gọn phổ biến 100% trong đàm thoại đời thường của người Mỹ.",
+        "exampleEn": "I'm gonna visit the museum.",
+        "exampleIpa": "/aɪm ˈɡʌn.ə ˈvɪz.ɪt ðə mjuːˈziː.əm/",
+        "exampleVi": "Tôi sẽ đi thăm viện bảo tàng."
+      }
+    ],
+    "sentencePattern": {
+      "titleVi": "Khuôn Mẫu Câu: Du Lịch & Bản Xứ Hoá (Làm Chủ Đàm Thoại Độc Lập Trôi Chảy Không Giới Hạn)",
+      "pattern": "I'm gonna [Hành động] because I wanna experience [Trải nghiệm].",
+      "formulaVi": "Tôi sẽ [làm gì] bởi vì tôi muốn trải nghiệm [điều gì].",
+      "usageVi": "Mẫu câu đàm thoại tự nhiên, giàu cảm xúc chuẩn người bản xứ.",
+      "examples": [
+        {
+          "en": "I'm gonna travel independently because I wanna experience local culture.",
+          "ipa": "/aɪm ˈɡʌn.ə ˈtræv.əl ˌɪn.dɪˈpen.dənt.li bɪˈkɑːz aɪ ˈwɑːn.ə ɪkˈspɪr.i.əns ˈloʊ.kəl ˈkʌl.tʃɚ/",
+          "vi": "Tôi sẽ đi du lịch tự túc vì tôi muốn trải nghiệm văn hóa địa phương.",
+          "fillWord": "travel independently / local culture"
+        }
+      ]
+    },
+    "earTrainingDrills": [
+      {
+        "id": "drill-3-18-1",
+        "promptVi": "Nghe và chọn từ mang nghĩa điểm đến du lịch:",
+        "audioWord": "destination",
+        "options": [
+          {
+            "word": "destination",
+            "ipa": "/ˌdes.təˈneɪ.ʃən/",
+            "meaningVi": "điểm đến du lịch"
+          },
+          {
+            "word": "definition",
+            "ipa": "/ˌdef.əˈnɪʃ.ən/",
+            "meaningVi": "định nghĩa"
+          }
+        ],
+        "correctIndex": 0,
+        "explanationVi": "'Destination' có trọng âm rơi vào âm tiết thứ 3 -NAY- /neɪ/."
       }
     ]
   }
