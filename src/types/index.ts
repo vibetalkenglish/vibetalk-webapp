@@ -44,6 +44,36 @@ export interface DialogueLine {
   audioSlow?: boolean;
 }
 
+export interface SentencePatternExample {
+  en: string;
+  ipa: string;
+  vi: string;
+  fillWord?: string;
+}
+
+export interface SentencePattern {
+  titleVi: string;
+  pattern: string;
+  formulaVi: string;
+  usageVi: string;
+  examples: SentencePatternExample[];
+}
+
+export interface EarTrainingOption {
+  word: string;
+  ipa: string;
+  meaningVi: string;
+}
+
+export interface EarTrainingDrill {
+  id: string;
+  promptVi: string;
+  audioWord: string;
+  options: EarTrainingOption[];
+  correctIndex: number;
+  explanationVi: string;
+}
+
 export type LevelId = 'lv0' | 'lv1' | 'lv2' | 'lv3';
 
 export interface Lesson {
@@ -58,6 +88,8 @@ export interface Lesson {
   keyTakeaways: string[];
   vocabulary: VocabItem[];
   dialogue?: DialogueLine[];
+  sentencePattern?: SentencePattern;
+  earTrainingDrills?: EarTrainingDrill[];
   vietnamesePronunciationTips: {
     title: string;
     description: string;

@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { LESSONS, LEVELS_CONFIG } from '@/data/lessonsData';
 import WordPronounceCard from '@/components/WordPronounceCard';
 import DialoguePlayer from '@/components/DialoguePlayer';
+import SentencePatternCard from '@/components/SentencePatternCard';
+import EarTrainingCard from '@/components/EarTrainingCard';
 import { 
   markLessonCompleted, 
   toggleSaveLesson, 
@@ -250,22 +252,60 @@ export default function LessonDetailPage() {
         </div>
       </section>
 
-      {/* SECTION 3: INTERACTIVE DIALOGUE */}
-      {lesson.dialogue && lesson.dialogue.length > 0 && (
+      {/* SECTION 3: SENTENCE PATTERN FRAMEWORK */}
+      {lesson.sentencePattern && (
         <section className="space-y-4">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">
+            <div className="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">
               3
             </div>
             <div>
               <h2 className="text-xl font-bold text-slate-900">
-                Thực Hành Hội Thoại & Shadowing Theo Giọng Mẫu
+                Khuôn Mẫu Câu Thần Thánh (Sentence Pattern)
               </h2>
-              <p className="text-xs text-slate-500">Nghe đoạn hội thoại hoàn chỉnh và thử ghi âm nhại lại</p>
+              <p className="text-xs text-slate-500">Lắp từ vào khuôn là nói được hàng trăm câu chuẩn ngữ điệu</p>
+            </div>
+          </div>
+
+          <SentencePatternCard pattern={lesson.sentencePattern} />
+        </section>
+      )}
+
+      {/* SECTION 4: INTERACTIVE DIALOGUE & ROLEPLAY */}
+      {lesson.dialogue && lesson.dialogue.length > 0 && (
+        <section className="space-y-4">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">
+              {lesson.sentencePattern ? 4 : 3}
+            </div>
+            <div>
+              <h2 className="text-xl font-bold text-slate-900">
+                Thực Hành Hội Thoại & Đóng Vai 1-1 Với AI
+              </h2>
+              <p className="text-xs text-slate-500">Nghe toàn bộ, Shadowing và hóa thân đối thoại cùng AI</p>
             </div>
           </div>
 
           <DialoguePlayer lines={lesson.dialogue} />
+        </section>
+      )}
+
+      {/* SECTION 5: EAR-TRAINING ACOUSTIC DRILLS */}
+      {lesson.earTrainingDrills && lesson.earTrainingDrills.length > 0 && (
+        <section className="space-y-4">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-xl bg-purple-100 text-purple-800 flex items-center justify-center font-bold text-sm">
+              {lesson.sentencePattern ? 5 : 4}
+            </div>
+            <div>
+              <h2 className="text-xl font-bold text-slate-900">
+                Luyện Đôi Tai Nhạy Bén (Ear-Training Drill)
+              </h2>
+              <p className="text-xs text-slate-500">Nghe và phân biệt các cặp âm gây lú để phản xạ chính xác</p>
+            </div>
+          </div>
+
+          <EarTrainingCard drills={lesson.earTrainingDrills} />
         </section>
       )}
 

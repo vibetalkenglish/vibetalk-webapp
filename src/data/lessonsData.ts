@@ -163,6 +163,41 @@ export const LESSONS: Lesson[] = [
         textVi: 'Bạn phát âm các âm đuôi rất chuẩn đấy!',
         ipa: '/ɡreɪt dʒɑːb wɪð jɔːr ˈen.dɪŋ saʊndz/'
       }
+    ],
+    sentencePattern: {
+      titleVi: 'Khuôn Mẫu Câu: Khẳng Định Sở Thích & Cảm Nhận',
+      pattern: 'I like [Danh từ / Hành động] because it is [Tính từ].',
+      formulaVi: 'Tôi thích [X] bởi vì nó [Y]',
+      usageVi: 'Khuôn mẫu đa năng giúp bạn luyện bật rõ âm /k/ trong "like", âm /z/ trong "is" và âm đuôi tính từ mà không bao giờ bị nuốt âm.',
+      examples: [
+        { en: 'I like this place because it is nice.', ipa: '/aɪ laɪk ðɪs pleɪs bɪˈkɑːz ɪt ɪz naɪs/', vi: 'Tôi thích nơi này vì nó rất đẹp.', fillWord: 'this place / nice' },
+        { en: 'I like to practice because it is fast.', ipa: '/aɪ laɪk tuː ˈpræk.tɪs bɪˈkɑːz ɪt ɪz fæst/', vi: 'Tôi thích luyện tập vì nó nhanh gọn.', fillWord: 'to practice / fast' },
+        { en: 'I like this coffee because it is exact.', ipa: '/aɪ laɪk ðɪs ˈkɑː.fi bɪˈkɑːz ɪt ɪz ɪɡˈzækt/', vi: 'Tôi thích cà phê này vì nó chuẩn vị.', fillWord: 'this coffee / exact' }
+      ]
+    },
+    earTrainingDrills: [
+      {
+        id: 'drill-0-1-1',
+        promptVi: 'Nghe và chọn từ phát ra âm /k/ bật ở đuôi (không bị nuốt âm):',
+        audioWord: 'like',
+        options: [
+          { word: 'like', ipa: '/laɪk/', meaningVi: 'thích (bật /k/)' },
+          { word: 'lie', ipa: '/laɪ/', meaningVi: 'nói dối / nằm (không có âm đuôi)' }
+        ],
+        correctIndex: 0,
+        explanationVi: 'Từ "like" /laɪk/ có âm đuôi /k/ bật nhẹ trong cổ họng, khác với "lie" /laɪ/ không có âm kết thúc.'
+      },
+      {
+        id: 'drill-0-1-2',
+        promptVi: 'Nghe và chọn từ phát ra âm /s/ xì gió ở đuôi:',
+        audioWord: 'nice',
+        options: [
+          { word: 'nice', ipa: '/naɪs/', meaningVi: 'tuyệt vời (xì /s/)' },
+          { word: 'night', ipa: '/naɪt/', meaningVi: 'buổi đêm (bật /t/)' }
+        ],
+        correctIndex: 0,
+        explanationVi: 'Từ "nice" /naɪs/ có âm xì gió /s/ kéo dài ở cuối, trong khi "night" /naɪt/ ngắt bằng âm bật /t/.'
+      }
     ]
   },
   {
@@ -234,7 +269,48 @@ export const LESSONS: Lesson[] = [
         textVi: 'Cảm ơn! Quang cảnh bãi biển bên ngoài thật tuyệt vời.',
         ipa: '/θæŋks! ðə vjuː ʌv ðə biːtʃ ˌaʊtˈsaɪd ɪz əˈmeɪ.zɪŋ/'
       }
-    ]
+    ],
+    sentencePattern: {
+      titleVi: "Khuôn Mẫu Câu: Mời Lịch Sự Với Nguyên Âm Căng & Thả Lỏng",
+      pattern: "Please [Động từ] and take a look at this [Danh từ].",
+      formulaVi: "Xin vui lòng [làm gì] và xem qua [cái gì]",
+      usageVi: "Giúp bạn luyện tập sự tương phản giữa âm /iː/ kéo dài mỉm cười (please, sheet) và âm /ɪ/ thả lỏng ngắn gọn (sit, ship).",
+      examples: [
+            {
+                  en: "Please sit down and take a look at this sheet.",
+                  ipa: "/pliːz sɪt daʊn ænd teɪk ə lʊk æt ðɪs ʃiːt/",
+                  vi: "Xin mời ngồi xuống và xem qua tờ tài liệu này.",
+                  fillWord: "sit down / sheet"
+            },
+            {
+                  en: "Please leave the keys on the ship.",
+                  ipa: "/pliːz liːv ðə kiːz ɑːn ðə ʃɪp/",
+                  vi: "Xin hãy để chìa khóa lại trên tàu.",
+                  fillWord: "leave / ship"
+            }
+      ]
+},
+    earTrainingDrills: [
+      {
+            id: "drill-0-2-1",
+            promptVi: "Nghe và phân biệt: Đây là âm /iː/ (Cười tươi kéo dài) hay /ɪ/ (Thả lỏng ngắn gọn)?",
+            audioWord: "beach",
+            options: [
+                  {
+                        word: "beach",
+                        ipa: "/biːtʃ/",
+                        meaningVi: "bãi biển (âm /iː/ kéo dài)"
+                  },
+                  {
+                        word: "bitch",
+                        ipa: "/bɪtʃ/",
+                        meaningVi: "từ nhạy cảm (âm /ɪ/ ngắn)"
+                  }
+            ],
+            correctIndex: 0,
+            explanationVi: "Từ \"beach\" có nguyên âm /iː/ căng mọng kéo dài khóe môi cười, tuyệt đối không phát âm giật cục kẻo nhầm từ nhạy cảm."
+      }
+]
   },
   {
     id: 'lv0-lesson-3',
@@ -304,7 +380,48 @@ export const LESSONS: Lesson[] = [
         textVi: 'Đúng rồi, đó là chiếc túi đen của tôi. Cảm ơn bạn đã hỏi!',
         ipa: '/jes, ðæt ɪz maɪ blæk bæɡ. θæŋks fɔːr ˈæsk.ɪŋ/'
       }
-    ]
+    ],
+    sentencePattern: {
+      titleVi: "Khuôn Mẫu Câu: Hỏi & Xác Nhận Đồ Vật Với Âm A Rớt Hàm",
+      pattern: "Is that [Tính từ màu sắc/kích thước] [Danh từ] yours?",
+      formulaVi: "Chiếc [X] [Y] kia có phải của bạn không?",
+      usageVi: "Luyện tập hạ cằm sâu cho các từ chứa âm /æ/ (that, black, bag) khi hỏi người khác.",
+      examples: [
+            {
+                  en: "Is that black bag yours on the desk?",
+                  ipa: "/ɪz ðæt blæk bæɡ jɔːrz ɑːn ðə desk/",
+                  vi: "Chiếc túi màu đen trên bàn kia có phải của bạn không?",
+                  fillWord: "black bag"
+            },
+            {
+                  en: "Is that black jacket in the back yours?",
+                  ipa: "/ɪz ðæt blæk ˈdʒæk.ɪt ɪn ðə bæk jɔːrz/",
+                  vi: "Chiếc áo khoác đen phía sau kia có phải của bạn không?",
+                  fillWord: "black jacket"
+            }
+      ]
+},
+    earTrainingDrills: [
+      {
+            id: "drill-0-3-1",
+            promptVi: "Nghe và chọn từ phát ra âm /æ/ há to rớt hàm:",
+            audioWord: "cat",
+            options: [
+                  {
+                        word: "cat",
+                        ipa: "/kæt/",
+                        meaningVi: "con mèo (âm /æ/ rớt hàm)"
+                  },
+                  {
+                        word: "cut",
+                        ipa: "/kʌt/",
+                        meaningVi: "cắt (âm /ʌ/ miệng khép hờ)"
+                  }
+            ],
+            correctIndex: 0,
+            explanationVi: "Âm /æ/ trong \"cat\" yêu cầu cằm rớt sâu, âm /ʌ/ trong \"cut\" miệng thả lỏng tự nhiên."
+      }
+]
   },
   {
     id: 'lv0-lesson-4',
@@ -374,7 +491,48 @@ export const LESSONS: Lesson[] = [
         textVi: 'Tôi nghĩ nó giúp chúng ta nói tự nhiên hơn cùng nhau.',
         ipa: '/aɪ θɪŋk ɪt helps ʌs spiːk mɔːr ˈnætʃ.ɚ.əl.i təˈɡeð.ɚ/'
       }
-    ]
+    ],
+    sentencePattern: {
+      titleVi: "Khuôn Mẫu Câu: Hỏi Quan Điểm Lịch Sự Với Âm TH Thè Lưỡi",
+      pattern: "What do you think about [Danh từ / Ý tưởng]?",
+      formulaVi: "Bạn nghĩ gì về [điều gì]?",
+      usageVi: "Mẫu câu kinh điển giúp bạn luyện đặt đầu lưỡi ra giữa 2 răng khi phát âm \"think\" và \"this\".",
+      examples: [
+            {
+                  en: "What do you think about this new method?",
+                  ipa: "/wɑːt duː juː θɪŋk əˈbaʊt ðɪs nuː ˈmeθ.əd/",
+                  vi: "Bạn nghĩ gì về phương pháp mới này?",
+                  fillWord: "this new method"
+            },
+            {
+                  en: "What do you think about working together?",
+                  ipa: "/wɑːt duː juː θɪŋk əˈbaʊt ˈwɜːrk.ɪŋ təˈɡeð.ɚ/",
+                  vi: "Bạn nghĩ sao về việc cùng làm việc với nhau?",
+                  fillWord: "working together"
+            }
+      ]
+},
+    earTrainingDrills: [
+      {
+            id: "drill-0-4-1",
+            promptVi: "Nghe và phân biệt: Từ này bắt đầu bằng âm thè lưỡi /θ/ hay âm /s/?",
+            audioWord: "think",
+            options: [
+                  {
+                        word: "think",
+                        ipa: "/θɪŋk/",
+                        meaningVi: "suy nghĩ (thè lưỡi cắn nhẹ)"
+                  },
+                  {
+                        word: "sink",
+                        ipa: "/sɪŋk/",
+                        meaningVi: "chìm xuống / bồn rửa (xì răng khép)"
+                  }
+            ],
+            correctIndex: 0,
+            explanationVi: "Âm /θ/ trong \"think\" có đầu lưỡi kẹp nhẹ giữa 2 răng, khác với \"sink\" hai hàm răng khép kín."
+      }
+]
   },
   {
     id: 'lv0-lesson-5',
@@ -444,7 +602,48 @@ export const LESSONS: Lesson[] = [
         textVi: 'Tuyệt quá! Một sự thay đổi tích cực cho sự nghiệp của cô ấy.',
         ipa: '/ðæt ɪz ˈwʌn.dɚ.fəl! ə ˈpɑː.zə.t̬ɪv tʃeɪndʒ fɔːr hɜːr kəˈrɪr/'
       }
-    ]
+    ],
+    sentencePattern: {
+      titleVi: "Khuôn Mẫu Câu: Kể Về Sự Kiện Mới Với Âm Chu Môi /ʃ/ & /dʒ/",
+      pattern: "She just [Động từ quá khứ] a new [Danh từ].",
+      formulaVi: "Cô ấy vừa [làm gì] một [cái gì] mới",
+      usageVi: "Luyện chu môi tròn thổi gió cho \"she\" và bật rung nổ giòn cho \"job\", \"change\".",
+      examples: [
+            {
+                  en: "She just started a new job this morning.",
+                  ipa: "/ʃiː dʒʌst ˈstɑːr.t̬ɪd ə nuː dʒɑːb ðɪs ˈmɔːr.nɪŋ/",
+                  vi: "Cô ấy vừa bắt đầu công việc mới sáng nay.",
+                  fillWord: "started / job"
+            },
+            {
+                  en: "She just made a huge change in her career.",
+                  ipa: "/ʃiː dʒʌst meɪd ə hjuːdʒ tʃeɪndʒ ɪn hɜːr kəˈrɪr/",
+                  vi: "Cô ấy vừa tạo ra một bước ngoặt lớn trong sự nghiệp.",
+                  fillWord: "made / change"
+            }
+      ]
+},
+    earTrainingDrills: [
+      {
+            id: "drill-0-5-1",
+            promptVi: "Nghe và chọn từ phát ra âm chu môi /ʃ/:",
+            audioWord: "she",
+            options: [
+                  {
+                        word: "she",
+                        ipa: "/ʃiː/",
+                        meaningVi: "cô ấy (chu mỏ thổi gió)"
+                  },
+                  {
+                        word: "see",
+                        ipa: "/siː/",
+                        meaningVi: "nhìn thấy (bè môi cười)"
+                  }
+            ],
+            correctIndex: 0,
+            explanationVi: "Từ \"she\" /ʃiː/ môi phải chu tròn như ra hiệu suỵt im lặng, khác với \"see\" /siː/ môi bè sang hai bên."
+      }
+]
   },
   {
     id: 'lv0-lesson-6',
@@ -514,7 +713,48 @@ export const LESSONS: Lesson[] = [
         textVi: 'Nước lạnh sẽ tốt hơn nhiều cho tôi, cảm ơn bạn!',
         ipa: '/koʊld ˈwɑː.t̬ɚ ɪz mʌtʃ ˈbet̬.ɚ fɔːr miː, θæŋk juː/'
       }
-    ]
+    ],
+    sentencePattern: {
+      titleVi: "Khuôn Mẫu Câu: So Sánh Hơn Cực Mượt Với Biến Âm Flap T",
+      pattern: "[Danh từ A] is much better for me, thank you!",
+      formulaVi: "[Món A] tốt hơn nhiều cho tôi, cảm ơn bạn!",
+      usageVi: "Luyện nói lướt \"beh-der\" và \"wah-der\" không bị ngắc ngứ khi chọn lựa đồ ăn, nước uống.",
+      examples: [
+            {
+                  en: "Cold water is much better for me, thank you!",
+                  ipa: "/koʊld ˈwɑː.t̬ɚ ɪz mʌtʃ ˈbet̬.ɚ fɔːr miː, θæŋk juː/",
+                  vi: "Nước lạnh tốt hơn nhiều cho tôi, cảm ơn bạn!",
+                  fillWord: "Cold water"
+            },
+            {
+                  en: "This city is much better in winter.",
+                  ipa: "/ðɪs ˈsɪt̬.i ɪz mʌtʃ ˈbet̬.ɚ ɪn ˈwɪn.t̬ɚ/",
+                  vi: "Thành phố này đẹp hơn nhiều vào mùa đông.",
+                  fillWord: "This city"
+            }
+      ]
+},
+    earTrainingDrills: [
+      {
+            id: "drill-0-6-1",
+            promptVi: "Nghe và nhận diện âm Flap T kiểu Mỹ:",
+            audioWord: "water",
+            options: [
+                  {
+                        word: "water",
+                        ipa: "/ˈwɑː.t̬ɚ/",
+                        meaningVi: "nước uống (đọc là wah-der)"
+                  },
+                  {
+                        word: "waiter",
+                        ipa: "/ˈweɪ.t̬ɚ/",
+                        meaningVi: "người bồi bàn (đọc là way-der)"
+                  }
+            ],
+            correctIndex: 0,
+            explanationVi: "Âm /ɑː/ mở rộng họng trong \"water\" khác với nguyên âm đôi /eɪ/ trong \"waiter\"."
+      }
+]
   },
 
   // ================= LEVEL 1 (6 BÀI) =================
@@ -585,7 +825,42 @@ export const LESSONS: Lesson[] = [
         textVi: 'Khá tốt! Tôi là Minh đến từ Hà Nội. Rất vui được gặp bạn!',
         ipa: '/ˈprɪt̬.i ɡʊd! aɪ æm mɪnh frʌm hæˈnɔɪ. ˈpleʒ.ɚ tuː miːtʃ juː/'
       }
-    ]
+    ],
+    sentencePattern: {
+      titleVi: "Khuôn Mẫu Câu: Bắt Chuyện Tự Nhiên & Giới Thiệu Bản Thân",
+      pattern: "Pretty good! I am [Tên] from [Thành phố]. Pleasure to meet you!",
+      formulaVi: "Khá tốt! Tôi là [Tên] đến từ [Nơi chốn]. Rất vui được gặp bạn!",
+      usageVi: "Mẫu câu mở đầu thân thiện, tự tin khi gặp gỡ người nước ngoài tại Việt Nam.",
+      examples: [
+            {
+                  en: "Pretty good! I am Minh from Hanoi. Pleasure to meet you!",
+                  ipa: "/ˈprɪt̬.i ɡʊd! aɪ æm mɪnh frʌm hæˈnɔɪ. ˈpleʒ.ɚ tuː miːtʃ juː/",
+                  vi: "Khá tốt! Tôi là Minh đến từ Hà Nội. Rất vui được gặp bạn!",
+                  fillWord: "Minh / Hanoi"
+            }
+      ]
+},
+    earTrainingDrills: [
+      {
+            id: "drill-1-1-1",
+            promptVi: "Nghe câu chào và chọn câu có nối âm How-zit-going:",
+            audioWord: "awesome",
+            options: [
+                  {
+                        word: "awesome",
+                        ipa: "/ˈɑː.səm/",
+                        meaningVi: "tuyệt vời (từ lóng phổ biến)"
+                  },
+                  {
+                        word: "awful",
+                        ipa: "/ˈɑː.fəl/",
+                        meaningVi: "tồi tệ (trái nghĩa)"
+                  }
+            ],
+            correctIndex: 0,
+            explanationVi: "\"Awesome\" /ˈɑː.səm/ có nghĩa là tuyệt vời, rất hay được người Mỹ dùng để trả lời khi được hỏi thăm."
+      }
+]
   },
   {
     id: 'lv1-lesson-2',
@@ -654,7 +929,48 @@ export const LESSONS: Lesson[] = [
         textVi: 'Cho mình 1 ly Americano đá size vừa, nhiều đá, mang đi nhé?',
         ipa: '/kæn aɪ ɡet ə ˈɡrɑːn.deɪ aɪst əˌmer.ɪˈkɑː.noʊ wɪð ˈek.strə aɪs, tuː ɡoʊ/'
       }
-    ]
+    ],
+    sentencePattern: {
+      titleVi: "Khuôn Mẫu Câu: Gọi Đồ Uống Chuẩn Người Mỹ (Starbucks / Cafe)",
+      pattern: "Can I get a [Kích cỡ] [Tên đồ uống] with [Yêu cầu thêm], [To go / For here]?",
+      formulaVi: "Cho tôi 1 ly [cỡ] [món] [yêu cầu], [mang đi / tại quán] nhé?",
+      usageVi: "Chỉ cần thay tên món là bạn có thể tự tin gọi bất kỳ loại đồ uống nào tại các chuỗi quốc tế.",
+      examples: [
+            {
+                  en: "Can I get a grande iced Americano with extra ice, to go?",
+                  ipa: "/kæn aɪ ɡet ə ˈɡrɑːn.deɪ aɪst əˌmer.ɪˈkɑː.noʊ wɪð ˈek.strə aɪs, tuː ɡoʊ/",
+                  vi: "Cho mình 1 ly Americano đá size vừa, nhiều đá, mang đi nhé?",
+                  fillWord: "grande iced Americano / extra ice / to go"
+            },
+            {
+                  en: "Can I get a tall hot latte with oat milk, for here?",
+                  ipa: "/kæn aɪ ɡet ə tɑːl hɑːt ˈlɑː.teɪ wɪð oʊt mɪlk, fɔːr hɪr/",
+                  vi: "Cho mình 1 ly latte nóng size nhỏ, sữa yến mạch, dùng tại đây nhé?",
+                  fillWord: "tall hot latte / oat milk / for here"
+            }
+      ]
+},
+    earTrainingDrills: [
+      {
+            id: "drill-1-2-1",
+            promptVi: "Nghe và chọn từ phát âm đúng (chú ý chữ \"p\" là âm câm):",
+            audioWord: "receipt",
+            options: [
+                  {
+                        word: "receipt",
+                        ipa: "/rɪˈsiːt/",
+                        meaningVi: "hóa đơn (âm p câm, đọc là ri-sít)"
+                  },
+                  {
+                        word: "recipe",
+                        ipa: "/ˈres.ə.pi/",
+                        meaningVi: "công thức nấu ăn (3 âm tiết)"
+                  }
+            ],
+            correctIndex: 0,
+            explanationVi: "Trong từ \"receipt\" /rɪˈsiːt/, chữ \"p\" là âm câm, tuyệt đối không đọc là ri-síp-tờ."
+      }
+]
   },
   {
     id: 'lv1-lesson-3',
@@ -723,7 +1039,42 @@ export const LESSONS: Lesson[] = [
         textVi: 'Chúng tôi sẵn sàng rồi! Cho chúng tôi 2 burger bò và chia tiền hóa đơn nhé?',
         ipa: '/wiː ɑːr ˈred.i! kʊd wiː ɡet tuː biːf ˈbɜːr.ɡɚz ænd splɪt ðə bɪl/'
       }
-    ]
+    ],
+    sentencePattern: {
+      titleVi: "Khuôn Mẫu Câu: Gọi Món & Tách Hóa Đơn Nhà Hàng",
+      pattern: "We are ready! Could we get [Số lượng món] and split the bill?",
+      formulaVi: "Chúng tôi sẵn sàng! Cho chúng tôi [món] và chia tiền hóa đơn nhé?",
+      usageVi: "Dùng khi đi ăn uống cùng bạn bè hoặc đối tác tại nhà hàng nước ngoài.",
+      examples: [
+            {
+                  en: "We are ready! Could we get two beef burgers and split the bill?",
+                  ipa: "/wiː ɑːr ˈred.i! kʊd wiː ɡet tuː biːf ˈbɜːr.ɡɚz ænd splɪt ðə bɪl/",
+                  vi: "Cho chúng tôi 2 burger bò và chia tiền hóa đơn nhé?",
+                  fillWord: "two beef burgers"
+            }
+      ]
+},
+    earTrainingDrills: [
+      {
+            id: "drill-1-3-1",
+            promptVi: "Nghe và chọn từ miêu tả món ăn ngon miệng:",
+            audioWord: "delicious",
+            options: [
+                  {
+                        word: "delicious",
+                        ipa: "/dɪˈlɪʃ.əs/",
+                        meaningVi: "thơm ngon, ngon miệng"
+                  },
+                  {
+                        word: "delicate",
+                        ipa: "/ˈdel.ə.kət/",
+                        meaningVi: "tinh tế, mỏng manh"
+                  }
+            ],
+            correctIndex: 0,
+            explanationVi: "\"Delicious\" /dɪˈlɪʃ.əs/ có trọng âm rơi vào âm tiết thứ 2 -LISH-."
+      }
+]
   },
   {
     id: 'lv1-lesson-4',
@@ -979,7 +1330,48 @@ export const LESSONS: Lesson[] = [
         textVi: 'Tôi có 3 năm kinh nghiệm trong ngành marketing cùng kỹ năng làm việc nhóm tốt.',
         ipa: '/aɪ hæv θriː jɪrz ʌv ɪkˈspɪr.i.əns ɪn ˈmɑːr.kɪ.t̬ɪŋ wɪð strɑːŋ ˈtiːm.wɜːrk skɪlz/'
       }
-    ]
+    ],
+    sentencePattern: {
+      titleVi: "Khuôn Mẫu Câu: Trả Lời Phỏng Vấn Xin Việc (Job Interview)",
+      pattern: "I have [Số năm] years of experience in [Lĩnh vực] with strong [Kỹ năng] skills.",
+      formulaVi: "Tôi có [X] năm kinh nghiệm trong [ngành] cùng kỹ năng [thế mạnh] tốt.",
+      usageVi: "Khung trả lời ngắn gọn, trực diện, thể hiện sự chuyên nghiệp và tự tin trước nhà tuyển dụng.",
+      examples: [
+            {
+                  en: "I have three years of experience in marketing with strong teamwork skills.",
+                  ipa: "/aɪ hæv θriː jɪrz ʌv ɪkˈspɪr.i.əns ɪn ˈmɑːr.kɪ.t̬ɪŋ wɪð strɑːŋ ˈtiːm.wɜːrk skɪlz/",
+                  vi: "Tôi có 3 năm kinh nghiệm trong ngành marketing cùng kỹ năng làm việc nhóm tốt.",
+                  fillWord: "three / marketing / teamwork"
+            },
+            {
+                  en: "I have five years of experience in software design with strong problem-solving skills.",
+                  ipa: "/aɪ hæv faɪv jɪrz ʌv ɪkˈspɪr.i.əns ɪn ˈsɑːft.wer dɪˈzaɪn wɪð strɑːŋ ˈprɑː.bləm ˌsɑːl.vɪŋ skɪlz/",
+                  vi: "Tôi có 5 năm kinh nghiệm trong ngành thiết kế phần mềm cùng kỹ năng giải quyết vấn đề tốt.",
+                  fillWord: "five / software design / problem-solving"
+            }
+      ]
+},
+    earTrainingDrills: [
+      {
+            id: "drill-2-1-1",
+            promptVi: "Nghe và chọn từ chỉ điểm mạnh cá nhân:",
+            audioWord: "strength",
+            options: [
+                  {
+                        word: "strength",
+                        ipa: "/streŋθ/",
+                        meaningVi: "điểm mạnh, thế mạnh"
+                  },
+                  {
+                        word: "strange",
+                        ipa: "/streɪndʒ/",
+                        meaningVi: "kỳ lạ, xa lạ"
+                  }
+            ],
+            correctIndex: 0,
+            explanationVi: "\"Strength\" /streŋθ/ kết thúc bằng âm thè lưỡi /θ/, khác với \"strange\" /streɪndʒ/ kết thúc bằng /dʒ/."
+      }
+]
   },
   {
     id: 'lv2-lesson-2',
@@ -1351,7 +1743,48 @@ export const LESSONS: Lesson[] = [
         textVi: 'Tôi đến đây để du lịch nghỉ dưỡng trong 7 ngày.',
         ipa: '/aɪ æm hɪr fɔːr ə veɪˈkeɪ.ʃən fɔːr ˈsev.ən deɪz/'
       }
-    ]
+    ],
+    sentencePattern: {
+      titleVi: "Khuôn Mẫu Câu: Trả Lời Hải Quan Sân Bay Quốc Tế",
+      pattern: "I am here for [Mục đích chuyến đi] for [Số ngày / tuần] days.",
+      formulaVi: "Tôi đến đây vì mục đích [du lịch/nghỉ dưỡng] trong [X] ngày.",
+      usageVi: "Câu trả lời chuẩn mực giúp bạn qua cổng hải quan sân bay chỉ trong 30 giây.",
+      examples: [
+            {
+                  en: "I am here for a vacation for seven days.",
+                  ipa: "/aɪ æm hɪr fɔːr ə veɪˈkeɪ.ʃən fɔːr ˈsev.ən deɪz/",
+                  vi: "Tôi đến đây để du lịch nghỉ dưỡng trong 7 ngày.",
+                  fillWord: "a vacation / seven"
+            },
+            {
+                  en: "I am here for a business conference for four days.",
+                  ipa: "/aɪ æm hɪr fɔːr ə ˈbɪz.nɪs ˈkɑːn.fɚ.əns fɔːr fɔːr deɪz/",
+                  vi: "Tôi đến đây tham dự hội nghị công tác trong 4 ngày.",
+                  fillWord: "a business conference / four"
+            }
+      ]
+},
+    earTrainingDrills: [
+      {
+            id: "drill-3-1-1",
+            promptVi: "Nghe và chọn từ phát âm có âm đuôi /t/ dứt khoát:",
+            audioWord: "passport",
+            options: [
+                  {
+                        word: "passport",
+                        ipa: "/ˈpæs.pɔːrt/",
+                        meaningVi: "hộ chiếu"
+                  },
+                  {
+                        word: "password",
+                        ipa: "/ˈpæs.wɜːrd/",
+                        meaningVi: "mật khẩu (đuôi /d/)"
+                  }
+            ],
+            correctIndex: 0,
+            explanationVi: "\"Passport\" kết thúc bằng /rt/ bật /t/, còn \"password\" kết thúc bằng /rd/ rung nhẹ."
+      }
+]
   },
   {
     id: 'lv3-lesson-2',
