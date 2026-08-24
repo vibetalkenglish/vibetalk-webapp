@@ -231,8 +231,23 @@ class AmericanSpeechEngine {
 export const speechEngine = new AmericanSpeechEngine();
 
 /**
- * Utility function to speak English with American accent
+ * Universal American Speech Player
+ * Uses Neural TTS / Studio Audio with graceful client fallback
  */
-export function playAmericanSpeech(text: string, rate: number = 0.88, onEnd?: () => void) {
-  speechEngine.speak(text, { rate, onEnd });
+export function playAmericanSpeech(
+  text: string, 
+  rate: number = 0.88, 
+  onEnd?: () => void,
+  options?: { gender?: 'female' | 'male'; audioUrl?: string }
+) {
+  // If in browser and studio audio manager is available, use hybrid pipeline
+  if (typeof window !== 'undefined') {
+    import('./audioManager').then(({ studioAudio }) => {
+      studioAudio.play(text, { rate, onEnd, ...options });
+    }).catch(() => {
+      speechEngine.speak(text, { rate, onEnd });
+    });
+  } else {
+    speechEngine.speak(text, { rate, onEnd });
+  }
 }
