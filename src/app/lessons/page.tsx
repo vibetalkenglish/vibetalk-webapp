@@ -276,33 +276,41 @@ export default function LessonsPage() {
                 key={level.id}
                 className={`rounded-3xl border transition-all overflow-hidden ${
                   isCurrent
-                    ? 'border-indigo-400 bg-white shadow-md ring-2 ring-indigo-500/20'
+                    ? 'border-indigo-400 bg-white shadow-lg ring-2 ring-indigo-500/20'
                     : isUnlocked
                     ? 'border-slate-200 bg-white shadow-sm'
-                    : 'border-slate-200 bg-slate-50/70 opacity-85'
+                    : 'border-slate-300 bg-white shadow-sm'
                 }`}
               >
-                {/* Level Header Banner */}
-                <div className={`p-6 bg-gradient-to-r ${level.color} text-white flex flex-col md:flex-row md:items-center justify-between gap-4`}>
+                {/* Level Header Banner with Explicit High-Contrast Gradient */}
+                <div className={`p-6 text-white flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-inner ${
+                  level.id === 'lv0'
+                    ? 'bg-gradient-to-r from-amber-500 via-orange-500 to-orange-600'
+                    : level.id === 'lv1'
+                    ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-indigo-700'
+                    : level.id === 'lv2'
+                    ? 'bg-gradient-to-r from-emerald-600 via-teal-600 to-teal-700'
+                    : 'bg-gradient-to-r from-purple-600 via-purple-700 to-pink-600'
+                }`}>
                   <div className="space-y-1.5">
                     <div className="flex items-center gap-2 flex-wrap">
-                      <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-xs font-bold uppercase tracking-wider">
+                      <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-xs font-bold uppercase tracking-wider text-white border border-white/20 shadow-xs">
                         {level.title.split(':')[0]}
                       </span>
-                      <span className="px-2.5 py-0.5 rounded-full bg-amber-400/90 text-slate-950 text-xs font-black shadow-xs">
+                      <span className="px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 text-xs font-black shadow-xs">
                         {level.cefrLevel}
                       </span>
-                      <span className="text-sm font-bold text-amber-200">
+                      <span className="text-sm font-bold text-amber-200 drop-shadow-xs">
                         {level.badge}
                       </span>
                       {isAdmin && (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500/30 text-emerald-100 text-[11px] font-bold border border-emerald-400/40">
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500/40 text-white text-[11px] font-bold border border-emerald-300/50 shadow-xs">
                           <ShieldCheck className="w-3 h-3" /> Admin Unlocked
                         </span>
                       )}
                     </div>
-                    <h2 className="text-xl sm:text-2xl font-black">{level.title.split(':')[1] || level.title}</h2>
-                    <p className="text-xs text-white/90">{level.subTitle}</p>
+                    <h2 className="text-xl sm:text-2xl font-black text-white drop-shadow-xs">{level.title.split(':')[1] || level.title}</h2>
+                    <p className="text-xs sm:text-sm text-white/95 font-medium">{level.subTitle}</p>
                   </div>
 
                   {/* Level Action: Test or Status */}
@@ -316,8 +324,8 @@ export default function LessonsPage() {
                         <span>Làm Bài Test Thăng Cấp</span>
                       </Link>
                     ) : (
-                      <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-black/30 backdrop-blur-sm text-white text-xs font-semibold">
-                        <Lock className="w-4 h-4" />
+                      <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900/60 backdrop-blur-md text-white text-xs font-bold border border-white/25 shadow-md">
+                        <Lock className="w-4 h-4 text-amber-300" />
                         <span>Cần vượt qua Level trước</span>
                       </div>
                     )}
