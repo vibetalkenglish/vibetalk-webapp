@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { LESSONS, LEVELS_CONFIG } from '@/data/lessonsData';
@@ -33,8 +33,13 @@ import {
   Award,
   Zap,
   Layers,
-  Headphones
+  Headphones,
+  Compass,
+  ChevronRight,
+  ChevronLeft
 } from 'lucide-react';
+
+type SectionKey = 'all' | 'tips' | 'vocab' | 'pattern' | 'dialogue' | 'grammar' | 'ear' | 'quiz';
 
 export default function LessonDetailPage() {
   const params = useParams();
@@ -46,6 +51,24 @@ export default function LessonDetailPage() {
   const [isCompleted, setIsCompleted] = useState(false);
   const [fontSizeLevel, setFontSizeLevel] = useState(0); // 0: Normal, 1: +15%, 2: +30%
   const [isFlashcardsOpen, setIsFlashcardsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<SectionKey>('all');
+  const [scrollPercent, setScrollPercent] = useState(0);
+  const [showStickyBottom, setShowStickyBottom] = useState(false);
+
+  // Scroll tracker for top progress bar & sticky bottom bar
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) {
+        const currentProgress = (window.scrollY / totalHeight) * 100;
+        setScrollPercent(Math.min(100, Math.max(0, currentProgress)));
+      }
+      setShowStickyBottom(window.scrollY > 280);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     if (lesson) {
@@ -57,12 +80,12 @@ export default function LessonDetailPage() {
 
   if (!lesson) {
     return (
-      <div className="text-center py-20 bg-white rounded-3xl border border-slate-200 p-8 space-y-4">
+      <div className="text-center py-20 bg-white rounded-3xl border border-slate-200 p-8 space-y-4 max-w-lg mx-auto">
         <h2 className="text-2xl font-bold text-slate-900">Không tìm thấy bài học</h2>
         <p className="text-sm text-slate-500">Bài học này có thể chưa được cập nhật hoặc đường dẫn không đúng.</p>
         <Link
           href="/lessons"
-          className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-xl text-xs font-bold"
+          className="inline-flex items-center gap-2 px-5 py-2.5 bg-indigo-600 text-white rounded-2xl text-xs font-bold"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Quay lại danh sách bài học</span>
@@ -89,8 +112,8 @@ export default function LessonDetailPage() {
       setIsCompleted(true);
       try {
         confetti({
-          particleCount: 50,
-          spread: 60,
+          particleCount: 60,
+          spread: 70,
           origin: { y: 0.7 },
         });
       } catch (err) {
@@ -98,6 +121,18 @@ export default function LessonDetailPage() {
       }
     }
   };
+
+  // Section list configuration
+  const sectionsList: { key: SectionKey; label: string; icon: string }[] = [
+    { key: 'all', label: '🌟 Toàn Bộ Bài', icon: '🌟' },
+    { key: 'tips', label: '1. Mẹo Khẩu Hình', icon: '💡' },
+    { key: 'vocab', label: `2. Từ Vựng (${lesson.vocabulary.length})`, icon: '📖' },
+    ...(lesson.sentencePattern ? [{ key: 'pattern' as SectionKey, label: '3. Khuôn Mẫu Câu', icon: '🎯' }] : []),
+    ...(lesson.dialogue && lesson.dialogue.length > 0 ? [{ key: 'dialogue' as SectionKey, label: '4. Đóng Vai AI', icon: '🎭' }] : []),
+    ...(lesson.grammarNotes && lesson.grammarNotes.length > 0 ? [{ key: 'grammar' as SectionKey, label: '5. Ngữ Pháp', icon: '💡' }] : []),
+    ...(lesson.earTrainingDrills && lesson.earTrainingDrills.length > 0 ? [{ key: 'ear' as SectionKey, label: '6. Luyện Tai', icon: '🎧' }] : []),
+    { key: 'quiz', label: '7. Mini Quiz 30s', icon: '🏆' },
+  ];
 
   // Dynamic font sizing wrapper class
   const fontScaleClass = fontSizeLevel === 1 
@@ -107,12 +142,20 @@ export default function LessonDetailPage() {
     : '';
 
   return (
-    <div className={`space-y-8 max-w-5xl mx-auto transition-all ${fontScaleClass}`}>
-      {/* Top Accessibility & Speed Toolbar */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+    <div className={`space-y-6 sm:space-y-8 max-w-5xl mx-auto pb-24 sm:pb-8 transition-all ${fontScaleClass}`}>
+      {/* 0. TOP SCROLL PROGRESS BAR */}
+      <div className="fixed top-0 left-0 right-0 h-1.5 bg-slate-100 z-50">
+        <div
+          className="h-full bg-gradient-to-r from-amber-400 via-indigo-500 to-emerald-400 transition-all duration-150"
+          style={{ width: `${scrollPercent}%` }}
+        />
+      </div>
+
+      {/* 1. TOP BREADCRUMB & ACCESSIBILITY TOOLBAR */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
         <Link
           href="/lessons"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-indigo-600 transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Danh sách bài học ({levelConfig.title.split(':')[0]})</span>
@@ -124,12 +167,12 @@ export default function LessonDetailPage() {
         />
       </div>
 
-      {/* 1. LESSON HERO BANNER */}
-      <div className="bg-gradient-to-br from-indigo-900 via-indigo-950 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl border border-indigo-500/20 relative overflow-hidden">
+      {/* 2. LESSON HERO BANNER */}
+      <div className="bg-gradient-to-br from-indigo-900 via-indigo-950 to-slate-900 text-white rounded-3xl p-5 sm:p-8 shadow-xl border border-indigo-500/20 relative overflow-hidden">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="space-y-3 max-w-2xl">
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-bold border border-white/10">
+              <span className="px-3 py-1 rounded-full bg-white/15 text-amber-300 text-xs font-black border border-white/10 shadow-xs">
                 {levelConfig.title.split(':')[0]} • Bài {currentIndex + 1}
               </span>
               <span className="px-2.5 py-0.5 rounded-full bg-indigo-500/30 text-indigo-200 text-xs font-semibold">
@@ -137,12 +180,12 @@ export default function LessonDetailPage() {
               </span>
               {isCompleted && (
                 <span className="px-2.5 py-0.5 rounded-full bg-emerald-500 text-white text-xs font-bold flex items-center gap-1">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> Đã hoàn thành
+                  <CheckCircle2 className="w-3.5 h-3.5" /> Đã xong
                 </span>
               )}
             </div>
 
-            <h1 className="text-2xl sm:text-4xl font-black tracking-tight leading-snug">
+            <h1 className="text-xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-snug">
               {lesson.titleVi}
             </h1>
 
@@ -154,7 +197,7 @@ export default function LessonDetailPage() {
             <div className="flex items-center gap-2.5 pt-2 flex-wrap">
               <button
                 onClick={() => setIsFlashcardsOpen(true)}
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs shadow-md transition-all active:scale-95 cursor-pointer"
+                className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs shadow-md transition-all active:scale-95 cursor-pointer"
               >
                 <Layers className="w-4 h-4" />
                 <span>🃏 Lật Flashcard 3D ({lesson.vocabulary.length} từ)</span>
@@ -165,43 +208,70 @@ export default function LessonDetailPage() {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row md:flex-col gap-2.5 flex-shrink-0">
+          <div className="flex flex-row sm:flex-row md:flex-col gap-2.5 flex-shrink-0">
             <button
               onClick={handleToggleSave}
-              className={`flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+              className={`flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-2xl text-xs font-bold transition-all cursor-pointer ${
                 isSaved
                   ? 'bg-amber-400 text-slate-950 shadow-md font-black'
                   : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
               }`}
             >
               <Bookmark className={`w-3.5 h-3.5 ${isSaved ? 'fill-slate-950' : ''}`} />
-              <span>{isSaved ? 'Đã lưu vào Sổ tay' : 'Lưu bài học'}</span>
+              <span>{isSaved ? 'Đã lưu' : 'Lưu bài'}</span>
             </button>
 
             <button
               onClick={handleMarkComplete}
-              className={`flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+              className={`flex-1 sm:flex-none flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-2xl text-xs font-bold transition-all cursor-pointer ${
                 isCompleted
                   ? 'bg-emerald-500/30 text-emerald-200 border border-emerald-500/40'
                   : 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md'
               }`}
             >
               <CheckCircle2 className="w-3.5 h-3.5" />
-              <span>{isCompleted ? 'Hoàn thành (+50 EXP)' : 'Đánh dấu đã học'}</span>
+              <span>{isCompleted ? 'Đã xong (+50 EXP)' : 'Đã học xong'}</span>
             </button>
           </div>
         </div>
       </div>
 
+      {/* 3. MOBILE-FIRST STICKY NAVIGATION BAR (FOCUS MODE SWITCHER) */}
+      <div className="sticky top-2 z-30 bg-white/95 backdrop-blur-md p-1.5 sm:p-2 rounded-2xl border border-slate-200 shadow-md">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5 no-scrollbar flex-nowrap">
+          {sectionsList.map((sec) => {
+            const isSelected = activeSection === sec.key;
+            return (
+              <button
+                key={sec.key}
+                onClick={() => {
+                  setActiveSection(sec.key);
+                }}
+                className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex-shrink-0 cursor-pointer flex items-center gap-1.5 ${
+                  isSelected
+                    ? 'bg-indigo-600 text-white shadow-md shadow-indigo-500/25 ring-1 ring-indigo-400'
+                    : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
+                }`}
+              >
+                <span>{sec.icon}</span>
+                <span>{sec.label}</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* 4. CONTENT SECTIONS (RENDER BASED ON FOCUS MODE) */}
+
       {/* SECTION 1: PHONETICS & PRONUNCIATION TIPS */}
-      {lesson.vietnamesePronunciationTips && lesson.vietnamesePronunciationTips.length > 0 && (
-        <section className="space-y-4">
+      {(activeSection === 'all' || activeSection === 'tips') && lesson.vietnamesePronunciationTips && lesson.vietnamesePronunciationTips.length > 0 && (
+        <section className="space-y-4 animate-fade-in">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">
               1
             </div>
             <div>
-              <h2 className="text-xl font-bold text-slate-900">
+              <h2 className="text-lg sm:text-xl font-black text-slate-900">
                 Mẹo Khẩu Hình & Bí Thuật Giọng Mỹ
               </h2>
               <p className="text-xs text-slate-500">Khắc phục triệt để lỗi phát âm của người Việt</p>
@@ -213,11 +283,11 @@ export default function LessonDetailPage() {
               <div key={idx} className="bg-white rounded-3xl p-5 border border-slate-200 shadow-xs space-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-lg">💡</span>
-                  <h3 className="font-bold text-slate-900 text-sm">{tip.title}</h3>
+                  <h3 className="font-bold text-slate-900 text-sm sm:text-base">{tip.title}</h3>
                 </div>
-                <p className="text-xs text-slate-600 leading-relaxed">{tip.description}</p>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{tip.description}</p>
                 {tip.rule && (
-                  <div className="p-3 bg-amber-50/70 border border-amber-200/80 rounded-2xl text-xs text-amber-900 font-medium">
+                  <div className="p-3 bg-amber-50/70 border border-amber-200/80 rounded-2xl text-xs sm:text-sm text-amber-900 font-medium">
                     ⚠️ <strong className="font-bold">Quy tắc vàng:</strong> {tip.rule}
                   </div>
                 )}
@@ -228,45 +298,47 @@ export default function LessonDetailPage() {
       )}
 
       {/* SECTION 2: KEY VOCABULARY */}
-      <section className="space-y-4">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-indigo-100 text-indigo-800 flex items-center justify-center font-bold text-sm">
-              2
+      {(activeSection === 'all' || activeSection === 'vocab') && (
+        <section className="space-y-4 animate-fade-in">
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-xl bg-indigo-100 text-indigo-800 flex items-center justify-center font-bold text-sm">
+                2
+              </div>
+              <div>
+                <h2 className="text-lg sm:text-xl font-black text-slate-900">
+                  Từ Vựng Then Chốt ({lesson.vocabulary.length} từ)
+                </h2>
+                <p className="text-xs text-slate-500">Phiên âm IPA chuẩn, mẹo âm đuôi và câu ví dụ thực tế</p>
+              </div>
             </div>
-            <div>
-              <h2 className="text-xl font-bold text-slate-900">
-                Từ Vựng Then Chốt ({lesson.vocabulary.length} từ)
-              </h2>
-              <p className="text-xs text-slate-500">Phiên âm IPA chuẩn, mẹo âm đuôi và câu ví dụ thực tế</p>
-            </div>
+
+            <button
+              onClick={() => setIsFlashcardsOpen(true)}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold transition-colors cursor-pointer"
+            >
+              <Layers className="w-3.5 h-3.5" />
+              <span>Lật Flashcard</span>
+            </button>
           </div>
 
-          <button
-            onClick={() => setIsFlashcardsOpen(true)}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold transition-colors cursor-pointer"
-          >
-            <Layers className="w-3.5 h-3.5" />
-            <span>Lật Flashcard</span>
-          </button>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {lesson.vocabulary.map((vocab) => (
-            <WordPronounceCard key={vocab.id} item={vocab} />
-          ))}
-        </div>
-      </section>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {lesson.vocabulary.map((vocab) => (
+              <WordPronounceCard key={vocab.id} item={vocab} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* SECTION 3: SENTENCE PATTERN FRAMEWORK */}
-      {lesson.sentencePattern && (
-        <section className="space-y-4">
+      {(activeSection === 'all' || activeSection === 'pattern') && lesson.sentencePattern && (
+        <section className="space-y-4 animate-fade-in">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">
               3
             </div>
             <div>
-              <h2 className="text-xl font-bold text-slate-900">
+              <h2 className="text-lg sm:text-xl font-black text-slate-900">
                 Khuôn Mẫu Câu Thần Thánh (Sentence Pattern)
               </h2>
               <p className="text-xs text-slate-500">Lắp từ vào khuôn là nói được hàng trăm câu chuẩn ngữ điệu</p>
@@ -278,14 +350,14 @@ export default function LessonDetailPage() {
       )}
 
       {/* SECTION 4: INTERACTIVE DIALOGUE & ROLEPLAY */}
-      {lesson.dialogue && lesson.dialogue.length > 0 && (
-        <section className="space-y-4">
+      {(activeSection === 'all' || activeSection === 'dialogue') && lesson.dialogue && lesson.dialogue.length > 0 && (
+        <section className="space-y-4 animate-fade-in">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">
               {lesson.sentencePattern ? 4 : 3}
             </div>
             <div>
-              <h2 className="text-xl font-bold text-slate-900">
+              <h2 className="text-lg sm:text-xl font-black text-slate-900">
                 Thực Hành Hội Thoại & Đóng Vai 1-1 Với AI
               </h2>
               <p className="text-xs text-slate-500">Nghe toàn bộ, Shadowing và hóa thân đối thoại cùng AI</p>
@@ -297,14 +369,14 @@ export default function LessonDetailPage() {
       )}
 
       {/* SECTION 5: GRAMMAR SPOTLIGHT IN DIALOGUE */}
-      {lesson.grammarNotes && lesson.grammarNotes.length > 0 && (
-        <section className="space-y-4">
+      {(activeSection === 'all' || activeSection === 'grammar') && lesson.grammarNotes && lesson.grammarNotes.length > 0 && (
+        <section className="space-y-4 animate-fade-in">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm">
               5
             </div>
             <div>
-              <h2 className="text-xl font-bold text-slate-900">
+              <h2 className="text-lg sm:text-xl font-black text-slate-900">
                 Ngữ Pháp Thực Chiến Có Trong Đoạn Hội Thoại
               </h2>
               <p className="text-xs text-slate-500">Hiểu bản chất cấu trúc câu để giao tiếp tự nhiên</p>
@@ -316,14 +388,14 @@ export default function LessonDetailPage() {
       )}
 
       {/* SECTION 6: EAR-TRAINING ACOUSTIC DRILLS */}
-      {lesson.earTrainingDrills && lesson.earTrainingDrills.length > 0 && (
-        <section className="space-y-4">
+      {(activeSection === 'all' || activeSection === 'ear') && lesson.earTrainingDrills && lesson.earTrainingDrills.length > 0 && (
+        <section className="space-y-4 animate-fade-in">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-xl bg-purple-100 text-purple-800 flex items-center justify-center font-bold text-sm">
               6
             </div>
             <div>
-              <h2 className="text-xl font-bold text-slate-900">
+              <h2 className="text-lg sm:text-xl font-black text-slate-900">
                 Luyện Đôi Tai Nhạy Bén (Ear-Training Drill)
               </h2>
               <p className="text-xs text-slate-500">Nghe và phân biệt các cặp âm gây lú để phản xạ chính xác</p>
@@ -335,56 +407,94 @@ export default function LessonDetailPage() {
       )}
 
       {/* SECTION 7: MINI QUIZ CHECKPOINT */}
-      <section className="space-y-4">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">
-            7
+      {(activeSection === 'all' || activeSection === 'quiz') && (
+        <section className="space-y-4 animate-fade-in">
+          <div className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">
+              7
+            </div>
+            <div>
+              <h2 className="text-lg sm:text-xl font-black text-slate-900">
+                Kiểm Tra Phản Xạ 30 Giây (Mini Checkpoint)
+              </h2>
+              <p className="text-xs text-slate-500">Vượt qua 3 câu trắc nghiệm nhanh để nhận +30 EXP</p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-xl font-bold text-slate-900">
-              Kiểm Tra Phản Xạ 30 Giây (Mini Checkpoint)
-            </h2>
-            <p className="text-xs text-slate-500">Vượt qua 3 câu trắc nghiệm nhanh để nhận +30 EXP</p>
-          </div>
-        </div>
 
-        <LessonQuickQuiz lesson={lesson} />
-      </section>
+          <LessonQuickQuiz lesson={lesson} />
+        </section>
+      )}
 
-      {/* BOTTOM FOOTER NAVIGATION */}
+      {/* 5. BOTTOM FOOTER NAVIGATION */}
       <div className="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
         {prevLesson ? (
           <Link
             href={`/lessons/${prevLesson.id}`}
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs sm:text-sm font-bold transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Bài trước: {prevLesson.titleVi}</span>
+            <span className="line-clamp-1">Bài trước: {prevLesson.titleVi}</span>
           </Link>
         ) : (
-          <div />
+          <div className="hidden sm:block" />
         )}
 
         {nextLesson ? (
           <Link
             href={`/lessons/${nextLesson.id}`}
             onClick={handleMarkComplete}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold shadow-md transition-colors"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-black shadow-md shadow-indigo-500/25 transition-all active:scale-95"
           >
-            <span>Bài tiếp theo: {nextLesson.titleVi}</span>
+            <span className="line-clamp-1">Bài tiếp theo: {nextLesson.titleVi}</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         ) : (
           <Link
             href={`/test/${lesson.levelId}`}
             onClick={handleMarkComplete}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs font-bold shadow-lg transition-all hover:scale-105"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-xs sm:text-sm font-black shadow-lg transition-all active:scale-95"
           >
             <Zap className="w-4 h-4" />
             <span>Làm Bài Test Thăng Cấp Ngay</span>
           </Link>
         )}
       </div>
+
+      {/* 6. MOBILE STICKY FLOATING QUICK ACTIONS BAR */}
+      {showStickyBottom && (
+        <div className="fixed bottom-3 left-3 right-3 z-40 sm:hidden animate-fade-in">
+          <div className="bg-slate-950/90 backdrop-blur-md text-white p-2.5 rounded-2xl border border-white/15 shadow-2xl flex items-center justify-between gap-2">
+            <div className="flex items-center gap-1.5">
+              <button
+                onClick={() => setIsFlashcardsOpen(true)}
+                className="px-3 py-2 rounded-xl bg-amber-400 text-slate-950 font-black text-xs flex items-center gap-1 shadow-xs cursor-pointer active:scale-95"
+              >
+                <span>🃏 Flashcard</span>
+              </button>
+            </div>
+
+            <div className="flex items-center gap-1.5">
+              {nextLesson ? (
+                <Link
+                  href={`/lessons/${nextLesson.id}`}
+                  onClick={handleMarkComplete}
+                  className="px-4 py-2 rounded-xl bg-indigo-600 text-white font-black text-xs flex items-center gap-1 shadow-md active:scale-95"
+                >
+                  <span>Bài tiếp ➔</span>
+                </Link>
+              ) : (
+                <Link
+                  href={`/test/${lesson.levelId}`}
+                  onClick={handleMarkComplete}
+                  className="px-4 py-2 rounded-xl bg-amber-500 text-slate-950 font-black text-xs flex items-center gap-1 shadow-md active:scale-95"
+                >
+                  <span>Thi thăng cấp 🏆</span>
+                </Link>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 3D Flashcards Modal */}
       <VocabularyFlashcardsModal
