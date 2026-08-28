@@ -141,6 +141,31 @@ export interface LevelTest {
   questions: TestQuestion[];
 }
 
+export interface PaymentOrder {
+  id: string;
+  userId: string;
+  userName: string;
+  userEmail: string;
+  planId: '1_month' | '6_months' | '1_year' | 'lifetime';
+  planName: string;
+  amount: number;
+  bankCode: string;
+  accountNumber: string;
+  accountName: string;
+  transferCode: string;
+  status: 'pending' | 'completed' | 'cancelled';
+  createdAt: number;
+  completedAt?: number;
+}
+
+export interface BankConfig {
+  bankId: string;
+  bankName: string;
+  accountNumber: string;
+  accountName: string;
+  qrTemplate: string;
+}
+
 export interface UserAccount {
   id: string;
   name: string;
@@ -157,6 +182,9 @@ export interface UserAccount {
   savedLessons: string[];
   testResults: Record<string, { score: number; passed: boolean; completedAt: number }>;
   isAdminMode?: boolean;
+  isPro?: boolean;
+  proPlan?: '1_month' | '6_months' | '1_year' | 'lifetime';
+  proExpiresAt?: number;
 }
 
 export interface UserProgress {
@@ -169,6 +197,9 @@ export interface UserProgress {
   lastActiveDate: string;
   testResults: Record<string, { score: number; passed: boolean; completedAt: number }>;
   isAdminMode?: boolean;
+  isPro?: boolean;
+  proPlan?: '1_month' | '6_months' | '1_year' | 'lifetime';
+  proExpiresAt?: number;
   exp?: number;
 }
 

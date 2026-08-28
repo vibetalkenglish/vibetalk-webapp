@@ -17,12 +17,12 @@ import {
   ArrowRight,
   HelpCircle
 } from 'lucide-react';
-import { getActiveUser, awardExp } from '@/lib/authStorage';
-import { UserAccount } from '@/types';
+import { getActiveUser, awardExp, getBankConfig, createPaymentOrder, checkOrderPaymentStatus, approveOrder } from '@/lib/authStorage';
+import { UserAccount, BankConfig, PaymentOrder } from '@/types';
 import confetti from 'canvas-confetti';
 
 interface PricingTier {
-  id: string;
+  id: '1_month' | '6_months' | '1_year' | 'lifetime';
   name: string;
   priceFormatted: string;
   priceNumber: number;
@@ -35,20 +35,20 @@ interface PricingTier {
 
 const PRICING_TIERS: PricingTier[] = [
   {
-    id: 'plan_1m',
+    id: '1_month',
     name: 'Gói 1 Tháng',
     priceFormatted: '99.000 đ',
     priceNumber: 99000,
     durationLabel: '/ tháng',
     features: [
-      'Mở khóa trọn bộ 24 Bài học thực chiến (Level 0 -> 3)',
+      'Mở khóa trọn bộ 72 Bài học thực chiến (Level 0 -> 3)',
       'Luyện nói & Chấm điểm AI không giới hạn',
       'Đóng vai đối thoại 1-1 với AI tất cả bài học',
-      'Sổ tay từ vựng không giới hạn',
+      'Sổ tay từ vựng & Flashcard 3D không giới hạn',
     ],
   },
   {
-    id: 'plan_6m',
+    id: '6_months',
     name: 'Gói 6 Tháng',
     priceFormatted: '299.000 đ',
     priceNumber: 299000,
@@ -57,16 +57,16 @@ const PRICING_TIERS: PricingTier[] = [
     badge: '🔥 BÁN CHẠY NHẤT',
     savings: 'Tiết kiệm 50%',
     features: [
-      'Mở khóa trọn bộ 24 Bài học thực chiến',
+      'Mở khóa trọn bộ 72 Bài học thực chiến',
       'Luyện nói & Chấm điểm AI không giới hạn 24/7',
-      'Đóng vai đối thoại 1-1 với AI',
+      'Gia Sư AI Voice-to-Voice gọi điện 1-1 không giới hạn',
       'Thử thách 3 phút Daily Sprint mỗi ngày',
       'Huy hiệu Học Viên VIP trên Bảng Xếp Hạng 👑',
       'Ưu tiên kết nối giọng đọc Studio Cảm Xúc',
     ],
   },
   {
-    id: 'plan_1y',
+    id: '1_year',
     name: 'Gói 1 Năm',
     priceFormatted: '499.000 đ',
     priceNumber: 499000,
@@ -78,11 +78,11 @@ const PRICING_TIERS: PricingTier[] = [
       'Tặng Ebook "Bí Quyết 44 Âm & Bẻ Khóa Âm Đuôi Giọng Mỹ"',
       'Mở khóa toàn bộ tính năng mới trong tương lai',
       'Tặng ngay +500 EXP thăng hạng Top Leaderboard',
-      'Hỗ trợ kỹ thuật & giải đáp phát âm ưu tiên 24/7',
+      'Chứng chỉ tốt nghiệp mạ vàng không watermark',
     ],
   },
   {
-    id: 'plan_lifetime',
+    id: 'lifetime',
     name: 'Gói Trọn Đời',
     priceFormatted: '899.000 đ',
     priceNumber: 899000,
@@ -100,19 +100,45 @@ const PRICING_TIERS: PricingTier[] = [
 export default function PricingPage() {
   const [activeUser, setActiveUser] = useState<UserAccount | null>(null);
   const [selectedPlan, setSelectedPlan] = useState<PricingTier | null>(null);
+  const [currentOrder, setCurrentOrder] = useState<PaymentOrder | null>(null);
+  const [bankConfig, setBankConfig] = useState<BankConfig | null>(null);
   const [isCopied, setIsCopied] = useState(false);
   const [isPaidSuccess, setIsPaidSuccess] = useState(false);
 
   useEffect(() => {
     setActiveUser(getActiveUser());
+    setBankConfig(getBankConfig());
   }, []);
+
+  // Polling for payment status
+  useEffect(() => {
+    if (!currentOrder || isPaidSuccess) return;
+    const interval = setInterval(() => {
+      const isApproved = checkOrderPaymentStatus(currentOrder.id);
+      if (isApproved) {
+        setIsPaidSuccess(true);
+        awardExp(500, 'Nâng cấp gói VibeTalk Pro VIP');
+        confetti({
+          particleCount: 120,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      }
+    }, 2500);
+    return () => clearInterval(interval);
+  }, [currentOrder, isPaidSuccess]);
 
   const handleOpenPayment = (tier: PricingTier) => {
     setSelectedPlan(tier);
     setIsPaidSuccess(false);
+    const order = createPaymentOrder(tier.id, tier.name, tier.priceNumber);
+    setCurrentOrder(order);
   };
 
   const handleConfirmPaid = () => {
+    if (currentOrder) {
+      approveOrder(currentOrder.id);
+    }
     setIsPaidSuccess(true);
     awardExp(500, 'Nâng cấp gói VibeTalk Pro VIP');
     try {
@@ -132,15 +158,16 @@ export default function PricingPage() {
     setTimeout(() => setIsCopied(false), 2000);
   };
 
-  // VietQR parameters
-  const bankName = 'Techcombank (Ngân hàng TMCP Kỹ thương VN)';
-  const accountNumber = '19036888999018';
-  const accountHolder = 'VIBETALK ENGLISH TEAM';
-  const transferContent = `VIBETALK ${selectedPlan?.id.toUpperCase()} ${activeUser?.name.replace(/\s+/g, '').toUpperCase() || 'PRO'}`;
+  // VietQR parameters dynamically loaded from Admin Bank Config
+  const bankId = bankConfig?.bankId || 'techcombank';
+  const bankName = bankConfig?.bankName || 'Techcombank (Ngân hàng Kỹ Thương)';
+  const accountNumber = bankConfig?.accountNumber || '19036888999018';
+  const accountHolder = bankConfig?.accountName || 'NGUYEN THI KIM ANH';
+  const transferContent = currentOrder?.transferCode || `VIBETALK ${selectedPlan?.id.toUpperCase()} PRO`;
   
   // Quick VietQR URL format
   const vietQrUrl = selectedPlan 
-    ? `https://img.vietqr.io/image/TCB-19036888999018-compact2.png?amount=${selectedPlan.priceNumber}&addInfo=${encodeURIComponent(transferContent)}&accountName=${encodeURIComponent(accountHolder)}`
+    ? `https://img.vietqr.io/image/${bankId}-${accountNumber}-compact2.png?amount=${selectedPlan.priceNumber}&addInfo=${encodeURIComponent(transferContent)}&accountName=${encodeURIComponent(accountHolder)}`
     : '';
 
   return (

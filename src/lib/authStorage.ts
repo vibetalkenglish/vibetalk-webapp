@@ -1,4 +1,4 @@
-import { UserAccount, LeaderboardUser, LevelId, VocabItem } from '@/types';
+import { UserAccount, LeaderboardUser, LevelId, VocabItem, PaymentOrder, BankConfig } from '@/types';
 import { getUserProgress, saveUserProgress } from './storage';
 
 const ACCOUNTS_KEY = 'VIBETALK_ACCOUNTS_V1';
@@ -224,5 +224,152 @@ function getLevelBadgeLabel(levelId: LevelId): string {
     case 'lv1': return 'Level 1: Đời Thường (A2)';
     case 'lv2': return 'Level 2: Đi Làm (B1)';
     case 'lv3': return 'Level 3: Du Lịch (B2)';
+  }
+}
+
+// ==================== PAYMENT & BANK CONFIGURATION ====================
+
+const BANK_CONFIG_KEY = 'VIBETALK_BANK_CONFIG_V1';
+const ORDERS_KEY = 'VIBETALK_PAYMENT_ORDERS_V1';
+
+export const DEFAULT_BANK_CONFIG: BankConfig = {
+  bankId: 'techcombank',
+  bankName: 'Techcombank (Ngân hàng Kỹ Thương)',
+  accountNumber: '19036888999018',
+  accountName: 'NGUYEN THI KIM ANH',
+  qrTemplate: 'compact2'
+};
+
+export function getBankConfig(): BankConfig {
+  if (typeof window === 'undefined') return DEFAULT_BANK_CONFIG;
+  try {
+    const raw = localStorage.getItem(BANK_CONFIG_KEY);
+    return raw ? JSON.parse(raw) : DEFAULT_BANK_CONFIG;
+  } catch (e) {
+    return DEFAULT_BANK_CONFIG;
+  }
+}
+
+export function saveBankConfig(config: BankConfig) {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(BANK_CONFIG_KEY, JSON.stringify(config));
+  } catch (e) {
+    console.error('Error saving bank config:', e);
+  }
+}
+
+export function getAllOrders(): PaymentOrder[] {
+  if (typeof window === 'undefined') return [];
+  try {
+    const raw = localStorage.getItem(ORDERS_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+export function saveOrders(orders: PaymentOrder[]) {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(ORDERS_KEY, JSON.stringify(orders));
+  } catch (e) {
+    console.error('Error saving orders:', e);
+  }
+}
+
+export function createPaymentOrder(
+  planId: '1_month' | '6_months' | '1_year' | 'lifetime',
+  planName: string,
+  amount: number
+): PaymentOrder {
+  const user = getActiveUser();
+  const bank = getBankConfig();
+  const orderId = `ORD_${Date.now().toString().slice(-6)}`;
+  const transferCode = `VIBETALK ${user.id.slice(-4).toUpperCase()}${Date.now().toString().slice(-3)}`;
+
+  const newOrder: PaymentOrder = {
+    id: orderId,
+    userId: user.id,
+    userName: user.name,
+    userEmail: user.email,
+    planId,
+    planName,
+    amount,
+    bankCode: bank.bankId,
+    accountNumber: bank.accountNumber,
+    accountName: bank.accountName,
+    transferCode,
+    status: 'pending',
+    createdAt: Date.now()
+  };
+
+  const existing = getAllOrders();
+  saveOrders([newOrder, ...existing]);
+  return newOrder;
+}
+
+export function approveOrder(orderId: string): boolean {
+  const orders = getAllOrders();
+  const order = orders.find(o => o.id === orderId);
+  if (!order) return false;
+
+  order.status = 'completed';
+  order.completedAt = Date.now();
+  saveOrders(orders);
+
+  // Upgrade target user
+  upgradeUserToPro(order.userId, order.planId);
+  return true;
+}
+
+export function checkOrderPaymentStatus(transferCodeOrOrderId: string): boolean {
+  const orders = getAllOrders();
+  const found = orders.find(
+    o => o.id === transferCodeOrOrderId || o.transferCode.toLowerCase() === transferCodeOrOrderId.toLowerCase()
+  );
+  return found?.status === 'completed';
+}
+
+export function upgradeUserToPro(
+  userId: string, 
+  planId: '1_month' | '6_months' | '1_year' | 'lifetime'
+) {
+  const accounts = getAllAccounts();
+  const target = accounts.find(a => a.id === userId);
+  if (!target) return;
+
+  const now = Date.now();
+  let durationMs = 30 * 86400000; // default 1 month
+  if (planId === '6_months') durationMs = 180 * 86400000;
+  if (planId === '1_year') durationMs = 365 * 86400000;
+  if (planId === 'lifetime') durationMs = 3650 * 86400000; // 10 years
+
+  const expiresAt = now + durationMs;
+
+  const updatedAccounts = accounts.map(a => {
+    if (a.id === userId) {
+      return {
+        ...a,
+        isPro: true,
+        proPlan: planId,
+        proExpiresAt: expiresAt,
+        unlockedLevels: ['lv0', 'lv1', 'lv2', 'lv3'] as LevelId[]
+      };
+    }
+    return a;
+  });
+
+  saveAccounts(updatedAccounts);
+
+  // If current active user is upgraded, update progress storage
+  const activeUser = getActiveUser();
+  if (activeUser.id === userId) {
+    const progress = getUserProgress();
+    progress.isPro = true;
+    progress.proPlan = planId;
+    progress.proExpiresAt = expiresAt;
+    progress.unlockedLevels = ['lv0', 'lv1', 'lv2', 'lv3'];
+    saveUserProgress(progress);
   }
 }

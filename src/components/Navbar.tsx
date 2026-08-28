@@ -255,12 +255,20 @@ export default function Navbar() {
             </div>
 
             {/* Drawer Footer */}
-            <div className="pt-4 border-t border-slate-100 space-y-3">
+            <div className="pt-4 border-t border-slate-100 space-y-2">
+              <Link
+                href="/admin"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full py-2.5 px-4 rounded-xl bg-slate-900 text-white text-xs font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-colors"
+              >
+                <span>🛡️ Cổng Quản Trị Admin</span>
+              </Link>
+
               <button
                 onClick={() => { setIsMobileMenuOpen(false); setIsAuthModalOpen(true); }}
-                className="w-full py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold flex items-center justify-center gap-2"
+                className="w-full py-2 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold flex items-center justify-center gap-2"
               >
-                <LogIn className="w-4 h-4" />
+                <LogIn className="w-3.5 h-3.5" />
                 <span>Đăng Nhập / Đổi Tài Khoản</span>
               </button>
             </div>
