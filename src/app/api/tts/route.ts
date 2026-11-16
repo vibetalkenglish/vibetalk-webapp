@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
           body: JSON.stringify({
             model: 'tts-1',
             input: text.trim(),
-            voice: voice.includes('male') ? 'onyx' : 'nova', // Nova is warm and expressive female, Onyx is deep warm male
+            voice: voice === 'male' ? 'onyx' : 'nova', // Nova is warm and expressive female, Onyx is deep warm male
             speed: Math.max(0.75, Math.min(1.25, speed)),
           }),
         });
@@ -51,7 +51,7 @@ export async function POST(req: NextRequest) {
     if (elevenApiKey) {
       try {
         // Rachel (21m00Tcm4TlvDq8ikWAM) or Adam (pNInz6obpgDQGcFmaJgB)
-        const voiceId = voice.includes('male') ? 'pNInz6obpgDQGcFmaJgB' : '21m00Tcm4TlvDq8ikWAM';
+        const voiceId = voice === 'male' ? 'pNInz6obpgDQGcFmaJgB' : '21m00Tcm4TlvDq8ikWAM';
         const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
           method: 'POST',
           headers: {
@@ -70,7 +70,9 @@ export async function POST(req: NextRequest) {
           }),
         });
 
-        if (response.ok) {
+        if (!response.ok) {
+          console.warn(`ElevenLabs TTS error ${response.status}:`, (await response.text()).slice(0, 300));
+        } else {
           const audioBuffer = await response.arrayBuffer();
           return new NextResponse(audioBuffer, {
             status: 200,

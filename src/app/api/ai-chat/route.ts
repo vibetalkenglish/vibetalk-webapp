@@ -80,16 +80,19 @@ Respond strictly in valid JSON format:
   "correctionTipVi": "Giải thích tiếng Việt ngắn gọn về cách dùng từ này (nếu có)"
 }`;
 
-        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiKey}`, {
+        const geminiModel = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
+        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${geminiModel}:generateContent`, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json', 'x-goog-api-key': geminiKey },
           body: JSON.stringify({
             contents: [{ parts: [{ text: promptText }] }],
             generationConfig: { responseMimeType: 'application/json' }
           })
         });
 
-        if (res.ok) {
+        if (!res.ok) {
+          console.warn(`Gemini API error ${res.status} (model ${geminiModel}):`, (await res.text()).slice(0, 300));
+        } else {
           const data = await res.json();
           const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
           if (rawText) {
