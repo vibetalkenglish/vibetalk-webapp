@@ -28,6 +28,7 @@ import {
   unlockAllLessonsAndLevels, 
   resetToStudentProgress 
 } from '@/lib/storage';
+import { isCloudAdmin, subscribeToCloudUser } from '@/lib/cloudUser';
 import { UserProgress, LevelId } from '@/types';
 
 export default function LessonsPage() {
@@ -43,7 +44,13 @@ export default function LessonsPage() {
     return () => unsubscribe();
   }, []);
 
-  const isAdmin = Boolean(progress?.isAdminMode);
+  // "Admin mode" (unlock everything) is only for real admins (profiles.role = 'admin').
+  const [canUseAdminMode, setCanUseAdminMode] = useState(false);
+  useEffect(() => {
+    setCanUseAdminMode(isCloudAdmin());
+    return subscribeToCloudUser(() => setCanUseAdminMode(isCloudAdmin()));
+  }, []);
+  const isAdmin = canUseAdminMode && Boolean(progress?.isAdminMode);
 
   const handleToggleAdmin = () => {
     toggleAdminMode();
@@ -134,6 +141,7 @@ export default function LessonsPage() {
               />
             </div>
 
+            {canUseAdminMode && (
             <div className="flex items-center justify-between pt-1">
               <button
                 onClick={handleToggleAdmin}
@@ -147,6 +155,7 @@ export default function LessonsPage() {
                 <span>{isAdmin ? 'Admin: Đang mở tất cả bài' : 'Mở quyền Admin'}</span>
               </button>
             </div>
+            )}
           </div>
         </div>
       </div>

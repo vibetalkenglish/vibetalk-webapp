@@ -13,7 +13,7 @@ import {
   Star,
   CheckCircle2
 } from 'lucide-react';
-import { getFullLeaderboard, getActiveUser, awardExp } from '@/lib/authStorage';
+import { getFullLeaderboard, fetchLeaderboard, getActiveUser, awardExp } from '@/lib/authStorage';
 import { LeaderboardUser, UserAccount } from '@/types';
 import confetti from 'canvas-confetti';
 
@@ -23,9 +23,14 @@ export default function LeaderboardPage() {
   const [hasClaimedDaily, setHasClaimedDaily] = useState(false);
   const [activeFilter, setActiveFilter] = useState<'all' | 'weekly'>('all');
 
+  const loadLeaderboard = () => {
+    setLeaderboard(getFullLeaderboard());
+    fetchLeaderboard().then(setLeaderboard).catch(() => undefined);
+  };
+
   useEffect(() => {
     setActiveUser(getActiveUser());
-    setLeaderboard(getFullLeaderboard());
+    loadLeaderboard();
   }, []);
 
   const handleClaimDailyExp = () => {
@@ -33,7 +38,8 @@ export default function LeaderboardPage() {
     awardExp(30, 'Điểm danh hàng ngày');
     setHasClaimedDaily(true);
     setActiveUser(getActiveUser());
-    setLeaderboard(getFullLeaderboard());
+    // XP is pushed to Supabase after a short debounce; refresh once it has landed.
+    setTimeout(loadLeaderboard, 2500);
 
     try {
       confetti({

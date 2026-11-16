@@ -19,7 +19,10 @@ import {
   ArrowRight,
   RotateCcw
 } from 'lucide-react';
-import { getActiveUser, updateUserProfile, PRESET_AVATARS, getAllAccounts, setActiveAccount } from '@/lib/authStorage';
+import { getActiveUser, updateUserProfile, PRESET_AVATARS } from '@/lib/authStorage';
+import { subscribeToProgress } from '@/lib/storage';
+import { isLoggedIn, subscribeToCloudUser } from '@/lib/cloudUser';
+import { signOut } from '@/lib/cloudSync';
 import { UserAccount } from '@/types';
 import AuthModal from '@/components/AuthModal';
 
@@ -29,10 +32,16 @@ export default function ProfilePage() {
   const [editName, setEditName] = useState('');
   const [editAvatar, setEditAvatar] = useState('👨‍🎓');
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
-  const [allAccounts, setAllAccounts] = useState<UserAccount[]>([]);
+  const [loggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
     loadUser();
+    const unsubProgress = subscribeToProgress(() => loadUser());
+    const unsubCloud = subscribeToCloudUser(() => loadUser());
+    return () => {
+      unsubProgress();
+      unsubCloud();
+    };
   }, []);
 
   const loadUser = () => {
@@ -40,7 +49,7 @@ export default function ProfilePage() {
     setUser(active);
     setEditName(active.name);
     setEditAvatar(active.avatar);
-    setAllAccounts(getAllAccounts());
+    setLoggedIn(isLoggedIn());
   };
 
   const handleSaveProfile = () => {
@@ -53,8 +62,9 @@ export default function ProfilePage() {
     loadUser();
   };
 
-  const handleSwitchAccount = (accountId: string) => {
-    setActiveAccount(accountId);
+  const handleSignOut = async () => {
+    if (!confirm('Đăng xuất khỏi tài khoản trên thiết bị này?')) return;
+    await signOut();
     loadUser();
   };
 
@@ -125,7 +135,9 @@ export default function ProfilePage() {
                   {user.currentLevel.toUpperCase()}
                 </span>
               </div>
-              <p className="text-xs sm:text-sm text-indigo-200">{user.email}</p>
+              <p className="text-xs sm:text-sm text-indigo-200">
+                {loggedIn ? user.email : 'Chế độ khách — đăng nhập để lưu tiến độ trên mọi thiết bị'}
+              </p>
               <p className="text-[11px] text-indigo-300">
                 Thành viên từ: {new Date(user.createdAt).toLocaleDateString('vi-VN')}
               </p>
@@ -143,11 +155,11 @@ export default function ProfilePage() {
             </button>
 
             <button
-              onClick={() => setIsAuthModalOpen(true)}
+              onClick={() => (loggedIn ? handleSignOut() : setIsAuthModalOpen(true))}
               className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-md transition-all"
             >
               <User className="w-4 h-4" />
-              <span>Chuyển / Đổi Tài Khoản</span>
+              <span>{loggedIn ? 'Đăng Xuất' : 'Đăng Nhập / Đăng Ký'}</span>
             </button>
           </div>
         </div>

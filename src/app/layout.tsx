@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import Navbar from '@/components/Navbar';
+import CloudSyncInit from '@/components/CloudSyncInit';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -38,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="vi" className="h-full scroll-smooth">
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-indigo-500 selection:text-white">
+        <CloudSyncInit />
         <Navbar />
         <main className="flex-1 max-w-7xl w-full mx-auto px-3.5 sm:px-6 lg:px-8 py-5 sm:py-8 pb-16 sm:pb-12">
           {children}

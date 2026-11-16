@@ -22,6 +22,8 @@ import {
 } from 'lucide-react';
 import { getUserProgress, subscribeToProgress } from '@/lib/storage';
 import { getActiveUser } from '@/lib/authStorage';
+import { getCloudUser, subscribeToCloudUser } from '@/lib/cloudUser';
+import { signOut } from '@/lib/cloudSync';
 import { UserProgress, UserAccount } from '@/types';
 import AuthModal from './AuthModal';
 import VoiceSettingsModal from './VoiceSettingsModal';
@@ -34,9 +36,15 @@ export default function Navbar() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isVoiceModalOpen, setIsVoiceModalOpen] = useState(false);
 
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
+
   const refreshData = () => {
     setProgress(getUserProgress());
     setActiveUser(getActiveUser());
+    const cloud = getCloudUser();
+    setLoggedIn(Boolean(cloud));
+    setIsAdmin(cloud?.role === 'admin');
   };
 
   useEffect(() => {
@@ -44,7 +52,11 @@ export default function Navbar() {
     const unsubscribe = subscribeToProgress(() => {
       refreshData();
     });
-    return () => unsubscribe();
+    const unsubCloud = subscribeToCloudUser(() => refreshData());
+    return () => {
+      unsubscribe();
+      unsubCloud();
+    };
   }, []);
 
   // Close mobile drawer on route change
@@ -166,7 +178,7 @@ export default function Navbar() {
                 className="flex items-center gap-1.5 px-2.5 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-full text-xs font-bold border border-indigo-200 transition-colors"
               >
                 <span className="text-sm leading-none">{activeUser?.avatar || '👨‍🎓'}</span>
-                <span className="hidden md:inline">{activeUser?.exp || 320} EXP</span>
+                <span className="hidden md:inline">{activeUser?.exp ?? 0} EXP</span>
               </Link>
 
               {/* Mobile Menu Toggle Button */}
@@ -216,7 +228,7 @@ export default function Navbar() {
                   <span className="text-3xl">{activeUser?.avatar || '👨‍🎓'}</span>
                   <div>
                     <strong className="text-xs font-bold text-slate-900 block">{activeUser?.name || 'Học viên'}</strong>
-                    <span className="text-[11px] text-indigo-600 font-bold">{activeUser?.exp || 320} EXP</span>
+                    <span className="text-[11px] text-indigo-600 font-bold">{activeUser?.exp ?? 0} EXP</span>
                   </div>
                 </div>
                 <Link
@@ -256,20 +268,29 @@ export default function Navbar() {
 
             {/* Drawer Footer */}
             <div className="pt-4 border-t border-slate-100 space-y-2">
-              <Link
-                href="/admin"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="w-full py-2.5 px-4 rounded-xl bg-slate-900 text-white text-xs font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-colors"
-              >
-                <span>🛡️ Cổng Quản Trị Admin</span>
-              </Link>
+              {isAdmin && (
+                <Link
+                  href="/admin"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="w-full py-2.5 px-4 rounded-xl bg-slate-900 text-white text-xs font-bold flex items-center justify-center gap-2 hover:bg-slate-800 transition-colors"
+                >
+                  <span>🛡️ Cổng Quản Trị Admin</span>
+                </Link>
+              )}
 
               <button
-                onClick={() => { setIsMobileMenuOpen(false); setIsAuthModalOpen(true); }}
+                onClick={async () => {
+                  setIsMobileMenuOpen(false);
+                  if (loggedIn) {
+                    if (confirm('Đăng xuất khỏi tài khoản trên thiết bị này?')) await signOut();
+                  } else {
+                    setIsAuthModalOpen(true);
+                  }
+                }}
                 className="w-full py-2 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold flex items-center justify-center gap-2"
               >
                 <LogIn className="w-3.5 h-3.5" />
-                <span>Đăng Nhập / Đổi Tài Khoản</span>
+                <span>{loggedIn ? 'Đăng Xuất' : 'Đăng Nhập / Đăng Ký'}</span>
               </button>
             </div>
           </div>

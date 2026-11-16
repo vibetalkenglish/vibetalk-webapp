@@ -17,8 +17,19 @@ import {
   ArrowRight,
   HelpCircle
 } from 'lucide-react';
-import { getActiveUser, awardExp, getBankConfig, createPaymentOrder, checkOrderPaymentStatus, approveOrder } from '@/lib/authStorage';
-import { UserAccount, BankConfig, PaymentOrder } from '@/types';
+import { getActiveUser, awardExp, getBankConfig, fetchBankConfig } from '@/lib/authStorage';
+import { isLoggedIn } from '@/lib/cloudUser';
+import { refreshCloudProfile } from '@/lib/cloudSync';
+import { PLANS } from '@/lib/plans';
+import AuthModal from '@/components/AuthModal';
+import { UserAccount, BankConfig } from '@/types';
+
+interface ServerOrder {
+  code: string;
+  amount: number;
+  plan_name: string;
+  status: 'pending' | 'paid' | 'cancelled';
+}
 import confetti from 'canvas-confetti';
 
 interface PricingTier {
@@ -38,7 +49,7 @@ const PRICING_TIERS: PricingTier[] = [
     id: '1_month',
     name: 'Gói 1 Tháng',
     priceFormatted: '99.000 đ',
-    priceNumber: 99000,
+    priceNumber: PLANS['1_month'].amount,
     durationLabel: '/ tháng',
     features: [
       'Mở khóa trọn bộ 72 Bài học thực chiến (Level 0 -> 3)',
@@ -51,7 +62,7 @@ const PRICING_TIERS: PricingTier[] = [
     id: '6_months',
     name: 'Gói 6 Tháng',
     priceFormatted: '299.000 đ',
-    priceNumber: 299000,
+    priceNumber: PLANS['6_months'].amount,
     durationLabel: '6 tháng (~50k/tháng)',
     popular: true,
     badge: '🔥 BÁN CHẠY NHẤT',
@@ -69,7 +80,7 @@ const PRICING_TIERS: PricingTier[] = [
     id: '1_year',
     name: 'Gói 1 Năm',
     priceFormatted: '499.000 đ',
-    priceNumber: 499000,
+    priceNumber: PLANS['1_year'].amount,
     durationLabel: '12 tháng (~41k/tháng)',
     badge: '🌟 BEST VALUE',
     savings: 'Tiết kiệm 60%',
@@ -85,7 +96,7 @@ const PRICING_TIERS: PricingTier[] = [
     id: 'lifetime',
     name: 'Gói Trọn Đời',
     priceFormatted: '899.000 đ',
-    priceNumber: 899000,
+    priceNumber: PLANS['lifetime'].amount,
     durationLabel: 'thanh toán 1 lần duy nhất',
     badge: '👑 EARLY BIRD',
     features: [
@@ -100,56 +111,75 @@ const PRICING_TIERS: PricingTier[] = [
 export default function PricingPage() {
   const [activeUser, setActiveUser] = useState<UserAccount | null>(null);
   const [selectedPlan, setSelectedPlan] = useState<PricingTier | null>(null);
-  const [currentOrder, setCurrentOrder] = useState<PaymentOrder | null>(null);
+  const [currentOrder, setCurrentOrder] = useState<ServerOrder | null>(null);
   const [bankConfig, setBankConfig] = useState<BankConfig | null>(null);
   const [isCopied, setIsCopied] = useState(false);
   const [isPaidSuccess, setIsPaidSuccess] = useState(false);
+  const [orderError, setOrderError] = useState<string | null>(null);
+  const [isCreatingOrder, setIsCreatingOrder] = useState(false);
+  const [hasClickedPaid, setHasClickedPaid] = useState(false);
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
+  const [pendingTier, setPendingTier] = useState<PricingTier | null>(null);
 
   useEffect(() => {
     setActiveUser(getActiveUser());
     setBankConfig(getBankConfig());
+    fetchBankConfig().then(setBankConfig).catch(() => undefined);
   }, []);
 
-  // Polling for payment status
+  // Poll the server for payment status. Pro is activated by the payment
+  // webhook or by an admin — never by the customer's own click.
   useEffect(() => {
     if (!currentOrder || isPaidSuccess) return;
-    const interval = setInterval(() => {
-      const isApproved = checkOrderPaymentStatus(currentOrder.id);
-      if (isApproved) {
-        setIsPaidSuccess(true);
-        awardExp(500, 'Nâng cấp gói VibeTalk Pro VIP');
-        confetti({
-          particleCount: 120,
-          spread: 70,
-          origin: { y: 0.6 }
-        });
+    const interval = setInterval(async () => {
+      try {
+        const res = await fetch(`/api/orders/${encodeURIComponent(currentOrder.code)}`, { cache: 'no-store' });
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data.status === 'paid') {
+          setIsPaidSuccess(true);
+          await refreshCloudProfile();
+          awardExp(500, 'Nâng cấp gói VibeTalk Pro VIP');
+          setActiveUser(getActiveUser());
+          confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
+        }
+      } catch {
+        // network blip — try again next tick
       }
-    }, 2500);
+    }, hasClickedPaid ? 3000 : 6000);
     return () => clearInterval(interval);
-  }, [currentOrder, isPaidSuccess]);
+  }, [currentOrder, isPaidSuccess, hasClickedPaid]);
 
-  const handleOpenPayment = (tier: PricingTier) => {
+  const handleOpenPayment = async (tier: PricingTier) => {
+    if (!isLoggedIn()) {
+      setPendingTier(tier);
+      setIsAuthOpen(true);
+      return;
+    }
     setSelectedPlan(tier);
     setIsPaidSuccess(false);
-    const order = createPaymentOrder(tier.id, tier.name, tier.priceNumber);
-    setCurrentOrder(order);
+    setHasClickedPaid(false);
+    setCurrentOrder(null);
+    setOrderError(null);
+    setIsCreatingOrder(true);
+    try {
+      const res = await fetch('/api/orders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ planId: tier.id }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.order) throw new Error(data.error || 'Không tạo được đơn hàng.');
+      setCurrentOrder(data.order);
+    } catch (err: any) {
+      setOrderError(err?.message || 'Không tạo được đơn hàng. Vui lòng thử lại.');
+    } finally {
+      setIsCreatingOrder(false);
+    }
   };
 
   const handleConfirmPaid = () => {
-    if (currentOrder) {
-      approveOrder(currentOrder.id);
-    }
-    setIsPaidSuccess(true);
-    awardExp(500, 'Nâng cấp gói VibeTalk Pro VIP');
-    try {
-      confetti({
-        particleCount: 150,
-        spread: 80,
-        origin: { y: 0.6 },
-      });
-    } catch (e) {
-      console.warn(e);
-    }
+    setHasClickedPaid(true);
   };
 
   const copyToClipboard = (text: string) => {
@@ -163,11 +193,11 @@ export default function PricingPage() {
   const bankName = bankConfig?.bankName || 'Techcombank (Ngân hàng Kỹ Thương)';
   const accountNumber = bankConfig?.accountNumber || '19036888999018';
   const accountHolder = bankConfig?.accountName || 'NGUYEN THI KIM ANH';
-  const transferContent = currentOrder?.transferCode || `VIBETALK ${selectedPlan?.id.toUpperCase()} PRO`;
+  const transferContent = currentOrder?.code || '';
   
   // Quick VietQR URL format
-  const vietQrUrl = selectedPlan 
-    ? `https://img.vietqr.io/image/${bankId}-${accountNumber}-compact2.png?amount=${selectedPlan.priceNumber}&addInfo=${encodeURIComponent(transferContent)}&accountName=${encodeURIComponent(accountHolder)}`
+  const vietQrUrl = currentOrder
+    ? `https://img.vietqr.io/image/${bankId}-${accountNumber}-compact2.png?amount=${currentOrder.amount}&addInfo=${encodeURIComponent(transferContent)}&accountName=${encodeURIComponent(accountHolder)}`
     : '';
 
   return (
@@ -334,6 +364,13 @@ export default function PricingPage() {
                   </p>
                 </div>
 
+                {orderError && (
+                  <div className="p-3 bg-rose-50 border border-rose-200 rounded-xl text-xs text-rose-800">{orderError}</div>
+                )}
+                {isCreatingOrder && <p className="text-xs text-slate-500">Đang tạo đơn hàng...</p>}
+
+                {currentOrder && (
+                <>
                 {/* QR Code Image */}
                 <div className="p-3 bg-slate-50 rounded-2xl border-2 border-dashed border-indigo-200 inline-block mx-auto shadow-inner">
                   <img
@@ -371,7 +408,7 @@ export default function PricingPage() {
 
                   <div className="flex justify-between items-center">
                     <span className="text-slate-500 font-medium">Số tiền:</span>
-                    <span className="font-extrabold text-rose-600 text-sm">{selectedPlan.priceFormatted}</span>
+                    <span className="font-extrabold text-rose-600 text-sm">{(currentOrder?.amount ?? selectedPlan.priceNumber).toLocaleString('vi-VN')} đ</span>
                   </div>
 
                   <div className="flex justify-between items-center pt-2 border-t border-slate-200">
@@ -396,12 +433,21 @@ export default function PricingPage() {
                 )}
 
                 {/* Confirm Paid Button */}
-                <button
-                  onClick={handleConfirmPaid}
-                  className="w-full py-3.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-black text-sm rounded-2xl shadow-lg shadow-emerald-600/25 transition-transform active:scale-98 cursor-pointer"
-                >
-                  Tôi Đã Chuyển Khoản Thành Công ✅
-                </button>
+                {!hasClickedPaid ? (
+                  <button
+                    onClick={handleConfirmPaid}
+                    className="w-full py-3.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-black text-sm rounded-2xl shadow-lg shadow-emerald-600/25 transition-transform active:scale-98 cursor-pointer"
+                  >
+                    Tôi Đã Chuyển Khoản ✅
+                  </button>
+                ) : (
+                  <div className="p-3.5 bg-emerald-50 border border-emerald-200 rounded-2xl text-xs text-emerald-900 space-y-1">
+                    <p className="font-bold">⏳ Đang chờ xác nhận giao dịch...</p>
+                    <p>Tài khoản sẽ tự lên Pro ngay khi hệ thống nhận được tiền (thường trong vài phút). Bạn có thể đóng cửa sổ này — Pro vẫn được kích hoạt. Cần hỗ trợ, hãy gửi mã <strong>{transferContent}</strong> cho chúng tôi.</p>
+                  </div>
+                )}
+                </>
+                )}
               </div>
             ) : (
               /* Success Celebration Screen */
@@ -434,6 +480,19 @@ export default function PricingPage() {
           </div>
         </div>
       )}
+      <AuthModal
+        isOpen={isAuthOpen}
+        initialMode="register"
+        onClose={() => setIsAuthOpen(false)}
+        onSuccess={() => {
+          setActiveUser(getActiveUser());
+          if (pendingTier) {
+            const tier = pendingTier;
+            setPendingTier(null);
+            setTimeout(() => handleOpenPayment(tier), 300);
+          }
+        }}
+      />
     </div>
   );
 }

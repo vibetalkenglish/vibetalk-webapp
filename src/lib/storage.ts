@@ -202,3 +202,8 @@ export function resetToStudentProgress() {
   progress.completedLessons = [];
   saveUserProgress(progress);
 }
+
+/** Clears local progress back to a fresh learner (used on sign-out). */
+export function resetUserProgress() {
+  saveUserProgress({ ...DEFAULT_PROGRESS, lastActiveDate: new Date().toISOString().split('T')[0] });
+}
