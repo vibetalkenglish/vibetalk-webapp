@@ -1,4 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { consumeQuota } from '@/lib/server/quota';
+
+const MAX_BODY_BYTES = 20_000;
+const MAX_MESSAGES = 12;
+const MAX_MESSAGE_CHARS = 500;
 
 interface ChatMessage {
   role: 'user' | 'assistant' | 'system';
@@ -56,16 +61,32 @@ Provide natural slang or travel tips in "correctionTipEn" and "correctionTipVi".
 
 export async function POST(req: NextRequest) {
   try {
-    const { messages, persona = 'jessica' } = await req.json() as {
-      messages: ChatMessage[];
-      persona: string;
-    };
+    const raw = await req.text();
+    if (raw.length > MAX_BODY_BYTES) {
+      return NextResponse.json({ error: 'Tin nhắn quá dài.' }, { status: 413 });
+    }
+    const body = JSON.parse(raw || '{}') as { messages?: unknown; persona?: unknown };
+    const persona = typeof body.persona === 'string' && Object.hasOwn(PERSONAS, body.persona) ? body.persona : 'jessica';
 
-    const currentPersona = PERSONAS[persona] || PERSONAS.jessica;
+    // Only plain user/assistant turns, trimmed — never client-supplied system prompts.
+    const messages: ChatMessage[] = (Array.isArray(body.messages) ? body.messages : [])
+      .filter((m: any) => m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string')
+      .slice(-MAX_MESSAGES)
+      .map((m: any) => ({ role: m.role, content: m.content.slice(0, MAX_MESSAGE_CHARS) }));
+
+    const currentPersona = PERSONAS[persona];
     const lastUserMessage = messages.filter(m => m.role === 'user').pop()?.content || 'Hello!';
 
     const geminiKey = process.env.GEMINI_API_KEY;
     const openAiKey = process.env.OPENAI_API_KEY;
+
+    // Paid providers need a signed-in user with quota left; otherwise use the free rule engine.
+    if (geminiKey || openAiKey) {
+      const quota = await consumeQuota('ai_chat');
+      if (!quota.ok) {
+        return NextResponse.json({ ...ruleBasedReply(persona, lastUserMessage), notice: quota.message, limited: quota.reason });
+      }
+    }
 
     // 1. Try Gemini Flash if key is present
     if (geminiKey) {
@@ -137,73 +158,7 @@ Respond strictly in valid JSON format:
     }
 
     // 3. Fallback Smart Rule Engine (100% Free & Instant)
-    const lower = lastUserMessage.toLowerCase();
-    let replyEn = '';
-    let replyVi = '';
-    let tipEn = '';
-    let tipVi = '';
-
-    if (persona === 'david') {
-      if (lower.includes('experience') || lower.includes('job') || lower.includes('work')) {
-        replyEn = "That sounds like a strong foundation! Could you walk me through a major challenge you solved in your recent project?";
-        replyVi = "Nghe có vẻ là một nền tảng vững chắc! Bạn có thể chia sẻ về một thử thách lớn mà bạn đã giải quyết trong dự án gần đây không?";
-        tipEn = "Use the STAR method: Situation, Task, Action, Result to structure your answer.";
-        tipVi = "Dùng mô hình STAR (Bối cảnh, Nhiệm vụ, Hành động, Kết quả) để câu trả lời thuyết phục nhất.";
-      } else if (lower.includes('strength') || lower.includes('good at')) {
-        replyEn = "That is a valuable skill in any cross-functional team! How do you handle tight deadlines under pressure?";
-        replyVi = "Đó là một kỹ năng rất giá trị trong nhóm làm việc! Bạn xử lý các hạn chót gấp dưới áp lực như thế nào?";
-        tipEn = "Say 'I thrive under pressure by prioritizing high-impact tasks' for a natural corporate tone.";
-        tipVi = "Dùng cụm 'thrive under pressure' để thể hiện khả năng làm việc tốt dưới áp lực.";
-      } else {
-        replyEn = `Thank you for sharing that. In a business setting, clarity is key. What is your primary career goal for the next two years?`;
-        replyVi = `Cảm ơn bạn đã chia sẻ. Trong môi trường công sở, sự rõ ràng là then chốt. Mục tiêu nghề nghiệp chính của bạn trong 2 năm tới là gì?`;
-      }
-    } else if (persona === 'sam') {
-      if (lower.includes('airport') || lower.includes('flight') || lower.includes('travel')) {
-        replyEn = "Awesome! Always make sure to have your passport and boarding pass ready at the gate. What destination are you most excited to visit?";
-        replyVi = "Tuyệt vời! Hãy luôn chuẩn bị sẵn hộ chiếu và thẻ lên máy bay ở cổng nhé. Điểm đến nào làm bạn hào hứng muốn ghé thăm nhất?";
-        tipEn = "Say 'I'm catching a flight' instead of 'I go by plane' to sound like a native.";
-        tipVi = "Người bản xứ thường dùng 'catch a flight' thay vì nói 'go by plane'.";
-      } else if (lower.includes('hotel') || lower.includes('room')) {
-        replyEn = "Pro tip: ask the front desk if they have any complimentary room upgrades! Do you prefer staying near the city center or by the beach?";
-        replyVi = "Mẹo hay: hãy hỏi quầy lễ tân xem có phòng nâng cấp miễn phí không nhé! Bạn thích ở gần trung tâm hay gần bãi biển hơn?";
-        tipEn = "Use 'complimentary' instead of 'free' when speaking to hotel staff.";
-        tipVi = "Dùng từ 'complimentary' thay vì 'free' nghe sang trọng và chuyên nghiệp hơn.";
-      } else {
-        replyEn = `That sounds like a great trip idea! Traveling independently gives you so much freedom. What local food do you wanna try first?`;
-        replyVi = `Nghe như một ý tưởng du lịch tuyệt vời! Đi du lịch tự túc mang lại rất nhiều sự tự do. Món ăn địa phương nào bạn muốn thử trước tiên?`;
-        tipEn = "Use 'wanna' and 'gonna' in casual travel conversation.";
-        tipVi = "Dùng 'wanna' và 'gonna' khi trò chuyện du lịch thân mật.";
-      }
-    } else {
-      // Jessica (Default)
-      if (lower.includes('coffee') || lower.includes('drink') || lower.includes('starbucks')) {
-        replyEn = "I love coffee! In New York, my go-to order is an iced oat milk latte. What is your favorite drink when you relax?";
-        replyVi = "Tôi mê cà phê lắm! Ở New York, món ruột của tôi là latte sữa yến mạch đá. Đồ uống yêu thích của bạn khi thư giãn là gì?";
-        tipEn = "Say 'My go-to drink is...' to describe your favorite item naturally.";
-        tipVi = "Dùng cụm 'My go-to...' để chỉ món ruột, đồ uống quen thuộc nhất của bạn.";
-      } else if (lower.includes('weekend') || lower.includes('movie') || lower.includes('music')) {
-        replyEn = "That sounds so relaxing! I usually go for a walk in Central Park on weekends. Any exciting plans coming up for you?";
-        replyVi = "Nghe thật thư thái! Tôi thường đi dạo ở Central Park vào cuối tuần. Bạn có kế hoạch thú vị nào sắp tới không?";
-        tipEn = "Say 'Any plans coming up?' instead of 'Do you have plans in future?'.";
-        tipVi = "Dùng 'Any plans coming up?' để hỏi kế hoạch sắp tới ngắn gọn và tự nhiên.";
-      } else if (lower.includes('hello') || lower.includes('hi') || lower.includes('how are you')) {
-        replyEn = "Hey! I'm doing wonderful today. It's so great to practice English with you! Tell me, what is something fun you did recently?";
-        replyVi = "Chào bạn! Hôm nay tôi cảm thấy rất tuyệt. Thật vui được luyện tiếng Anh cùng bạn! Kể tôi nghe, dạo này bạn có làm điều gì vui không?";
-        tipEn = "Respond with 'Doing great, thanks!' or 'Pretty good!' for natural greetings.";
-        tipVi = "Đáp lại bằng 'Doing great!' hoặc 'Pretty good!' thay cho câu học vẹt 'I am fine thank you'.";
-      } else {
-        replyEn = `I hear you! That's really interesting. Practicing every day like this will make your American accent super fluent. What would you like to talk about next?`;
-        replyVi = `Tôi hiểu ý bạn rồi! Thú vị thật đấy. Luyện tập mỗi ngày thế này sẽ giúp giọng Mỹ của bạn siêu trôi chảy. Tiếp theo bạn muốn nói về chủ đề gì?`;
-      }
-    }
-
-    return NextResponse.json({
-      replyEn,
-      replyVi,
-      correctionTipEn: tipEn,
-      correctionTipVi: tipVi
-    });
+    return NextResponse.json(ruleBasedReply(persona, lastUserMessage));
   } catch (error) {
     console.error('AI Chat Error:', error);
     return NextResponse.json(
@@ -216,4 +171,70 @@ Respond strictly in valid JSON format:
       { status: 200 }
     );
   }
+}
+
+/** Free canned replies used without an AI key, for guests, and when the daily quota is used up. */
+function ruleBasedReply(persona: string, lastUserMessage: string) {
+  const lower = lastUserMessage.toLowerCase();
+  let replyEn = '';
+  let replyVi = '';
+  let tipEn = '';
+  let tipVi = '';
+
+  if (persona === 'david') {
+    if (lower.includes('experience') || lower.includes('job') || lower.includes('work')) {
+      replyEn = "That sounds like a strong foundation! Could you walk me through a major challenge you solved in your recent project?";
+      replyVi = "Nghe có vẻ là một nền tảng vững chắc! Bạn có thể chia sẻ về một thử thách lớn mà bạn đã giải quyết trong dự án gần đây không?";
+      tipEn = "Use the STAR method: Situation, Task, Action, Result to structure your answer.";
+      tipVi = "Dùng mô hình STAR (Bối cảnh, Nhiệm vụ, Hành động, Kết quả) để câu trả lời thuyết phục nhất.";
+    } else if (lower.includes('strength') || lower.includes('good at')) {
+      replyEn = "That is a valuable skill in any cross-functional team! How do you handle tight deadlines under pressure?";
+      replyVi = "Đó là một kỹ năng rất giá trị trong nhóm làm việc! Bạn xử lý các hạn chót gấp dưới áp lực như thế nào?";
+      tipEn = "Say 'I thrive under pressure by prioritizing high-impact tasks' for a natural corporate tone.";
+      tipVi = "Dùng cụm 'thrive under pressure' để thể hiện khả năng làm việc tốt dưới áp lực.";
+    } else {
+      replyEn = `Thank you for sharing that. In a business setting, clarity is key. What is your primary career goal for the next two years?`;
+      replyVi = `Cảm ơn bạn đã chia sẻ. Trong môi trường công sở, sự rõ ràng là then chốt. Mục tiêu nghề nghiệp chính của bạn trong 2 năm tới là gì?`;
+    }
+  } else if (persona === 'sam') {
+    if (lower.includes('airport') || lower.includes('flight') || lower.includes('travel')) {
+      replyEn = "Awesome! Always make sure to have your passport and boarding pass ready at the gate. What destination are you most excited to visit?";
+      replyVi = "Tuyệt vời! Hãy luôn chuẩn bị sẵn hộ chiếu và thẻ lên máy bay ở cổng nhé. Điểm đến nào làm bạn hào hứng muốn ghé thăm nhất?";
+      tipEn = "Say 'I'm catching a flight' instead of 'I go by plane' to sound like a native.";
+      tipVi = "Người bản xứ thường dùng 'catch a flight' thay vì nói 'go by plane'.";
+    } else if (lower.includes('hotel') || lower.includes('room')) {
+      replyEn = "Pro tip: ask the front desk if they have any complimentary room upgrades! Do you prefer staying near the city center or by the beach?";
+      replyVi = "Mẹo hay: hãy hỏi quầy lễ tân xem có phòng nâng cấp miễn phí không nhé! Bạn thích ở gần trung tâm hay gần bãi biển hơn?";
+      tipEn = "Use 'complimentary' instead of 'free' when speaking to hotel staff.";
+      tipVi = "Dùng từ 'complimentary' thay vì 'free' nghe sang trọng và chuyên nghiệp hơn.";
+    } else {
+      replyEn = `That sounds like a great trip idea! Traveling independently gives you so much freedom. What local food do you wanna try first?`;
+      replyVi = `Nghe như một ý tưởng du lịch tuyệt vời! Đi du lịch tự túc mang lại rất nhiều sự tự do. Món ăn địa phương nào bạn muốn thử trước tiên?`;
+      tipEn = "Use 'wanna' and 'gonna' in casual travel conversation.";
+      tipVi = "Dùng 'wanna' và 'gonna' khi trò chuyện du lịch thân mật.";
+    }
+  } else {
+    // Jessica (Default)
+    if (lower.includes('coffee') || lower.includes('drink') || lower.includes('starbucks')) {
+      replyEn = "I love coffee! In New York, my go-to order is an iced oat milk latte. What is your favorite drink when you relax?";
+      replyVi = "Tôi mê cà phê lắm! Ở New York, món ruột của tôi là latte sữa yến mạch đá. Đồ uống yêu thích của bạn khi thư giãn là gì?";
+      tipEn = "Say 'My go-to drink is...' to describe your favorite item naturally.";
+      tipVi = "Dùng cụm 'My go-to...' để chỉ món ruột, đồ uống quen thuộc nhất của bạn.";
+    } else if (lower.includes('weekend') || lower.includes('movie') || lower.includes('music')) {
+      replyEn = "That sounds so relaxing! I usually go for a walk in Central Park on weekends. Any exciting plans coming up for you?";
+      replyVi = "Nghe thật thư thái! Tôi thường đi dạo ở Central Park vào cuối tuần. Bạn có kế hoạch thú vị nào sắp tới không?";
+      tipEn = "Say 'Any plans coming up?' instead of 'Do you have plans in future?'.";
+      tipVi = "Dùng 'Any plans coming up?' để hỏi kế hoạch sắp tới ngắn gọn và tự nhiên.";
+    } else if (lower.includes('hello') || lower.includes('hi') || lower.includes('how are you')) {
+      replyEn = "Hey! I'm doing wonderful today. It's so great to practice English with you! Tell me, what is something fun you did recently?";
+      replyVi = "Chào bạn! Hôm nay tôi cảm thấy rất tuyệt. Thật vui được luyện tiếng Anh cùng bạn! Kể tôi nghe, dạo này bạn có làm điều gì vui không?";
+      tipEn = "Respond with 'Doing great, thanks!' or 'Pretty good!' for natural greetings.";
+      tipVi = "Đáp lại bằng 'Doing great!' hoặc 'Pretty good!' thay cho câu học vẹt 'I am fine thank you'.";
+    } else {
+      replyEn = `I hear you! That's really interesting. Practicing every day like this will make your American accent super fluent. What would you like to talk about next?`;
+      replyVi = `Tôi hiểu ý bạn rồi! Thú vị thật đấy. Luyện tập mỗi ngày thế này sẽ giúp giọng Mỹ của bạn siêu trôi chảy. Tiếp theo bạn muốn nói về chủ đề gì?`;
+    }
+  }
+
+  return { replyEn, replyVi, correctionTipEn: tipEn, correctionTipVi: tipVi };
 }

@@ -3,6 +3,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { playAmericanSpeech, speechEngine } from '@/lib/speechHelper';
 import { awardExp } from '@/lib/authStorage';
+import { showNotice } from '@/lib/notice';
+import { DAILY_LIMITS } from '@/lib/limits';
 import confetti from 'canvas-confetti';
 import { 
   Phone, 
@@ -208,6 +210,7 @@ export default function VoiceAiTutorCall() {
       });
 
       const data = await res.json();
+      if (data.notice) showNotice(data.notice, `chat-${data.limited || 'notice'}`);
       const aiReply: ChatTurn = {
         id: `ai-${Date.now()}`,
         sender: 'ai',
@@ -254,7 +257,7 @@ export default function VoiceAiTutorCall() {
               🎙️ Voice-to-Voice AI Tutor
             </span>
             <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/30 text-emerald-300 text-[11px] font-black border border-emerald-400/40">
-              100% Free Quota
+              Miễn phí {DAILY_LIMITS.ai_chat.free} lượt/ngày
             </span>
           </div>
           <h2 className="text-xl sm:text-2xl font-black">

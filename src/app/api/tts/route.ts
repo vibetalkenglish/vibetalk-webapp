@@ -1,4 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { consumeQuota } from '@/lib/server/quota';
+
+const MAX_TTS_CHARS = 400;
 
 /**
  * Server-Side Neural TTS API Route
@@ -11,6 +14,17 @@ export async function POST(req: NextRequest) {
 
     if (!text || typeof text !== 'string') {
       return NextResponse.json({ error: 'Text is required' }, { status: 400 });
+    }
+
+    // Long texts and requests without a premium key go to the free browser voice.
+    if (text.length > MAX_TTS_CHARS || (!process.env.OPENAI_API_KEY && !process.env.ELEVENLABS_API_KEY)) {
+      return NextResponse.json({ fallback: true });
+    }
+
+    // Premium voices cost money: signed-in users only, within their daily quota.
+    const quota = await consumeQuota('tts');
+    if (!quota.ok) {
+      return NextResponse.json({ fallback: true, limited: quota.reason, notice: quota.message });
     }
 
     // Check for OpenAI API Key in env if available

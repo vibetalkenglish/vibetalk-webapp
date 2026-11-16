@@ -19,6 +19,7 @@ import { signInWithPassword, signUpWithPassword, sendPasswordReset } from '@/lib
 import { getCloudUser, subscribeToCloudUser } from '@/lib/cloudUser';
 import { isSupabaseConfigured, SUPABASE_NOT_CONFIGURED_MESSAGE } from '@/lib/supabase/config';
 import { UserAccount } from '@/types';
+import Link from 'next/link';
 
 interface AuthModalProps {
   isOpen: boolean;
@@ -269,6 +270,14 @@ export default function AuthModal({
               ? 'Đang xử lý...'
               : mode === 'login' ? 'Đăng Nhập Ngay 🚀' : mode === 'register' ? 'Đăng Ký & Nhận +100 EXP 🎁' : 'Gửi Link Đặt Lại Mật Khẩu'}
           </button>
+          {mode === 'register' && (
+            <p className="text-[11px] text-slate-500 text-center leading-relaxed">
+              Bằng việc đăng ký, bạn đồng ý với{' '}
+              <Link href="/terms" target="_blank" className="font-bold text-indigo-600 hover:underline">Điều khoản sử dụng</Link>
+              {' '}và{' '}
+              <Link href="/privacy" target="_blank" className="font-bold text-indigo-600 hover:underline">Chính sách quyền riêng tư</Link>.
+            </p>
+          )}
         </form>
 
         {/* Toggle Mode */}

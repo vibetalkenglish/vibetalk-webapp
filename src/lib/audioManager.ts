@@ -5,10 +5,14 @@
  */
 
 import { speechEngine } from './speechHelper';
+import { showNotice } from './notice';
+import { isLoggedIn } from './cloudUser';
 
 class StudioAudioManager {
   private currentAudio: HTMLAudioElement | null = null;
   private audioCache = new Map<string, string>(); // text:key -> objectURL
+  // Set when the server refuses premium TTS, so we stop asking until it can succeed.
+  private serverTtsBlocked: 'login' | 'quota' | null = null;
 
   public async play(
     text: string,
@@ -47,8 +51,10 @@ class StudioAudioManager {
       return;
     }
 
-    // 3. Try to fetch from Neural TTS API
-    try {
+    // 3. Try to fetch from Neural TTS API (skipped while the server is refusing us)
+    const blocked =
+      this.serverTtsBlocked === 'quota' || (this.serverTtsBlocked === 'login' && !isLoggedIn());
+    if (!blocked) try {
       const res = await fetch('/api/tts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -67,6 +73,13 @@ class StudioAudioManager {
           this.fallbackSpeech(cleanText, options.rate, options.onEnd);
         });
         return;
+      }
+      if (res.ok) {
+        const data = await res.json().catch(() => null);
+        if (data?.limited === 'login' || data?.limited === 'quota') {
+          this.serverTtsBlocked = data.limited;
+          if (data.notice) showNotice(data.notice, `tts-${data.limited}`);
+        }
       }
     } catch (e) {
       // Network or API route unreachable

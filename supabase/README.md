@@ -9,6 +9,8 @@ Làm một lần. Không cần cài thêm phần mềm gì trên máy.
 ## 2. Tạo bảng
 1. Dashboard → **SQL Editor** → **New query**.
 2. Dán toàn bộ nội dung `supabase/migrations/0001_init.sql` → **Run**. Phải báo "Success".
+3. Tạo query mới, dán `supabase/migrations/0002_usage_limits.sql` → **Run**.
+   File này bắt buộc: thiếu nó thì Gia Sư AI và giọng đọc AI sẽ tự chuyển sang chế độ miễn phí (trả lời mẫu, giọng trình duyệt).
 
 ## 3. Cài đặt đăng nhập
 Dashboard → **Authentication**:
@@ -43,11 +45,21 @@ Khi chạy trên máy: chép `.env.example` thành `.env.local` rồi điền v�
    ```
 3. Đăng xuất rồi đăng nhập lại. Mục **🛡️ Cổng Quản Trị Admin** sẽ hiện trong menu, và `/admin` mở được.
 
+## Giới hạn chi phí AI
+- Chỉ người **đã đăng nhập** mới dùng Gia Sư AI thật (Gemini) và giọng đọc AI (ElevenLabs). Khách dùng trả lời mẫu và giọng của trình duyệt.
+- Mỗi ngày (tính theo giờ Việt Nam), mỗi người được:
+  - Free: 20 lượt chat AI, 50 lượt giọng đọc AI.
+  - Pro: 200 lượt chat AI, 500 lượt giọng đọc AI.
+- Muốn đổi các con số này thì sửa `src/lib/limits.ts`.
+- Mỗi tin nhắn gửi AI tối đa 500 ký tự, mỗi lần chỉ gửi 12 tin gần nhất. Mỗi đoạn đọc tối đa 400 ký tự; dài hơn thì dùng giọng trình duyệt.
+- Nên đặt thêm hạn mức chi tiêu ngay trên trang Google AI Studio và ElevenLabs để chặn chi phí từ phía nhà cung cấp.
+
 ## Dữ liệu được lưu ở đâu
 - `profiles`: tên, avatar, EXP, streak, Pro (`is_pro`, `pro_until`), quyền (`role`).
 - `progress`: level, bài đã học, bài đã lưu, kết quả test.
 - `notebook_entries`: từ vựng trong sổ tay.
 - `orders`: đơn mua Pro. Chỉ máy chủ tạo được, số tiền lấy từ `src/lib/plans.ts`.
 - `app_config`: tài khoản ngân hàng hiện trên mã VietQR.
+- `usage_counters`: số lượt dùng AI mỗi ngày của từng người.
 
 Học viên không tự bật được Pro hay quyền admin. Các cột đó chỉ máy chủ (service role) hoặc admin sửa được.

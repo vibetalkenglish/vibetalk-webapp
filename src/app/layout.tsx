@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import CloudSyncInit from '@/components/CloudSyncInit';
+import NoticeToast from '@/components/NoticeToast';
+import Link from 'next/link';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -40,6 +42,7 @@ export default function RootLayout({
     <html lang="vi" className="h-full scroll-smooth">
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-indigo-500 selection:text-white">
         <CloudSyncInit />
+        <NoticeToast />
         <Navbar />
         <main className="flex-1 max-w-7xl w-full mx-auto px-3.5 sm:px-6 lg:px-8 py-5 sm:py-8 pb-16 sm:pb-12">
           {children}
@@ -51,11 +54,9 @@ export default function RootLayout({
               <span>© 2026 - Nền Tảng Học Tiếng Anh Chuẩn Giọng Mỹ Dành Cho Người Việt.</span>
             </div>
             <div className="flex items-center gap-3 text-slate-400 text-[11px]">
-              <span>Phát âm chuẩn IPA</span>
+              <Link href="/terms" className="hover:text-slate-700 hover:underline">Điều khoản sử dụng</Link>
               <span>•</span>
-              <span>AI Chấm điểm 100% Miễn phí</span>
-              <span>•</span>
-              <span>Học theo Level</span>
+              <Link href="/privacy" className="hover:text-slate-700 hover:underline">Chính sách quyền riêng tư</Link>
             </div>
           </div>
         </footer>
